@@ -9,6 +9,8 @@ import Footer from './Components/Footer/Footer.jsx'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import About from './Pages/About/About';
+
 import './App.css';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
     <>
       <Navbar />
       <Homepage />
+      <About/>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Event />} />
