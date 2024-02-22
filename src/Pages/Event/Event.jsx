@@ -7,6 +7,7 @@ const Event = () => {
   return (
     <>
       <div className='event-container'>
+      
         {
           Detail.map((item,index)=>(
             <div key={index} onClick={()=>{navigate(`/${item.id}`)}} className='event-box'>
