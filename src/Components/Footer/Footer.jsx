@@ -1,7 +1,6 @@
 import React from 'react';
 // import background from '../../assets/back.jpg';
 import './Footer.css';
-// import logo from '../../assets/ieee-logo.png';
 import logo from '../../assets/JSCOP_LOGO.png'
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
