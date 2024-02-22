@@ -1,0 +1,79 @@
+.NavbarComponent {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px;
+}
+
+.NavbarToggle {
+    display: none;
+    cursor: pointer;
+}
+
+.NavabrLogo img {
+    display: block;
+    width: 150px;
+    height: 50px;
+}
+
+.NavbarContent {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 2%;
+}
+
+.NavbarContent li {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .NavbarComponent {
+        flex-direction: column;
+        /* position: relative; */
+        /* align-items: start; */
+    }
+
+    .NavbarToggle {
+        display: block;
+        font-size: 24px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+    }
+
+    .NavbarToggle::before {
+        content: '\2630';
+        font-size: 24px;
+    }
+
+    .NavbarToggle.active::before {
+        content: '\00d7';
+        font-size: 40px;
+    }
+
+
+    .NavabrLogo img {
+        display: none;
+
+    }
+
+    .NavbarContent {
+        display: none;
+        flex-direction: column;
+        /* position: absolute; */
+        top: 50%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .NavbarContent.showMenu {
+        display: flex;
+    }
+}
