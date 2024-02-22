@@ -22,7 +22,7 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <Parallax strength={-600} bgImage={bg}>
+        {/* <Parallax strength={-600} bgImage={bg}>
           <div className="content">
             <div className="left">
               <Parallax strength={500}>
@@ -37,8 +37,9 @@ const About = () => {
                   />
                 </div>
               </Parallax>
-            </div>
-            <div className="right">
+            </div> */}
+            <div className='heading'>WHAT OPTICA DOES ?</div>
+            <div className="content">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
               fuga quibusdam. Voluptates itaque maiores odio quaerat esse animi
               corrupti consequatur asperiores voluptatum laborum. Aperiam magni
@@ -46,9 +47,10 @@ const About = () => {
               necessitatibus deleniti harum maiores modi nobis! Unde eaque nulla
               amet cupiditate tempora, quaerat itaque officiis incidunt quis
               possimus!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus labore sed quibusdam sequi tenetur vero at accusantium ratione esse dolore magni voluptates alias, minus quod amet dolor expedita aliquid? Rem, explicabo voluptatibus velit recusandae dolorum et aut pariatur, natus, vero quidem laudantium quas illum dolore? Maiores, beatae. Quos aliquid culpa dolor doloribus, maxime totam accusantium commodi harum libero repellendus hic soluta. Ipsa assumenda maxime perspiciatis sequi. Labore maiores vero fugiat porro temporibus magnam quod, aliquid reiciendis accusamus nisi beatae cumque cum dignissimos ducimus alias ipsum tenetur neque fuga iusto, possimus eaque velit molestiae? Excepturi, doloremque vel molestias sunt fugiat omnis?
             </div>
-          </div>
-        </Parallax>
+          {/* </div>
+        </Parallax> */}
       </div>
     </>
   );
