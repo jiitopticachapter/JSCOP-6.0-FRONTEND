@@ -3,6 +3,7 @@ import { useRef } from "react";
 import planet from "./planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
+// import Slider from "../../Components/Mainn/Mainn";
 
 const Homepage = () => {
   const videoRef = useRef();
@@ -10,6 +11,7 @@ const Homepage = () => {
     videoRef.current.playbackRate = 2;
   };
   return (
+    <>
     <div className="homepage">
       <Stars />
       <img src={planet} alt="planet" className="planet" />
@@ -33,6 +35,8 @@ const Homepage = () => {
       <div className="astro"></div>
       <div className="spacestation"></div>
     </div>
+    {/* <Slider/> */}
+    </>
   );
 };
 

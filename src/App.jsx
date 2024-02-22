@@ -10,15 +10,17 @@ import Footer from "./Components/Footer/Footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import About from "./Pages/About/About";
-
+// import PartnersSlider from "./Pages/Sponsors/Sponsors.jsx";
 import "./App.css";
-
+import Speaker from "./Pages/Speakers/Speakers.jsx";
 function App() {
   return (
     <>
       <Navbar />
       <Homepage />
+    
       <About />
+      <Speaker/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Event />} />
@@ -27,7 +29,9 @@ function App() {
       </BrowserRouter>
       <Timeline />
       <Gallery />
+     {/* <PartnersSlider/> */}
       <Footer />
+
     </>
   );
 }
