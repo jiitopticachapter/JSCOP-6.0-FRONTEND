@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`NavbarComponent ${showMenu ? 'showMenu' : ''}`}>
+      <div id={`${toggleIcon ? 'mobilenav' : ''}`} className={`NavbarComponent ${showMenu ? 'showMenu' : ''}`}>
         <div className={`NavbarToggle ${toggleIcon ? 'active' : ''}`} onClick={toggleMenu}></div>
         <div className="NavabrLogo">
           <img src={navLogo} alt="" />
