@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import "./Speakers.css";
-function Card() {
+function Speaker() {
   return (
     <>
     <div className="container">
@@ -42,13 +42,4 @@ function Card() {
   );
 }
 
-export default Card;
-=======
-import React from 'react'
-
-export default function Speakers() {
-  return (
-    <div>Speakers</div>
-  )
-}
->>>>>>> 659d11e8b00361eae487c42ea4507c7bb884839d
+export default Speaker;
