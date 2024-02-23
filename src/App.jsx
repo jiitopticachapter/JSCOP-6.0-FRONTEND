@@ -5,6 +5,8 @@ import Timeline from "./Pages/Timeline/Timeline.jsx";
 import EventDetailPage from "./Pages/Event/EventDetailPage.jsx";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import Speakers from "./Pages/Speakers/Speakers.jsx";
+// import Sponsors from "./Pages/Sponsors/Sponsors.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import About from "./Pages/About/About";
@@ -25,6 +27,8 @@ function App() {
       </BrowserRouter>
       <Timeline />
       <Gallery />
+      <Speakers />
+      {/* <Sponsors /> */}
       <Footer />
     </>
   );
