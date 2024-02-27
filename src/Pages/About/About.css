@@ -7,24 +7,28 @@
     align-items: center;
     justify-content: center;
     padding: 3% 5%;
-    background-color: black;
     color:white;
 }
 
-.heading {
+.heading-about {
     font-size: 3rem;
-    font-weight: 600;
-    margin: 2%;
+    font-weight: 300;
+    margin-bottom: 3%;
+
 }
 
 .content {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     line-height: 30px;
+    background-color: rgb(35, 41, 46);
+    border-radius: 2%;
+    padding: 2%;
 }
 
 @media only screen and (max-width:650px){
-    .heading{
+.heading-about {
+    
         font-size: 2.3rem;
     }
     .content{
@@ -33,7 +37,8 @@
 }
 
 @media only screen and (max-width:550px){
-    .heading{
+.heading-about {
+    
         font-size: 1.8rem;
     }
     .content{
