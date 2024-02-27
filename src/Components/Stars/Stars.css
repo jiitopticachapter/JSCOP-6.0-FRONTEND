@@ -187,6 +187,7 @@ html {
     918px 1318px #fff, 1460px 1826px #fff;
   animation: animStar 50s linear infinite;
 }
+
 #stars:after {
   content: " ";
   position: absolute;
@@ -431,6 +432,7 @@ html {
     1588px 290px #fff, 295px 1657px #fff;
   animation: animStar 100s linear infinite;
 }
+
 #stars2:after {
   content: " ";
   position: absolute;
@@ -523,6 +525,7 @@ html {
     1974px 1512px #fff;
   animation: animStar 150s linear infinite;
 }
+
 #stars3:after {
   content: " ";
   position: absolute;
@@ -573,6 +576,7 @@ html {
   margin-top: -60px;
   padding-left: 10px;
 }
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
@@ -584,6 +588,7 @@ html {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }

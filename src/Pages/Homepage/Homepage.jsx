@@ -16,13 +16,13 @@ const Homepage = () => {
 
       <div className="home-heading">
         {/* <div className="home-heading-inner"> */}
-        <span className="home-heading1">JIIT OPTICA</span> <br />
+        <div className="home-heading1">JIIT OPTICA</div>
         <div className="home-heading2">Presents</div>
         <div className="home-heading3">JSCOP 6.0</div>
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
         </div>
-        <br />
+        {/* <br /> */}
         <Timer />
         <br />
         <div>
