@@ -17,9 +17,9 @@
 
 .planet {
   /* height: 100%; */
-  width: 80%;
-  margin-left: -20%;
-  margin-top: 20px;
+  width: 50%;
+  margin-left: -10%;
+  margin-top: 12%;
   animation: rotateAnimation 25s infinite alternate;
   /* bottom: -20%; */
   /* position: absolute; */
@@ -204,6 +204,27 @@
 @media screen and (max-width: 1170px) and (min-width: 676px) {
   .home-heading3 {
     font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 1250px) and (min-width: 885px) {
+  .planet {
+    width: 100%;
+    margin-left: -20%;
+    margin-top: 30vh;
+  }
+
+  .spacestation {
+    height: 20vw;
+    width: 35vw;
+    top: 70%;
+  }
+
+  .astro {
+    height: 50vw;
+    width: 49vh;
+
+    top: 60px;
   }
 }
 
