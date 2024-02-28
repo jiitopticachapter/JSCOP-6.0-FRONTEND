@@ -3,7 +3,7 @@ import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
 
 const Sidenav = () => {
-  const [sidenavWidth, setSidenavWidth] = useState(0);
+  const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -16,18 +16,18 @@ const Sidenav = () => {
   currentURL = currentURL[currentURL.length - 2];
 
   const openNav = () => {
-    setSidenavWidth(270);
+    setSidenavWidth("100vw");
   };
 
   const closeNav = () => {
-    setSidenavWidth(0);
+    setSidenavWidth("0vw");
   };
   return (
     <div className="sidenavvbar">
       <div
         id="mySidenav"
         className="sidenav"
-        style={{ width: `${sidenavWidth}px` }}
+        style={{ width: `${sidenavWidth}` }}
       >
         <Link href="" className="closebtn" onClick={closeNav}>
           &times;
