@@ -4,6 +4,9 @@ import "./About.css";
 const About = () => {
   return (
     <>
+      <video width="320" height="240" controls>
+        <source src="bgAbout.mp4" type="video/mp4" />
+      </video>
       <div className="about">
         {/* <Stars /> */}
         <div className="heading">WHAT OPTICA DOES ?</div>
@@ -31,20 +34,6 @@ const About = () => {
             eaque velit molestiae? Excepturi, doloremque vel molestias sunt
             fugiat omnis?
           </div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
-          fuga quibusdam. Voluptates itaque maiores odio quaerat esse animi
-          corrupti consequatur asperiores voluptatum laborum. Aperiam magni
-          eligendi molestias, ipsam, soluta nam veritatis assumenda,
-          necessitatibus deleniti harum maiores modi nobis! Unde eaque nulla
-          amet cupiditate tempora, quaerat itaque officiis incidunt quis
-          possimus! Lorem, inde eaque nulla amet cupiditate tempora, quaerat
-          itaque officiis incidunt quis possimus! Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Natus labore sed quibusdam sequi tenetur
-          vero at accusantium ratione esse dolore magni voluptates alias, minus
-          quod amet dolor expedita aliquid? Rem, explicabo voluptatibus velit
-          recusandae dolorum et aut pariatur, natus, vero quidem laudantium quas
-          illum dolore? Maiores, beatae. Quos aliquid culpa dolor doloribus,
-          maxime totam accusan
         </div>
       </div>
     </>
