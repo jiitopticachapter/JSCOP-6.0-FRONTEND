@@ -3,6 +3,7 @@ import { useRef } from "react";
 import planet from "./planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const videoRef = useRef();
@@ -28,7 +29,9 @@ const Homepage = () => {
         <Timer />
         <br />
         <div>
-          <button className="register-btn">Register Now</button>
+          <button className="register-btn">
+            <Link to="/register">Register Now</Link>
+          </button>
         </div>
         {/* </div> */}
       </div>

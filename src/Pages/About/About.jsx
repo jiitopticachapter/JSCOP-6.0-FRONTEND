@@ -4,9 +4,9 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <video width="320" height="240" controls>
+      {/* <video width="320" height="240" controls>
         <source src="bgAbout.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       <div className="about">
         {/* <Stars /> */}
         <div className="heading">WHAT OPTICA DOES ?</div>
