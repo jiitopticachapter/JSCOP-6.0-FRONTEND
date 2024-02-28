@@ -87,7 +87,8 @@
   font-weight: bold;
 }
 
-.register-btn {
+.home-register-btn {
+  text-decoration: none;
   border: 2px solid white;
   color: white;
   font-size: 1.5rem;
@@ -165,7 +166,7 @@
     font-size: 4vw;
   }
 
-  .register-btn {
+  .home-register-btn {
     /* font-size: 1rem; */
     font-size: 5vw;
   }
@@ -256,7 +257,7 @@
 }
 
 @media screen and (max-width: 1114px) and (min-width: 765px) {
-  .register-btn {
+  .home-register-btn {
     font-size: 1.5rem;
     padding: 10px 16px;
     border-radius: 0.5rem;
