@@ -24,7 +24,7 @@ const Homepage = () => {
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
         </div>
-        <br />
+        {/* <br /> */}
         <Timer />
         <br />
         <div>
