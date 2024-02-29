@@ -10,8 +10,11 @@ function Register() {
     email: "",
     phone: "",
     batch: "",
+    branch: "",
     enroll: "",
   });
+
+  const [status, setStatus] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,14 +39,30 @@ function Register() {
     }
 
     try {
-      const res = await axios.post(`/register`, formData);
-      console.log(res.data);
-      if (res.data.success) {
-        toast.success("Registered successful");
-      } else {
-        toast.error("Invalid Credentials");
-        return;
-      }
+      // const res = await axios.post(`/register`, formData);
+      // console.log(res.data);
+      // if (res.data.success) {
+      //   toast.success("Registered successful");
+      // } else {
+      //   toast.error("Invalid Credentials");
+      //   return;
+      // }
+      let response = await fetch("http://localhost:4000/api/register-new", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formData),
+      });
+      let result = await response.json();
+       setFormData(formData);
+        if (result.code == 200) {
+          console.log("done!!!")
+            setStatus({ succes: true, message: 'User Saved successfully!!'});
+        }
+        else {
+            setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+        }
     } catch (error) {
       console.error("Error during register:", error);
       toast.error("An error occured during registration");
@@ -91,6 +110,14 @@ function Register() {
             <input
               onChange={handleChange}
               type="text"
+              name="branch"
+              placeholder="Branch"
+              className="register-input"
+              required
+            />
+            <input
+              onChange={handleChange}
+              type="text"
               name="enroll"
               placeholder="Enrollment Number"
               className="register-input"
@@ -100,10 +127,17 @@ function Register() {
 
           <div className="register-btns">
             <button className="register-btn" type="submit">
-              Button 1
+              Submit Form
+             
             </button>
-            <button className="register-btn">Button 2</button>
+            <button className="register-btn">
+            {
+                        status.message && 
+                        <p className={status.success === false ? "danger": "success"}>{status.message}</p>
+                    }
+            </button>
           </div>
+                     
         </form>
       </div>
     </div>
