@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
 
@@ -37,7 +37,11 @@ const Sidenav = () => {
         {sidenavItems.map((item, index) => {
           return (
             <div className="sidenavbarsections" key={index}>
-              <Link className="sidelink" to={item.link}>
+              <Link
+                className="sidelink nav-link"
+                to={item.link}
+                onClick={closeNav}
+              >
                 {item.name}
               </Link>
               {/* <hr style={{ color: "white" }} /> */}
@@ -50,7 +54,7 @@ const Sidenav = () => {
         style={{
           fontSize: "30px",
           cursor: "pointer",
-          padding: "15px",
+          padding: "7px",
           color: "var(--lighter)",
         }}
         onClick={openNav}
