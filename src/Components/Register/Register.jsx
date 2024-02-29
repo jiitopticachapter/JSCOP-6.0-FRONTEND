@@ -55,14 +55,18 @@ function Register() {
         body: JSON.stringify(formData),
       });
       let result = await response.json();
-       setFormData(formData);
-        if (result.code == 200) {
-          console.log("done!!!")
-            setStatus({ succes: true, message: 'User Saved successfully!!'});
-        }
-        else {
-            setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        }
+      // setFormData(formData);
+      if (result.code == 200) {
+        console.log("Registration completed!!!");
+        toast.success("Registered successfully");
+        setStatus({ succes: true, message: "User registered successfully!!" });
+      } else {
+        toast.error("Registration not completed, please try again later");
+        setStatus({
+          succes: false,
+          message: "Something went wrong, please try again later.",
+        });
+      }
     } catch (error) {
       console.error("Error during register:", error);
       toast.error("An error occured during registration");
@@ -128,16 +132,14 @@ function Register() {
           <div className="register-btns">
             <button className="register-btn" type="submit">
               Submit Form
-             
             </button>
-            <button className="register-btn">
+            {/* <button className="register-btn">
             {
                         status.message && 
                         <p className={status.success === false ? "danger": "success"}>{status.message}</p>
                     }
-            </button>
+            </button> */}
           </div>
-                     
         </form>
       </div>
     </div>
