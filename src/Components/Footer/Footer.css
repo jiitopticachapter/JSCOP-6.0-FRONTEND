@@ -112,14 +112,18 @@
 .link {
   margin: 0 10px;
 }
-#copyright {
+/* #copyright {
   color: white;
-}
+} */
 
 @media (max-width: 892px) {
   .Border {
     flex-direction: column;
     /* padding-left: 10%; */
+  }
+
+  #copyright {
+    font-size: 11px;
   }
 
   .phone {

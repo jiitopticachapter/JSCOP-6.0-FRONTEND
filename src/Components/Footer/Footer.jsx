@@ -108,8 +108,8 @@ export default function Footer() {
           borderTop: "1px solid white",
         }}
       >
-        <span style={{ fontSize: "20px" }}> &copy;</span> &nbsp; Copyright :
-        JIIT OPTICA Chapter | All Rights Reserved
+        <span> &copy;</span> &nbsp; Copyright : JIIT OPTICA Chapter | All Rights
+        Reserved
       </div>
     </div>
   );
