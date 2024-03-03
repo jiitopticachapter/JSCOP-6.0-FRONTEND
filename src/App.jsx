@@ -1,34 +1,20 @@
-import Event from "./Pages/Event/Event.jsx";
-import Gallery from "./Pages/Gallery/Gallery.jsx";
-import Homepage from "./Pages/Homepage/Homepage.jsx";
-import Timeline from "./Pages/Timeline/Timeline.jsx";
-import EventDetailPage from "./Pages/Event/EventDetailPage.jsx";
+import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-// import Speakers from "./Pages/Speakers/Speakers.jsx";
-// import Sponsors from "./Pages/Sponsors/Sponsors.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import About from "./Pages/About/About";
+import { Routes, Route } from "react-router-dom";
 
-import "./App.css";
+import Register from "./Components/Register/Register.jsx";
+import Layout from "./Pages/Layout/Layout.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Homepage />
-      <About />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Event />} />
-          <Route path="/:id" element={<EventDetailPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Timeline />
-      <Gallery />
-      {/* <Speakers /> */}
-      {/* <Sponsors /> */}
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
       <Footer />
     </>
   );

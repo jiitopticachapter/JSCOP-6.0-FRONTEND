@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './Navbar.css';
-import navLogo from '../../assets/JSCOP_LOGO.png';
+import React, { useState } from "react";
+import "./Navbar.css";
+import navLogo from "../../assets/JSCOP_LOGO.png";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,12 +13,18 @@ const Navbar = () => {
 
   return (
     <>
-      <div id={`${toggleIcon ? 'mobilenav' : ''}`} className={`NavbarComponent ${showMenu ? 'showMenu' : ''}`}>
-        <div className={`NavbarToggle ${toggleIcon ? 'active' : ''}`} onClick={toggleMenu}></div>
+      <div
+        id={`${toggleIcon ? "mobilenav" : ""}`}
+        className={`NavbarComponent ${showMenu ? "showMenu" : ""}`}
+      >
+        <div
+          className={`NavbarToggle ${toggleIcon ? "active" : ""}`}
+          onClick={toggleMenu}
+        ></div>
         <div className="NavabrLogo">
           <img src={navLogo} alt="" />
         </div>
-        <div className={`NavbarContent ${showMenu ? 'showMenu' : ''}`}>
+        <div className={`NavbarContent ${showMenu ? "showMenu" : ""}`}>
           <li>HOME</li>
           <li>ABOUT</li>
           <li>TIMELINE</li>
@@ -31,4 +37,4 @@ const Navbar = () => {
     </>
   );
 };
-export default Navbar
+export default Navbar;

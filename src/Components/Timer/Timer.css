@@ -51,23 +51,45 @@
 
 @media screen and (max-aspect-ratio: 4/3) {
   .time .time-number {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: 7vw;
   }
 
   .time .time-text {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 4vw;
   }
 
   .time-header {
-    /* font-size: 3rem; */
+    font-size: 6vw;
   }
 
   .time-container .time-content {
-    /* column-gap: 2rem; */
+    column-gap: 5vw;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1114px) and (min-width: 765px) {
+  .time-header {
+    font-size: 2rem;
+  }
+
+  .time-container .time-content {
+    column-gap: 1rem;
+
+    padding: 20px;
+  }
+
+  .time .time-number {
+    font-size: 2rem;
+  }
+
+  .time .time-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 575px) {
   .time .time-number {
     font-size: 1.8rem;
   }
@@ -83,4 +105,4 @@
   .time-container .time-content {
     column-gap: 0.5rem;
   }
-}
+} */
