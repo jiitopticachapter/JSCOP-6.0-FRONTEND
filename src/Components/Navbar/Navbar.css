@@ -1,5 +1,6 @@
-.NavbarComponent {
-  /* background-color: black; */
+.NavbarComponent,
+#hidesidenav {
+  background-color: black;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -10,8 +11,31 @@
   z-index: 10;
 }
 
-#mobilenav {
-  /* height: 100vh; */
+#hidesidenav {
+  display: none;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
 
 .NavbarToggle {
@@ -39,9 +63,8 @@
 
 @media (max-width: 768px) {
   .NavbarComponent {
+    display: none;
     flex-direction: column;
-    /* position: relative; */
-    /* align-items: start; */
   }
 
   .NavbarToggle {
@@ -79,5 +102,9 @@
 
   .NavbarContent.showMenu {
     display: flex;
+  }
+
+  #hidesidenav {
+    display: block;
   }
 }

@@ -29,9 +29,9 @@ const Homepage = () => {
         <Timer />
         <br />
         <div>
-          <button className="register-btn">
-            <Link to="/register">Register Now</Link>
-          </button>
+          <Link to="/register">
+            <button className="home-register-btn">Register Now</button>
+          </Link>
         </div>
         {/* </div> */}
       </div>

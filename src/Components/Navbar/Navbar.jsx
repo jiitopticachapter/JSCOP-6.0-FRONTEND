@@ -1,38 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import navLogo from "../../assets/JSCOP_LOGO.png";
+import Sidenav from "./SideNavbar";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [toggleIcon, setToggleIcon] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-    setToggleIcon(!toggleIcon);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const gradientColor = `linear-gradient(to bottom, black, rgba(0, 0, 0, 0))`;
+  const navbarStyle = {
+    background: scrollY > 0 ? gradientColor : "rgba(0, 0, 0, 0)",
+    // backdropFilter: scrollY > 0 ? "blur(4px)" : "none",
   };
 
   return (
     <>
-      <div
-        id={`${toggleIcon ? "mobilenav" : ""}`}
-        className={`NavbarComponent ${showMenu ? "showMenu" : ""}`}
-      >
-        <div
-          className={`NavbarToggle ${toggleIcon ? "active" : ""}`}
-          onClick={toggleMenu}
-        ></div>
+      <div className={`NavbarComponent `} style={navbarStyle}>
+        <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
           <img src={navLogo} alt="" />
         </div>
-        <div className={`NavbarContent ${showMenu ? "showMenu" : ""}`}>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>TIMELINE</li>
-          <li>EVENTS</li>
-          <li>GALLERY</li>
-          <li>TEAM</li>
-          <li>CONTACT</li>
+        <div className={`NavbarContent `}>
+          <li className="nav-link">HOME</li>
+          <li className="nav-link">ABOUT</li>
+          <li className="nav-link">TIMELINE</li>
+          <li className="nav-link">EVENTS</li>
+          <li className="nav-link">GALLERY</li>
+          <li className="nav-link">TEAM</li>
+          <li className="nav-link">CONTACT</li>
         </div>
+      </div>
+
+      <div id="hidesidenav" style={navbarStyle}>
+        <Sidenav />
       </div>
     </>
   );

@@ -87,7 +87,8 @@
   font-weight: bold;
 }
 
-.register-btn {
+.home-register-btn {
+  text-decoration: none;
   border: 2px solid white;
   color: white;
   font-size: 1.5rem;
@@ -165,7 +166,7 @@
     font-size: 4vw;
   }
 
-  .register-btn {
+  .home-register-btn {
     /* font-size: 1rem; */
     font-size: 5vw;
   }
@@ -256,16 +257,21 @@
 }
 
 @media screen and (max-width: 1114px) and (min-width: 765px) {
-  .register-btn {
+  .home-register-btn {
     font-size: 1.5rem;
     padding: 10px 16px;
     border-radius: 0.5rem;
   }
 
   .home-heading-inner2 {
-    margin: -28px 0 20px 0;
+    margin-top: -20px;
+    margin-bottom: 20px;
     border-top: 4px solid white;
-    font-size: 3.2vh;
+    font-size: 2.7vw;
+  }
+
+  .home-heading {
+    margin: auto;
   }
 
   .home-heading1 {
@@ -279,6 +285,6 @@
 
   .home-heading3 {
     margin-top: -25px;
-    font-size: 19vh;
+    font-size: 16vw;
   }
 }
