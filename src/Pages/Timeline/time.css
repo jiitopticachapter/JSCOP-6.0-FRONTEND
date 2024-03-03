@@ -86,11 +86,11 @@
   
   @media screen and (max-width: 900px) {
     .timeline-content {
-      width: 250px;
+      width: 2rem;
     }
     
     .timeline-item:nth-child(even) .timeline-content {
-      left: -289px;
+      left: -2rempx;
       
     }
   }
