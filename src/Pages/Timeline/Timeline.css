@@ -1,0 +1,65 @@
+.timeline {
+  /* margin: auto; */
+}
+
+.timet {
+  background-color: black;
+}
+
+.theading {
+  font-weight: bolder;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.tlbtn {
+  cursor: pointer;
+  padding: 4px 18px;
+  border-radius: 100px;
+  margin: 8px 0px;
+  font-size: 1.6rem;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.tlbtndiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid white;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 100px;
+}
+
+.tlbtn:hover {
+  background-color: #b3b1b1;
+  border-color: #d4d1d1;
+}
+
+.acttime {
+}
+
+.tlbtn2 {
+  background-color: white;
+  color: black;
+}
+
+@keyframes scrolll {
+  to {
+    translate: calc(-50% - 5px);
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+  .tlbtn {
+    font-size: 1rem;
+  }
+  .tlbtn2 {
+    font-size: 0.6rem;
+  }
+}

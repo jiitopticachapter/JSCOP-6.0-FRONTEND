@@ -5,6 +5,25 @@
   overflow-y: hidden;
 }
 
+.home-gradient {
+  position: absolute;
+  width: 100%;
+  /* z-index: 10; */
+  left: 0;
+  height: 20vh;
+  top: 84vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+/* .home-gradient2 {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  height: 25vh;
+  top: 76vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+} */
+
 .back {
   background-image: url("planet2.jpg");
   width: 100%;
@@ -59,8 +78,8 @@
   background-image: url("Astronaut3update.png");
   position: absolute;
   /* background-color: white; */
-  height: 90vh;
-  width: 40%;
+  height: 87vh;
+  width: 37%;
   right: 0;
   top: 50px;
   /* background-attachment: fixed; */
@@ -88,6 +107,8 @@
 }
 
 .home-register-btn {
+  /* position: relative; */
+  /* z-index: 120; */
   text-decoration: none;
   border: 2px solid white;
   color: white;

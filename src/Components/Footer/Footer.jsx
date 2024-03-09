@@ -103,9 +103,10 @@ export default function Footer() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginBottom: "10px",
+          paddingBottom: "10px",
           paddingTop: "10px",
           borderTop: "1px solid white",
+          backgroundColor: "black",
         }}
       >
         <span> &copy;</span> &nbsp; Copyright : JIIT OPTICA Chapter | All Rights

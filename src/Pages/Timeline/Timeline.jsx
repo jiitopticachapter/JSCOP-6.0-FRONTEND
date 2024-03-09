@@ -1,227 +1,148 @@
-// import React, { useEffect } from 'react';
-// import './time.css';
+import React, { useEffect, useState } from "react";
+import "./TimeLine.css";
 
-// const Timeline = () => {
-//   useEffect(() => {
-//     const items = document.querySelectorAll(".timeline-item");
+import Tiline from "./Tline";
+import talk from "./talk.png";
+import tea2 from "./tea2.png";
+import squid from "./squid.png";
+import tea from "./tea.png";
+import opening from "./opening.png";
+import onlinem from "./onlinem.png";
+import lunch from "./lunch.png";
+import idea from "./idea.png";
+import code from "./code.png";
+import closing from "./closing.png";
+import ccc from "./ccc.png";
 
-//     const isItemInView = (item) => {
-//       const rect = item.getBoundingClientRect();
-//       return (
-//         rect.top >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//       );
-//     }
+function Timeline() {
+  let arr1 = [
+    {
+      pic: opening,
+      name: "INAUGRATION CEREMONY",
+      time: "10:00 AM - 10:30 AM",
+      venue: "LT-4",
+    },
+    {
+      pic: tea,
+      name: "TEA BREAK",
+      time: "10:30 AM - 11:00 AM",
+      venue: "Infront of LT-4",
+    },
+    { pic: talk, name: "TALK 1", time: "11:00 AM - 12:00 PM", venue: "LT-4" },
+    { pic: talk, name: "TALK 2", time: "12:00 PM - 12:45 PM", venue: "LT-4" },
+    { pic: lunch, name: "LUNCH", time: "12:45 PM - 2:00 PM", venue: "MESS" },
+    {
+      pic: code,
+      name: "BLIND CODING",
+      time: "2:00 PM - 4:00 PM",
+      venue: "CL-1 - CL-4",
+    },
+    {
+      pic: tea2,
+      name: "TEA BREAK 2",
+      time: "4:00 PM - 4:20 PM",
+      venue: "Infront of LT-4",
+    },
+    {
+      pic: ccc,
+      name: "CCC",
+      time: "4:20 PM - 5:30 PM",
+      venue: "Comm. Systems Lab EL-11",
+    },
+  ];
 
-//     const callbackFunc = () => {
-//       for (let i = 0; i < items.length; i++) {
-//         if (isItemInView(items[i])) {
-//           items[i].classList.add("show");
-//         }
-//       }
-//     }
+  let arr2 = [
+    { pic: talk, name: "TALK3", time: "10:00 AM - 10:45 AM", venue: "LT-4" },
+    {
+      pic: tea2,
+      name: "TEA BREAK",
+      time: "10:45 AM - 11:15 AM",
+      venue: "Infront of LT-4",
+    },
+    {
+      pic: onlinem,
+      name: "ONLINE TALK",
+      time: "11:05 AM - 12:00 PM",
+      venue: "Google Meet",
+    },
+    { pic: lunch, name: "LUNCH", time: "12:00 AM - 1:30 PM", venue: "Mess" },
+    {
+      pic: idea,
+      name: "IDEATHON",
+      time: "1:30 PM - 3:30 PM",
+      venue: "Audi/LT-4",
+    },
+    { pic: squid, name: "SQUID GAME", time: "3:00 PM - 4:30 PM", venue: "JBS" },
+    {
+      pic: tea,
+      name: "TEA BREAK",
+      time: "4:30 PM - 5:00 PM",
+      venue: "Infront of LT-4",
+    },
+    {
+      pic: closing,
+      name: "TCLOSING CEREMONY",
+      time: "5:00 PM - 6:30 PM",
+      venue: "Audi",
+    },
+  ];
 
-//     window.addEventListener("load", callbackFunc);
-//     window.addEventListener("resize", callbackFunc);
-//     window.addEventListener("scroll", callbackFunc);
+  const [arr, setArr] = useState(arr1);
+  const [reference, setReference] = useState(1);
 
-//     return () => {
-//       window.removeEventListener("load", callbackFunc);
-//       window.removeEventListener("resize", callbackFunc);
-//       window.removeEventListener("scroll", callbackFunc);
-//     };
-//   }, []);
-
-//   return (
-//     <div className='timeline-body'>
-//       <h1 className="timeline-title">Timeline</h1>
-//       <div>
-//         <ul className="timeline">
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1910</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1920</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1930</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1940</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1950</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1960</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1970</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1980</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//           <li className="timeline-item">
-//             <div className="timeline-content">
-//               <time>1990</time>
-//               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-//               </p>
-//             </div>
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Timeline;
-import React, { Component } from 'react';
-import "./time.css";
-
-class Timeline extends Component {
-  componentDidMount() {
-    window.addEventListener("load", this.callbackFunc);
-    window.addEventListener("scroll", this.callbackFunc);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("load", this.callbackFunc);
-    window.removeEventListener("scroll", this.callbackFunc);
-  }
-
-  isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  callbackFunc = () => {
-    const items = document.querySelectorAll(".timeline li");
-    for (let i = 0; i < items.length; i++) {
-      if (this.isElementInViewport(items[i])) {
-        if (!items[i].classList.contains("in-view")) {
-          items[i].classList.add("in-view");
-        }
-      } else if (items[i].classList.contains("in-view")) {
-        items[i].classList.remove("in-view");
-      }
+  function showschedule(day) {
+    if (day == 1) {
+      setArr(arr1);
+      setReference(1);
+    } else {
+      setArr(arr2);
+      setReference(2);
     }
   }
 
-  render() {
-    return (
-      <>
-      <h1 className='heading-timeline'>TIMELINE</h1>
-      <section className="timeline">
-        <ul>
-          <li>
-            <div>
-              <time>1687</time>
-              <div className="discovery">
-                <h1>Discovery</h1>
-                <p>Laws of motion</p>
-              </div>
-              <div className="scientist">
-                <h1>Scientist</h1>
-                <span>Newton</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1905</time>
-              <div className="discovery">
-                <h1>Discovery</h1>
-                <p>Theory of Relativity</p>
-              </div>
-              <div className="scientist">
-                <h1>Scientist</h1>
-                <span>Albert Einstein</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1953</time>
-              <div className="discovery">
-                <h1>Discovery</h1>
-                <p>Structure of DNA</p>
-              </div>
-              <div className="scientist">
-                <h1>Scientist</h1>
-                <span>Watson and Crick</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1964</time>
-              <div className="discovery">
-                <h1>Discovery</h1>
-                <p>Quarks</p>
-              </div>
-              <div className="scientist">
-                <h1>Scientist</h1>
-                <span>Murray Gell-Mann</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1998</time>
-              <div className="discovery">
-                <h1>Discovery</h1>
-                <p>Acceleration of the Universe</p>
-              </div>
-              <div className="scientist">
-                <h1>Scientist</h1>
-                <span>Perlmutter, Riess, Schmidt</span>
-              </div>
-            </div>
-          </li>
-          {/* Add more list items here */}
-        </ul>
-      </section>
-      </>
-    );
-  }
+  return (
+    <div className="timet">
+      <div className="timeline">
+        <div className="theading">TimeLine</div>
+
+        <div className="acttime">
+          <div className="tlbtndiv">
+            <button
+              style={{
+                backgroundColor: reference === 1 ? "white" : "black",
+                color: reference === 1 ? "black" : "white",
+              }}
+              className="tlbtn"
+              onClick={() => showschedule(1)}
+            >
+              Day-1 Timeline
+            </button>
+            <button
+              style={{
+                backgroundColor: reference === 2 ? "white" : "black",
+                color: reference === 2 ? "black" : "white",
+              }}
+              className="tlbtn"
+              onClick={() => showschedule(2)}
+            >
+              Day-2 Timeline
+            </button>
+          </div>
+
+          <Tiline arr={arr} />
+
+          <div className="tlbtndiv">
+            <a href="./day1.png" download>
+              <button className="tlbtn tlbtn2">Download Day-1 Timeline</button>
+            </a>
+            <a href="./day2.png" download>
+              <button className="tlbtn tlbtn2">Download Day-2 Timeline</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Timeline;

@@ -1,14 +1,14 @@
 import Stars from "../../Components/Stars/Stars";
-import './About.css';
+import "./About.css";
 
 const About = () => {
   return (
     <>
       <div className="about">
         <div className="left">
-          <Stars />
-  <div className='heading-about'>WHAT OPTICA DOES ?</div>
-        
+          {/* <Stars /> */}
+          <div className="heading-about">WHAT OPTICA DOES ?</div>
+
           <div className="content">
             <div>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
@@ -20,13 +20,23 @@ const About = () => {
               possimus!
             </div>
             <div>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus labore sed quibusdam sequi tenetur vero at accusantium ratione esse dolore magni voluptates alias, minus quod amet dolor expedita aliquid? Rem, explicabo voluptatibus velit recusandae dolorum et aut pariatur, natus, vero quidem laudantium quas illum dolore? Maiores, beatae. Quos aliquid culpa dolor doloribus, maxime totam accusantium commodi harum libero repellendus hic soluta. Ipsa assumenda maxime perspiciatis sequi. Labore maiores vero fugiat porro temporibus magnam quod, aliquid reiciendis accusamus nisi beatae cumque cum dignissimos ducimus alias ipsum tenetur neque fuga iusto, possimus eaque velit molestiae? Excepturi, doloremque vel molestias sunt fugiat omnis?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              labore sed quibusdam sequi tenetur vero at accusantium ratione
+              esse dolore magni voluptates alias, minus quod amet dolor expedita
+              aliquid? Rem, explicabo voluptatibus velit recusandae dolorum et
+              aut pariatur, natus, vero quidem laudantium quas illum dolore?
+              Maiores, beatae. Quos aliquid culpa dolor doloribus, maxime totam
+              accusantium commodi harum libero repellendus hic soluta. Ipsa
+              assumenda maxime perspiciatis sequi. Labore maiores vero fugiat
+              porro temporibus magnam quod, aliquid reiciendis accusamus nisi
+              beatae cumque cum dignissimos ducimus alias ipsum tenetur neque
+              fuga iusto, possimus eaque velit molestiae? Excepturi, doloremque
+              vel molestias sunt fugiat omnis?
             </div>
           </div>
         </div>
         <div className="roc"></div>
       </div>
-
     </>
   );
 };

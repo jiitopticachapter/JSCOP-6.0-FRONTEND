@@ -1,85 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .about {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 3% 5%;
-    color:white;
-    position: relative;
-    margin-top: 0%;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3% 5%;
+  color: white;
+  position: relative;
+  margin-top: 0%;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-basis: 80%;
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 80%;
 }
 
 .heading-about {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 3%;
-    /* color: azure; */
-    z-index: 1.5;
-    margin-top: 7%;
-    color: white;
-    text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3%;
+  /* color: azure; */
+  z-index: 1.5;
+  /* margin-top: 7%; */
+  position: relative;
+  color: white;
+  text-align: center;
 }
 
 .content {
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 30px;
-    background-color: rgb(43, 45, 47);      
-    border-radius: 2%;
-    padding: 2%;;
-    z-index:2;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 30px;
+  background-color: rgb(43, 45, 47);
+  border-radius: 2%;
+  padding: 2%;
+  z-index: 2;
 }
 
-.roc{
-    background-image: url(/src/assets/roc.png);
-    position: absolute;
-    height: 50vh;
-    width: 20%;
-    left:0;
-    bottom: 0%;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    animation: roc 4s infinite alternate;
-    flex-basis: 20%;
+.roc {
+  background-image: url(/src/assets/roc.png);
+  position: absolute;
+  height: 50vh;
+  width: 20%;
+  left: 0;
+  bottom: 0%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  animation: roc 4s infinite alternate;
+  flex-basis: 20%;
 }
 
 @keyframes roc {
-    0% {
-      transform: translateY(0);
-    }
-  
-    100% {
-      transform: translateY(-70px);
-    }
+  0% {
+    transform: translateY(0);
   }
 
-@media only screen and (max-width:650px){
-.heading-about {
-    
-        font-size: 2.3rem;
-    }
-    .content{
-        font-size: 1.2rem;
-    }
+  100% {
+    transform: translateY(-70px);
+  }
 }
 
-@media only screen and (max-width:550px){
-.heading-about {
-    
-        font-size: 1.8rem;
-    }
-    .content{
-        font-size: 1.1rem;
-    }
+@media only screen and (max-width: 650px) {
+  .heading-about {
+    font-size: 2.3rem;
+  }
+  .content {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .heading-about {
+    font-size: 1.8rem;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
 }
