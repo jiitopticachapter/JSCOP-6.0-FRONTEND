@@ -5,10 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 3% 5%;
+  /* padding: 3% 5%; */
   color: white;
   position: relative;
-  margin-top: 0%;
+  margin-top: 20px;
 }
 
 .left {
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 80%;
+  flex-basis: 90%;
 }
 
 .heading-about {
@@ -35,13 +35,14 @@
   font-size: 1.2rem;
   text-align: justify;
   line-height: 30px;
-  background-color: rgb(43, 45, 47);
-  border-radius: 2%;
+  /* background-color: rgb(43, 45, 47); */
+  border-radius: 20px;
+  background: rgba(250, 250, 250, 0.2);
   padding: 2%;
   z-index: 2;
 }
 
-.roc {
+/* .roc {
   background-image: url(/src/assets/roc.png);
   position: absolute;
   height: 50vh;
@@ -63,12 +64,13 @@
   100% {
     transform: translateY(-70px);
   }
-}
+} */
 
 @media only screen and (max-width: 650px) {
   .heading-about {
     font-size: 2.3rem;
   }
+
   .content {
     font-size: 1.2rem;
   }

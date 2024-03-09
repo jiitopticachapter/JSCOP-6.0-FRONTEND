@@ -103,7 +103,7 @@ function Timeline() {
   return (
     <div className="timet">
       <div className="timeline">
-        <div className="theading">TimeLine</div>
+        <div className="theading">TIMELINE</div>
 
         <div className="acttime">
           <div className="tlbtndiv">

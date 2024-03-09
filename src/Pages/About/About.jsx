@@ -35,7 +35,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="roc"></div>
+        {/* <div className="roc"></div> */}
       </div>
     </>
   );
