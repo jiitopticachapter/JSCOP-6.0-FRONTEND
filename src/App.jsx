@@ -5,7 +5,7 @@ import EvetDetailPage from "./Pages/Event/EventDetailPage.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
-// import Register from "./Components/Register/Register.jsx";
+import Register from "./Components/Register/Register.jsx";
 import Layout from "./Pages/Layout/Layout.jsx";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/:id" element={<EvetDetailPage />} />
         {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>

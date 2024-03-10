@@ -22,10 +22,14 @@ const Navbar = () => {
     background: scrollY > 0 ? gradientColor : "rgba(0, 0, 0, 0)",
     // backdropFilter: scrollY > 0 ? "blur(4px)" : "none",
   };
+  const navbarStyle2 = {
+    background: scrollY > 0 ? gradientColor : "rgba(0, 0, 0, 0)",
+    backdropFilter: scrollY > 0 ? "blur(4px)" : "none",
+  };
 
   return (
     <>
-      <div className={`NavbarComponent `} style={navbarStyle}>
+      <div className={`NavbarComponent `} style={navbarStyle2}>
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
           <img src={navLogo} alt="" />

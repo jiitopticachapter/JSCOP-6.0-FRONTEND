@@ -1,18 +1,23 @@
-
-.event-container
-{
-    text-align: center;
+.event-container {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #000000;
   padding: 40px 0;
 }
 
-.event-container .event-box
-{
+.eventheading {
+  margin-top: 40px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.event-container .event-box {
   position: relative;
   width: 350px;
   height: 400px;
@@ -23,9 +28,8 @@
   transition: 0.5s;
 }
 
-.event-container .event-box::before
-{
-  content:' ';
+.event-container .event-box::before {
+  content: " ";
   position: absolute;
   top: 0;
   left: 50px;
@@ -38,9 +42,8 @@
   transition: 0.5s;
 }
 
-.event-container .event-box::after
-{
-  content:'';
+.event-container .event-box::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 50;
@@ -54,39 +57,32 @@
 }
 
 .event-container .event-box:hover:before,
-.event-container .event-box:hover:after
-{
+.event-container .event-box:hover:after {
   transform: skewX(0deg);
   left: 20px;
   width: calc(100% - 90px);
-  
 }
 
 .event-container .event-box:nth-child(1):before,
-.event-container .event-box:nth-child(1):after
-{
-  background: linear-gradient(315deg, #007fff,
-  #40E0D0)
+.event-container .event-box:nth-child(1):after {
+  background: linear-gradient(315deg, #007fff, #40e0d0);
 }
 
 .event-container .event-box:nth-child(2):before,
-.event-container .event-box:nth-child(2):after
-{
-  background: linear-gradient(315deg, #03a9f4, #21038c)
+.event-container .event-box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #21038c);
 }
 
 .event-container .event-box:nth-child(3):before,
-.event-container .event-box:nth-child(3):after
-{
-  background: linear-gradient(315deg, #00000052, #00d0ff)
+.event-container .event-box:nth-child(3):after {
+  background: linear-gradient(315deg, #00000052, #00d0ff);
 }
-.event-container .event-img{
-    width: 100%;
-    border-radius: 5%;
+.event-container .event-img {
+  width: 100%;
+  border-radius: 5%;
 }
 
-.event-container .event-box span
-{
+.event-container .event-box span {
   display: block;
   position: absolute;
   top: 0;
@@ -97,9 +93,8 @@
   pointer-events: none;
 }
 
-.event-container .event-box span::before
-{
-  content:'';
+.event-container .event-box span::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -109,13 +104,12 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: 0.1s;  
+  transition: 0.1s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.event-container .event-box:hover span::before
-{
+.event-container .event-box:hover span::before {
   top: -50px;
   left: 50px;
   width: 100px;
@@ -123,9 +117,8 @@
   opacity: 1;
 }
 
-.event-container .event-box span::after
-{
-  content:'';
+.event-container .event-box span::after {
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -137,12 +130,11 @@
   opacity: 0;
   transition: 0.5s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   animation-delay: -1s;
 }
 
-.event-container .event-box:hover span:after
-{
+.event-container .event-box:hover span:after {
   bottom: -50px;
   right: 50px;
   width: 100px;
@@ -150,21 +142,18 @@
   opacity: 1;
 }
 
-@keyframes animate
-{
-  0%, 100%
-  {
+@keyframes animate {
+  0%,
+  100% {
     transform: translateY(10px);
   }
-  
-  50%
-  {
+
+  50% {
     transform: translate(-10px);
   }
 }
 
-.event-container .event-box .event-content
-{
+.event-container .event-box .event-content {
   position: relative;
   left: 0;
   padding: 20px 40px;
@@ -177,28 +166,24 @@
   color: #fff;
 }
 
-.event-container .event-box:hover .event-content
-{
+.event-container .event-box:hover .event-content {
   left: -25px;
   padding: 60px 40px;
 }
 
-.event-container .event-box .event-content h2
-{
+.event-container .event-box .event-content h2 {
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.event-container .event-box .event-content p
-{
+.event-container .event-box .event-content p {
   font-size: 1.1em;
   margin-bottom: 10px;
   line-height: 1.4em;
 }
 
-.event-container .event-box .event-content .event-btn
-{
+.event-container .event-box .event-content .event-btn {
   display: inline-block;
   font-size: 1.1em;
   color: #ffffff;
@@ -210,9 +195,8 @@
   margin-top: 5px;
 }
 
-.event-container .event-box .event-content .event-btn:hover
-{
+.event-container .event-box .event-content .event-btn:hover {
   background: #000000;
-  
+
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }

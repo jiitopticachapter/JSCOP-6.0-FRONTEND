@@ -28,7 +28,7 @@ const Homepage = () => {
         {/* <br /> */}
         <Timer />
         <br />
-        <div>
+        <div className="home-register-btn-div">
           <Link to="/register">
             <button className="home-register-btn">Register Now</button>
           </Link>
@@ -37,6 +37,9 @@ const Homepage = () => {
       </div>
       <div className="astro"></div>
       <div className="spacestation"></div>
+      <div className="home-gradient"></div>
+      <div className="home-gradient"></div>
+      <div className="home-gradient"></div>
     </div>
   );
 };
