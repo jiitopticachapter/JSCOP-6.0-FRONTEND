@@ -22,7 +22,7 @@ const Event = () => {
               <img src={item.image} className="event-img" />
               <p className="event-desc">{item.description}</p>
               <a href="" className="event-btn">
-                Read More
+                Read More About
               </a>
             </div>
           </div>
