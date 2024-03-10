@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./TimeLine.css";
+import "./Timeline.css";
 
 import Tiline from "./Tline";
 import talk from "./talk.png";
