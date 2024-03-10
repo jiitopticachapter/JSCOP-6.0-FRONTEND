@@ -11,8 +11,6 @@ const Layout = () => {
       <Homepage />
       <About />
       <Event />
-      {/* <Timeline /> */}
-      {/* <Timeline /> */}
       <Gallery />
     </>
   );
