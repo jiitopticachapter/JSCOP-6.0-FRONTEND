@@ -41,10 +41,6 @@
   padding-left: 50px;
 }
 
-.Location {
-  /* flex: 1; */
-}
-
 .Location p {
   font-weight: 800;
   font-size: 1.1rem;
@@ -64,11 +60,6 @@
 
 .Location .location-content p {
   margin: 5px;
-}
-
-.contact {
-  /* flex: 1; */
-  /* background-color: aqua; */
 }
 
 .contact p {

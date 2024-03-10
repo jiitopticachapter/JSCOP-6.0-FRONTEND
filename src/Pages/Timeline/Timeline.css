@@ -1,6 +1,5 @@
-.timeline {
-  /* margin: auto; */
-}
+/* .timeline {
+} */
 
 .timet {
   background-color: black;
@@ -39,9 +38,6 @@
 .tlbtn:hover {
   background-color: #b3b1b1;
   border-color: #d4d1d1;
-}
-
-.acttime {
 }
 
 .tlbtn2 {
