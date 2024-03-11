@@ -59,6 +59,18 @@ const Member = [
         role: 'president',
         social: ['https://google.com', 'https://google.com', 'https://google.com']
     },
+    {
+        img: '/images/pallavi.jpg',
+        name: 'mehul',
+        role: 'president',
+        social: ['https://google.com', 'https://google.com', 'https://google.com']
+    },
+    {
+        img: '/images/ronit.jpg',
+        name: 'mehul',
+        role: 'president',
+        social: ['https://google.com', 'https://google.com', 'https://google.com']
+    },
     
 ]
 
