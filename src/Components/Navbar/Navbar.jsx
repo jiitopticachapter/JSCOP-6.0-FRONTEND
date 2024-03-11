@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import navLogo from "../../assets/JSCOP_LOGO.png";
 import Sidenav from "./SideNavbar";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -33,15 +33,17 @@ const Navbar = () => {
       <div className={`NavbarComponent `} style={navbarStyle2}>
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
+          <Link to='/'>
           <img src={navLogo} alt="" />
+          </Link>
         </div>
         <div className={`NavbarContent `}>
-          <li className="nav-link">HOME</li>
+          <Link to='/'><li className="nav-link">HOME</li></Link>
           <li className="nav-link">ABOUT</li>
           <li className="nav-link">TIMELINE</li>
           <li className="nav-link">EVENTS</li>
           <li className="nav-link">GALLERY</li>
-          <Link to='/team'>Team</Link>
+          <Link to='/team'><li className="nav-link">TEAM</li></Link>
           <li className="nav-link">CONTACT</li>
         </div>
       </div>
