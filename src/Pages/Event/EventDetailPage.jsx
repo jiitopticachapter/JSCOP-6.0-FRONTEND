@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Detail from './EventDetail';
 import './EventDetailPage.css'
-import photo from './Code-of-Duty.jpeg'
+import photo from './Code-of-duty.jpeg'
 import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
