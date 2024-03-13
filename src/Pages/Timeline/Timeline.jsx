@@ -131,7 +131,7 @@ function Timeline() {
 
           <Tiline arr={arr} />
 
-          <div className="tlbtndiv">
+          <div id="tlbtndiv2" className="tlbtndiv">
             <a href="./day1.png" download>
               <button className="tlbtn tlbtn2">Download Day-1 Timeline</button>
             </a>

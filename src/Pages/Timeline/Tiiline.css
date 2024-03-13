@@ -27,16 +27,16 @@ main {
   /* padding-block: 300px; */
   max-width: 1000px;
   margin-inline: auto;
-  /* &::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 50%;
     width: 0;
     height: 100%;
-    margin-left: -3px;
-    border-right: 6px dashed oklch(20% 0.5 313);
+    margin-left: -28px;
+    border-right: 4px double rgba(255, 255, 255, 0.8);
     content: "";
-  } */
+  }
 }
 
 .stop {
