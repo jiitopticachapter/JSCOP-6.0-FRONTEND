@@ -2,72 +2,50 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
+import {} from "../../oldassets/galleryImages/4.jpg";
 export default function Gallery() {
   return (
-    <div id="gallary" className="gallery-body">
-      <h1 className="gallery-title">GALLERY</h1>
-      <div className="middle">
-        <div className="gallery">
-          {/* <div className="fade"></div> */}
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ color: "white", margin: "30px", fontSize: "3rem" }}>
+        GALLERY
+      </h1>
+      <div className="gallery-container">
+        <div class="gallery">
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/4.jpg"
+            alt="a forest after an apocalypse"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/5.jpg"
+            alt="a waterfall and many rocks"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/6.jpg"
+            alt="a house on a mountain"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/7.jpg"
+            alt="sime pink flowers"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/8.jpg"
+            alt="big rocks with some trees"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/9.jpg"
+            alt="a waterfall, a lot of tree and a great view from the sky"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/10.jpg"
+            alt="a cool landscape"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/11.jpg"
+            alt="inside a town between two big buildings"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
+            src="src/oldassets/galleryImages/4.jpg"
+            alt="a great view of the sea above the mountain"
           />
         </div>
       </div>

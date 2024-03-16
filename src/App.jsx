@@ -15,6 +15,22 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 import About from "./Pages/About/About.jsx";
 
 function App() {
+
+  return (
+    <>
+      <Navbar />
+    
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/:id" element={<EvetDetailPage />} />
+        <Route path='/Webteam' element={<WebTeamComponent />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+      
+      <Footer />
+    </>
+  );
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -31,18 +47,17 @@ function App() {
       <>
         <ScrollToTop />
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/:id" element={<EvetDetailPage />} />
           <Route path="/Webteam" element={<WebTeamComponent />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-
         <Footer />
       </>
     );
   }
+
 }
 
 export default App;
