@@ -4,8 +4,8 @@
 
 .container-part-first {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     /* background-color: blue; */
 
 }
@@ -39,8 +39,8 @@
 
 .container-part-second {
     background: rgba(250, 250, 250, 0.2);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container-part-secondicons {

@@ -5,6 +5,7 @@ import photo from './Code-of-duty.jpeg'
 import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
+import Team from '../Team/Team';
 const EvetDetailPage = () => {
 
     const { id } = useParams();
@@ -44,6 +45,9 @@ const EvetDetailPage = () => {
                         <h1>
                             Team
                         </h1>
+                        <div>
+                            <Team />
+                        </div>
                     </div>
                 </div>
             </div>

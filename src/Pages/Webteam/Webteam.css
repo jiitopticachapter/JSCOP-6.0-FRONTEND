@@ -1,0 +1,20 @@
+.social-links {
+    /* margin-top: 10px; */
+    /* position: relative; */
+    position: absolute;
+    left: -200%;
+    top: 80%;
+    transition: left 0.3s ease;
+    /* Added transition for left property */
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    left: 50%;
+    transition: transform 0.3s ease-in-out;
+    /* Added transition for transform property */
+}
+
+

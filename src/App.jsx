@@ -7,7 +7,10 @@ import { Routes, Route } from "react-router-dom";
 
 import Register from "./Components/Register/Register.jsx";
 import Layout from "./Pages/Layout/Layout.jsx";
-import Team from "./Pages/Team/Team.jsx";
+// import Team from "./Pages/Team/Team.jsx";
+import Webteam from "./Pages/Webteam/Webteam.jsx";
+import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx";
+
 
 function App() {
   return (
@@ -16,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/:id" element={<EvetDetailPage />} />
-        <Route path='/team' element={<Team />} />
+        <Route path='/Webteam' element={<WebTeamComponent />} />
         <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
