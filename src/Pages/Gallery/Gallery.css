@@ -31,3 +31,15 @@
   width: calc(var(--s)*var(--f));
   height: calc(var(--s)*var(--f));
 }
+
+@media (max-width: 768px) {
+  .gallery {
+    --s: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery {
+    --s: 150px;
+  }
+}
