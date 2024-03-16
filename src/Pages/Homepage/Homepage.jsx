@@ -25,7 +25,9 @@ const Homepage = () => {
         <div className="home-break">
           <br />
         </div>
-        <div className="home-heading3">JSCOP 6.0</div>
+        <div className="home-heading3">
+          JSCOP <span className="six-point-zero"> 6.0</span>
+        </div>
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
         </div>

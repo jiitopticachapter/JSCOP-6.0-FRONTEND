@@ -34,9 +34,9 @@ const Webteam = ({ member }) => {
 const heroStyle = {
   display: "inline-block",
   position: "relative",
-  width: "400px",
-  minWidth: "400px",
-  height: "400px",
+  width: "300px",
+  minWidth: "300px",
+  height: "300px",
   borderRadius: "30px",
   overflow: "hidden",
   boxShadow: "5px 5px 30px rgba(0, 0, 0, 0.3)",
@@ -50,11 +50,11 @@ const heroDescriptionBackground = {
   backdropFilter: "blur(4px)",
   borderRadius: "30px",
   position: "absolute",
-  top: "75%",
-  left: "6px",
-  height: "75%",
+  top: "70%",
+  left: "-8px",
+  height: "70%",
   width: "108%",
-  transform: "skew(19deg, -15deg)",
+  transform: "skew(10deg, -18deg)",
 };
 
 const heroDescriptionBackgroundouter = {
@@ -83,11 +83,11 @@ const heroDescriptionStyle = {
   position: "absolute",
   color: "#fff",
   fontWeight: "500",
-  left: "70%",
+  left: "58%",
   // transform: 'translateX(-50%)',
-  bottom: "10%",
+  bottom: "4%",
   // textAlign: 'center',
-  fontSize: "1.2rem",
+  fontSize: "1rem",
 };
 
 export default Webteam;
