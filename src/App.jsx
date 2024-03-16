@@ -15,21 +15,20 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 import About from "./Pages/About/About.jsx";
 
 function App() {
+  // return (
+  //   <>
+  //     <Navbar />
 
-  return (
-    <>
-      <Navbar />
-    
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/:id" element={<EvetDetailPage />} />
-        <Route path='/Webteam' element={<WebTeamComponent />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-      
-      <Footer />
-    </>
-  );
+  //     <Routes>
+  //       <Route path="/" element={<Layout />} />
+  //       <Route path="/:id" element={<EvetDetailPage />} />
+  //       <Route path='/Webteam' element={<WebTeamComponent />} />
+  //       <Route path="/register" element={<Register />} />
+  //     </Routes>
+
+  //     <Footer />
+  //   </>
+  // );
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -57,7 +56,6 @@ function App() {
       </>
     );
   }
-
 }
 
 export default App;

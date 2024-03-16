@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 .about {
-  font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -9,6 +6,7 @@
   color: white;
   position: relative;
   margin-top: 20px;
+  /* font-weight: bold; */
 }
 
 #aboutus {
@@ -41,7 +39,7 @@
   line-height: 30px;
   /* background-color: rgb(43, 45, 47); */
   border-radius: 20px;
-  background: rgba(250, 250, 250, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   padding: 2%;
   z-index: 2;
 }

@@ -5,12 +5,12 @@ import "./Gallery.css";
 import {} from "../../oldassets/galleryImages/4.jpg";
 export default function Gallery() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div id="gallery" style={{ textAlign: "center" }}>
       <h1 style={{ color: "white", margin: "30px", fontSize: "3rem" }}>
         GALLERY
       </h1>
       <div className="gallery-container">
-        <div class="gallery">
+        <div className="gallery">
           <img
             src="src/oldassets/galleryImages/4.jpg"
             alt="a forest after an apocalypse"

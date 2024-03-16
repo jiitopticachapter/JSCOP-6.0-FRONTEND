@@ -51,9 +51,9 @@ const Navbar = () => {
             {" "}
             <li className="nav-link">EVENTS</li>{" "}
           </a>
-          <a href="#gallary">
+          <a href="#gallery">
             {" "}
-            <li className="nav-link">GALLARY</li>{" "}
+            <li className="nav-link">GALLERY</li>{" "}
           </a>
           <a href="#webteam">
             <li className="nav-link">WEBTEAM</li>
