@@ -1,36 +1,55 @@
-import './Team.css'
-import { FaGithub } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+// Team.js
+import React from 'react';
+import MemberData from './Teammember'; // Import your Member data
+import './Team.css'; // Import your CSS file
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import Detail from './Teammember.js';
+function MemberCard({ member }) {
+    const { img, name, role, social } = member;
 
-const Team = () => {
     return (
-        <div className='team'>
-            <div className='memberHeading'>TEAM MEMBERS</div>
-            <div className="teamsection">
-            {
-                Detail.map((item, index) => (
-                    <div className="member-card" key={index}>
-                        <div className="card-content">
-                            <img src={item.img} alt="Profile Picture" className="profile-picture" />
-                            <div className='member-detail'>
-                                <div className="member-name">{item.name}</div>
-                                <h3 className='member-role'>{item.role}</h3>
-                                <div className="social-icons">
-                                    <div><a href={item.social[0]}><FaGithub /></a></div>
-                                    <div><a href={item.social[1]}><FaDiscord /></a></div>
-                                    <div><a href={item.social[2]}><FaFacebook /></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))
-            }
+        <div className="member-card">
+            <div className="content">
+                <div className="img">
+                    <img src={img} alt={name} />
+                </div>
+                <div className="card-content">
+                    <h3>
+                        {name}
+                        <br />
+                        <span>{role}</span>
+                    </h3>
+                </div>
+            </div>
+            <ul className="social-icons">
+                {social.map((link, index) => (
+                    <li key={index} style={{ '--i': index + 1 }}>
+                        <a href={link}>
+                            {link.includes('instagram') ? (
+                                <FaInstagram />
+                            ) : link.includes('linkedin') ? (
+                                <FaLinkedin />
+                            ) : (
+                                <FaGithub />
+                            )}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+function Team() {
+    return (
+        <div className="team-container">
+            <div className="team-members">
+                {MemberData.map((member, index) => (
+                    <MemberCard key={index} member={member} />
+                ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default Team;

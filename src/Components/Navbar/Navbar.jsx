@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
           <Link to='/'>
-          <img src={navLogo} alt="" />
+            <img src={navLogo} alt="" />
           </Link>
         </div>
         <div className={`NavbarContent `}>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <li className="nav-link">TIMELINE</li>
           <li className="nav-link">EVENTS</li>
           <li className="nav-link">GALLERY</li>
-          <Link to='/team'><li className="nav-link">TEAM</li></Link>
+          <Link to='/Webteam'><li className="nav-link">WEBTEAM</li></Link>
           <li className="nav-link">CONTACT</li>
         </div>
       </div>
