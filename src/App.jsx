@@ -10,18 +10,20 @@ import Layout from "./Pages/Layout/Layout.jsx";
 // import Team from "./Pages/Team/Team.jsx";
 import Webteam from "./Pages/Webteam/Webteam.jsx";
 import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx";
-
+import NFTCard from "./Components/Events/Events.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
+    
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="/:id" element={<EvetDetailPage />} />
         <Route path='/Webteam' element={<WebTeamComponent />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <NFTCard/>
       <Footer />
     </>
   );
