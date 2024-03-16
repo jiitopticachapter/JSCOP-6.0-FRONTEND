@@ -10,7 +10,7 @@ import Layout from "./Pages/Layout/Layout.jsx";
 // import Team from "./Pages/Team/Team.jsx";
 import Webteam from "./Pages/Webteam/Webteam.jsx";
 import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx";
-import NFTCard from "./Components/Events/Events.jsx";
+
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path='/Webteam' element={<WebTeamComponent />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      <NFTCard/>
+      
       <Footer />
     </>
   );
