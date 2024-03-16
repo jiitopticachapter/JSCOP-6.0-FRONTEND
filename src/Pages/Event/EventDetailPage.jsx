@@ -1,11 +1,13 @@
 import { useParams } from 'react-router-dom';
-import Detail from './EventDetail';
+// import Detail from './EventDetail';
 import './EventDetailPage.css'
 import photo from './Code-of-duty.jpeg'
 import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
+// import data from '../../assets/Data/EventData.js'
 import Team from '../Team/Team';
+import DATA from './EventsData.js'
 const EvetDetailPage = () => {
 
     const { id } = useParams();
@@ -31,7 +33,7 @@ const EvetDetailPage = () => {
                             <SlCalender />
                         </div>
                         <div className='container-part-secondicons'>
-                            <FaLocationDot /> CL-01
+                            <FaLocationDot /> {DATA.location}
                         </div>
 
                     </div>
@@ -39,8 +41,7 @@ const EvetDetailPage = () => {
                     <div className='container-part-text2'>
                         <h1>DESCRIPTION</h1>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam dolorum quae tenetur dolores perspiciatis eos tempora repellat? Recusandae eaque impedit totam, natus laborum, eligendi illum iusto sapiente facere atque est.Lorem ipsum dolor sit amet, consectetLorem ipsum dolor sit amet, consectetLorem ipsum dolor sit amet, consectet.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quis minus ex animi, error exercitationem nobis eius fugiat explicabo vero, eligendi fugit. Ullam adipisci nam accusamus eius sapiente fuga natus.
+                            {DATA. description}
                         </p>
                         <h1>
                             Team
