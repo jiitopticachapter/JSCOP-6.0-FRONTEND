@@ -27,14 +27,12 @@ function App() {
     return (
       <>
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="/:id" element={<EvetDetailPage />} />
           <Route path="/Webteam" element={<WebTeamComponent />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-
         <Footer />
       </>
     );
