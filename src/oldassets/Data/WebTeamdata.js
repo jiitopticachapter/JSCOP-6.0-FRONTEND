@@ -9,12 +9,12 @@ const WebTeamData = [
         designation: "technical head"
     },
     {
-        name: "Ronit",
-        surname: "Khatri",
+        name: "Rajat",
+        surname: "Bhati",
         photo: "/images/ronit.jpg",
         insta: "https://instagram.com/ronitxx9?igshid=YmMyMTA2M2Y=",
         linkedin: "https://www.linkedin.com/in/ronit-khatri",
-        designation: "web master"
+        designation: "tech volunteer"
     },
     {
         name: "Harsh",

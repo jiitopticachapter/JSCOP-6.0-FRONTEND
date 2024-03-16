@@ -2,8 +2,8 @@
     /* margin-top: 10px; */
     /* position: relative; */
     position: absolute;
-    left: -200%;
-    top: 80%;
+    left: -230%;
+    top: 82%;
     transition: left 0.3s ease;
     /* Added transition for left property */
 }
@@ -17,4 +17,14 @@
     /* Added transition for transform property */
 }
 
+.web-member-card .webteam-icons {
+    opacity: 0.5;
+    /* transform: all 0.3s ease-in-out; */
 
+}
+
+.web-member-card:hover .webteam-icons {
+    opacity: 1;
+    /* transform: translateY(-10px); */
+    color: white;
+}

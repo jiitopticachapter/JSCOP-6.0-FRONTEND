@@ -1,0 +1,197 @@
+.loader-container {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: white; */
+}
+
+/* body {
+    background-color: #111214;
+    font-family: "Onest", sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    width: 100vw;
+  }
+   */
+.display-none {
+  display: none;
+  animation: animate 0.5s ease-in both;
+  /* height: 1px;
+  opacity: 0;
+  visibility: hidden;
+  width: 1px; */
+}
+
+.data-star1 {
+  animation: animate 0.8s ease-in both;
+  animation-iteration-count: 8;
+  background-color: darkorange;
+  height: 0.7vmin;
+  left: 30%;
+  position: relative;
+  transform: translateZ(-110vmin) rotateY(90deg) rotateX(var(--b))
+    translateZ(var(--a)) scaleX(1);
+  top: 0%;
+  width: 1.3vmin;
+  will-change: scale, transform;
+}
+
+.data-star2 {
+  animation: animate 0.6s ease-in both;
+  animation-iteration-count: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 0.4vmin;
+  left: 30%;
+  position: relative;
+  transform: translateZ(-100vmin) rotateY(90deg) rotateX(var(--b))
+    translateZ(var(--a)) scaleX(1);
+  top: 10%;
+  width: 1.6vmin;
+  will-change: scale, transform;
+}
+
+.data-star3 {
+  animation: animate 0.5s ease-in both;
+  animation-iteration-count: 8;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 1.6vmin;
+  left: 30%;
+  position: relative;
+  transform: translateZ(-170vmin) rotateY(90deg) rotateX(var(--b))
+    translateZ(var(--a)) scaleX(1);
+  top: 10%;
+  width: 1.6vmin;
+  will-change: scale, transform;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  30%,
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    /* transform: translateZ(0vmin) rotateY(90deg) rotateX(var(--b))
+      translateZ(var(--a)) scaleX(5); */
+  }
+}
+
+/* ASIDE (STAR ANIMATION */
+
+.space {
+  animation: bkg-anim 12s ease-in-out 1s both;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 10vmin;
+  position: fixed;
+  top: 0;
+  transform: rotateX(80deg) rotateY(145deg) scaleY(0.05) scaleX(0.3)
+    translateZ(0);
+  width: 100vw;
+  will-change: transform, background-color, opacity;
+  z-index: -1;
+}
+
+@keyframes bkg-anim {
+  0% {
+    background-color: #111214;
+    opacity: 1;
+    transform: rotateX(50deg) rotateY(90deg) scaleY(0.05) scaleX(0.3);
+  }
+
+  10% {
+    background-color: #fff;
+    transform: rotateX(80deg) rotateY(145deg) scaleY(0.05) scaleX(0.3);
+  }
+
+  15% {
+    transform: rotateX(80deg) rotateY(145deg) scaleY(0.3) scaleX(0.6);
+  }
+
+  20% {
+    background-color: #fff;
+  }
+
+  32% {
+    background-color: transparent;
+    transform: scaleY(1) scaleX(1);
+  }
+
+  70% {
+    opacity: 0.8;
+    transform: rotateX(0) rotateY(0) scaleY(1) scaleX(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+}
+
+.mid-label {
+  display: grid;
+  left: 0;
+  height: 100vh;
+  margin: 0;
+  place-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -10000;
+}
+
+.mid-label__text {
+  animation: show-mid-label 14.2s ease-in-out both;
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.16rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@keyframes show-mid-label {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    color: #111214;
+    opacity: 0;
+    letter-spacing: 4vw;
+  }
+
+  78% {
+    color: #eeeeee;
+    opacity: 0.4;
+    letter-spacing: 0.16rem;
+  }
+
+  85% {
+    color: #fff;
+    font-size: 2rem;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  90% {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.16rem;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    color: #9e9e9e;
+    letter-spacing: 0.16rem;
+    font-size: 2rem;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
