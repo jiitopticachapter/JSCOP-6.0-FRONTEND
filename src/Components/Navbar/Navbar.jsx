@@ -33,18 +33,34 @@ const Navbar = () => {
       <div className={`NavbarComponent `} style={navbarStyle2}>
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
-          <Link to='/'>
+          <Link to="/">
             <img src={navLogo} alt="" />
           </Link>
         </div>
         <div className={`NavbarContent `}>
-          <Link to='/'><li className="nav-link">HOME</li></Link>
-          <li className="nav-link">ABOUT</li>
-          <li className="nav-link">TIMELINE</li>
-          <li className="nav-link">EVENTS</li>
-          <li className="nav-link">GALLERY</li>
-          <Link to='/Webteam'><li className="nav-link">WEBTEAM</li></Link>
-          <li className="nav-link">CONTACT</li>
+          <a href="/">
+            <li className="nav-link">HOME</li>
+          </a>
+          <a href="#aboutus">
+            <li className="nav-link">ABOUT</li>
+          </a>
+          <a href="#timeline">
+            <li className="nav-link">TIMELINE</li>
+          </a>
+          <a href="#events">
+            {" "}
+            <li className="nav-link">EVENTS</li>{" "}
+          </a>
+          <a href="#gallary">
+            {" "}
+            <li className="nav-link">GALLARY</li>{" "}
+          </a>
+          <a href="#webteam">
+            <li className="nav-link">WEBTEAM</li>
+          </a>
+          <a href="#contactus">
+            <li className="nav-link">CONTACT</li>
+          </a>
         </div>
       </div>
 

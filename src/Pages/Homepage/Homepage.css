@@ -1,5 +1,5 @@
 .homepage {
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   background-color: black;
   overflow-y: hidden;
@@ -11,7 +11,7 @@
   /* z-index: 10; */
   left: 0;
   height: 20vh;
-  top: 84vh;
+  top: 90vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
 }
 /* .home-gradient2 {
@@ -162,6 +162,13 @@
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
+  .homepage {
+    height: 100vh;
+  }
+  .home-gradient {
+    height: 10vh;
+    top: 92vh;
+  }
   .home-heading1 {
     /* font-size: 2.4rem; */
     font-size: 9vw;

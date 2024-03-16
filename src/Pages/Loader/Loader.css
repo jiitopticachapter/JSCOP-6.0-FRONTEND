@@ -23,7 +23,7 @@
   width: 1px; */
 }
 
-.data-star1 {
+/* .data-star1 {
   animation: animate 0.8s ease-in both;
   animation-iteration-count: 8;
   background-color: darkorange;
@@ -63,7 +63,7 @@
   top: 10%;
   width: 1.6vmin;
   will-change: scale, transform;
-}
+} */
 
 @keyframes animate {
   0% {
@@ -85,7 +85,7 @@
 /* ASIDE (STAR ANIMATION */
 
 .space {
-  animation: bkg-anim 12s ease-in-out 1s both;
+  animation: bkg-anim 10s ease-in-out 1s both;
   height: 100vh;
   overflow: hidden;
   perspective: 10vmin;
@@ -147,7 +147,7 @@
 }
 
 .mid-label__text {
-  animation: show-mid-label 14.2s ease-in-out both;
+  animation: show-mid-label 9s ease-in-out both;
   color: #fff;
   font-size: 1.8rem;
   letter-spacing: 0.16rem;

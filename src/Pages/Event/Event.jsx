@@ -5,7 +5,7 @@ import Detail from "./EventDetail.jsx";
 const Event = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div id="events">
       <div className="eventheading">EVENTS</div>
       <div className="event-container">
         {Detail.map((item, index) => (

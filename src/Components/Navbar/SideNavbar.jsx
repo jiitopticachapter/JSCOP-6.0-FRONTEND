@@ -6,9 +6,12 @@ const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Timeline", path: "/timeline" },
-    { name: "Team", path: "/team" },
+    { name: "About", path: "aboutus" },
+    { name: "Events", path: "events" },
+    { name: "Timeline", path: "timeline" },
+    { name: "Web Team", path: "webteam" },
+    { name: "Gallary", path: "gallary" },
+    { name: "Contact Us", path: "contactus" },
   ]);
 
   var currentURL = window.location.href;
@@ -37,13 +40,13 @@ const Sidenav = () => {
         {sidenavItems.map((item, index) => {
           return (
             <div className="sidenavbarsections" key={index}>
-              <Link
+              <a
                 className="sidelink nav-link"
-                to={item.link}
+                href={`#${item.path}`}
                 onClick={closeNav}
               >
                 {item.name}
-              </Link>
+              </a>
               {/* <hr style={{ color: "white" }} /> */}
             </div>
           );

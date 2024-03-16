@@ -1,10 +1,11 @@
 import Stars from "../../Components/Stars/Stars";
 import "./About.css";
+import { useEffect } from "react";
 
 const About = () => {
   return (
     <>
-      <div className="about">
+      <div className="about" id="aboutus">
         <div className="left">
           {/* <Stars /> */}
           <div className="heading-about">WHAT OPTICA DOES ?</div>

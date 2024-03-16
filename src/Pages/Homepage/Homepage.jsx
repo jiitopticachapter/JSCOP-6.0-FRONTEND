@@ -12,9 +12,9 @@ const Homepage = () => {
   };
   return (
     <div className="homepage">
-      <Stars />
-      <img src={planet} alt="planet" className="planet" />
+      <Stars speed={0.04} />
 
+      <img src={planet} alt="planet" className="planet" />
       <div className="home-heading">
         {/* <div className="home-heading-inner"> */}
         <div className="home-heading1">JIIT OPTICA</div>

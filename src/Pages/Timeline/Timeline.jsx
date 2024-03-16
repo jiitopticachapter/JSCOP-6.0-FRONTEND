@@ -101,7 +101,7 @@ function Timeline() {
   }
 
   return (
-    <div className="timet">
+    <div id="timeline" className="timet">
       <div className="timeline">
         <div className="theading">TIMELINE</div>
 

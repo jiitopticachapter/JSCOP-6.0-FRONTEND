@@ -28,7 +28,7 @@ const Loader = () => {
       //   space.classList.add("display-none");
       setDisplayStar("");
       // }
-    }, 4800); //7500
+    }, 4200); //7500
     // };
 
     // initializeAnimation();
@@ -66,7 +66,7 @@ const Loader = () => {
           </div>
         ))} */}
         <div className={`${displaystar}`}>
-          <Stars />
+          <Stars speed={1} />
         </div>
       </div>
       <div className="mid-label">

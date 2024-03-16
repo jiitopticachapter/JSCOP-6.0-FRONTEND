@@ -11,6 +11,8 @@ import Layout from "./Pages/Layout/Layout.jsx";
 import Loader from "./Pages/Loader/Loader.jsx";
 import Webteam from "./Pages/Webteam/Webteam.jsx";
 import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
+import About from "./Pages/About/About.jsx";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -18,14 +20,16 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 12500);
+    }, 10200);
   }, []);
 
-  if (loading) {
-    return <Loader />;
-  } else {
+  // if (loading) {
+  //   return <Loader />;
+  // } else {
+  if (1) {
     return (
       <>
+        <ScrollToTop />
         <Navbar />
 
         <Routes>

@@ -15,7 +15,7 @@ import { color } from "framer-motion";
 export default function Footer() {
   return (
     <div id="Contact">
-      <div className="footer">
+      <div id="contactus" className="footer">
         <div className="Border">
           {/* <img className="bg-img" src={background} alt="" /> */}
           <div className="symbol">

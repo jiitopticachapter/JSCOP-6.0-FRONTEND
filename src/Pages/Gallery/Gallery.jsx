@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
 export default function Gallery() {
   return (
-    <div className="gallery-body">
+    <div id="gallary" className="gallery-body">
       <h1 className="gallery-title">GALLERY</h1>
       <div className="middle">
         <div className="gallery">

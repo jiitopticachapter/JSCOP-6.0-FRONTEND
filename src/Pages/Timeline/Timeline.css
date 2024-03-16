@@ -5,6 +5,10 @@
   background-color: black;
 }
 
+#timeline {
+  padding-top: 40px;
+}
+
 .theading {
   font-weight: bolder;
   padding: 0px 0px 20px 0px;
