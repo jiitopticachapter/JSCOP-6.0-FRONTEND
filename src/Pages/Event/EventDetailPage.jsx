@@ -1,16 +1,34 @@
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import Detail from './EventDetail';
-import './EventDetailPage.css'
-import photo from './Code-of-duty.jpeg'
 import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
-// import data from '../../assets/Data/EventData.js'
+import './EventDetailPage.css';
+import photo from './Code-of-duty.jpeg';
 import Team from '../Team/Team';
-import DATA from './EventsData.js'
-const EvetDetailPage = () => {
-
+import FAQ from './faqtoggle.jsx'; // Import the FAQ component
+import Data from './EventsData'; // Import your events data
+import './faq.css';
+const EventDetailPage = () => {
     const { id } = useParams();
+    const [faqs, setFaqs] = useState([]);
+
+    useEffect(() => {
+        // Find the event by id and set its faqs
+        const temp = Data.find(event => parseInt(event.id) === parseInt(id));
+        setFaqs(temp.faq);
+    }, [id]);
+
+    const toggleFAQ = (index) => {
+        setFaqs(faqs.map((faq, i) => {
+            if (i === index) {
+                faq.open = !faq.open;
+            } else {
+                faq.open = false;
+            }
+            return faq;
+        }));
+    };
 
     return (
         <div className='event-section'>
@@ -27,13 +45,13 @@ const EvetDetailPage = () => {
                 <div className='container-part-second'>
                     <div className='container-part-text1'>
                         <div className='container-part-secondicons'>
-                            <BsTrophyFill />  50000
+                            <BsTrophyFill /> 50000
                         </div>
                         <div className='container-part-secondicons'>
-                            <SlCalender />
+                            <SlCalender />  {Data[id - 1].date}
                         </div>
                         <div className='container-part-secondicons'>
-                            <FaLocationDot /> {DATA.location}
+                            <FaLocationDot /> {Data[id - 1].location}
                         </div>
 
                     </div>
@@ -41,7 +59,7 @@ const EvetDetailPage = () => {
                     <div className='container-part-text2'>
                         <h1>DESCRIPTION</h1>
                         <p>
-                            {DATA. description}
+                            {Data[id - 1].description}
                         </p>
                         <h1>
                             Team
@@ -49,11 +67,19 @@ const EvetDetailPage = () => {
                         <div>
                             <Team />
                         </div>
+                        <h1>FAQS</h1>
+                        <div className="FAQS">
+                            <div className="faqs">
+                                {faqs.map((faq, index) => (
+                                    <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default EvetDetailPage;
+export default EventDetailPage;
