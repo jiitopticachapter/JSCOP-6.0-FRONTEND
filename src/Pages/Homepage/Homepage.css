@@ -94,7 +94,7 @@
   text-align: center;
   color: white;
   z-index: 5;
-  top: 16px;
+  top: 26px;
   width: 98%;
   height: 100vh;
   /* background-color: black; */
@@ -113,8 +113,8 @@
   border: 2px solid white;
   color: white;
   font-size: 1.5rem;
-  margin-top: 10px;
-  padding: 10px 16px;
+  margin-top: 20px;
+  padding: 8px 16px;
   width: fit-content;
   cursor: pointer;
   /* padding: 2rem 2.5rem; */
@@ -128,7 +128,7 @@
 
 .home-heading-inner2 {
   /* background-color: yellow; */
-  margin: -35px 0 20px 0;
+  margin: -28px 0 9px 0;
   /* padding-top: 5px; */
   border-top: 4px solid white;
   /* font-size: 1.5rem; */
@@ -181,12 +181,12 @@
   animation: blink 1.5s infinite alternate;
 }
 
-@-webkit-keyframes blink {
+/* @-webkit-keyframes blink {
   100% {
     text-shadow: 0 0 2px #d8d7d7, 0 0 10px #bebdbd, 0 0 20px #bcbbbb,
       0 0 40px #1fa8c4, 0 0 70px #2a6f7d, 0 0 80px #0ba9ca;
   }
-}
+} */
 
 @keyframes mover {
   0% {
