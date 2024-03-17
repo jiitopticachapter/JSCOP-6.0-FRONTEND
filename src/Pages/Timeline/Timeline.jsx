@@ -106,7 +106,7 @@ function Timeline() {
         <div className="theading">TIMELINE</div>
 
         <div className="acttime">
-          <div className="tlbtndiv">
+          <div id="tlbtndiv1" className="tlbtndiv">
             <button
               style={{
                 backgroundColor: reference === 1 ? "white" : "black",

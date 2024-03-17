@@ -37,8 +37,12 @@
   background-color: rgba(255, 255, 255, 0.1);
   width: 90%;
   margin: auto;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   border-radius: 100px;
+}
+
+#tlbtndiv1 {
+  margin-bottom: 40px;
 }
 
 .tlbtn:hover {
@@ -70,6 +74,7 @@
     border: none;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: transparent;
     /* align-items: center;
   border: 2px solid white;
   width: 90%;

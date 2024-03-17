@@ -137,7 +137,7 @@
 
 .home-heading1 {
   /* font-size: 2rem; */
-  font-size: 6vh;
+  font-size: 5.5vh;
 }
 
 .home-heading2 {
@@ -158,8 +158,10 @@
   /* font-size: 100px; */
   text-align: center;
   text-shadow: 0 4px 5px rgba(60, 72, 96, 0.5);
-  color: #f0edf2;
-  -webkit-font-smoothing: antialiased;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #fff;
+  /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-animation-duration: 0.1s;
   animation-duration: 0.1s;
@@ -167,11 +169,23 @@
   animation-fill-mode: both;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  text-shadow: rgb(255, 255, 255) 0px 0px 175px, rgb(255, 255, 255) 0px 0px 10px,
+   */
+  /* text-shadow: rgb(255, 255, 255) 0px 0px 175px, rgb(255, 255, 255) 0px 0px 10px,
     rgb(255, 255, 255) 0px 0px 1px, rgb(0, 51, 128) 0px 0px 100px,
-    rgb(0, 51, 128) 0px 0px 250px;
+    rgb(0, 51, 128) 0px 0px 250px; */
+
+  color: #eae8e8;
+  text-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 20px #0ba9ca,
+    0 0 30px #2998ae, 0 0 40px #349fb5, 0 0 50px #409eb0;
+  -webkit-animation: blink 1.5s infinite alternate;
+  animation: blink 1.5s infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  100% {
+    text-shadow: 0 0 2px #d8d7d7, 0 0 10px #bebdbd, 0 0 20px #bcbbbb,
+      0 0 40px #1fa8c4, 0 0 70px #2a6f7d, 0 0 80px #0ba9ca;
+  }
 }
 
 @keyframes mover {

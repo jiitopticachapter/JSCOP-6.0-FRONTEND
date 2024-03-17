@@ -1,65 +1,70 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery';
-import 'slick-carousel/slick/slick';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import devfolio1 from "./devfolio1.png";
+import filecoin1 from "./filecoin1.png";
+import poygon1 from "./poygon1.png";
+import replit1 from "./replit1.png";
+import solana1 from "./solana1.png";
+import { useEffect } from "react";
+import "./Sponsors.css";
 
-function PartnersSlider() {
+const Sponsors = () => {
+  const listItems = [
+    {
+      pic: devfolio1,
+      text1: "devfolio",
+    },
+    {
+      pic: filecoin1,
+      text1: "filecoin",
+    },
+    {
+      pic: poygon1,
+      text1: "polygon",
+    },
+    {
+      pic: replit1,
+      text1: "replit",
+    },
+    {
+      pic: solana1,
+      text1: "solana",
+    },
+  ];
   useEffect(() => {
-    $('.customer-logos').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 4,
-          },
-        },
-        {
-          breakpoint: 520,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-      ],
+    const list = document.getElementById("list");
+    const listContent = Array.from(list.children);
+
+    listContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      list.appendChild(duplicatedItem);
     });
   }, []);
-
   return (
-    <div className="container">
-      <h2>Our Partners</h2>
-      <section className="customer-logos slider">
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="partner" />
+    <div>
+      <br />
+      <div className="theading">Sponsors</div>
+      <div className="tsponser">
+        <div className="dabb">
+          <div id="rcontainer" data-animated>
+            <ul id="list">
+              {listItems.map((item, index) => (
+                <li key={index} className="lii">
+                  <div className="core">
+                    <img
+                      src={item.pic}
+                      alt={`The picture of ${item.text1}`}
+                      className="sponspic"
+                    />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="partner" />
-        </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg" alt="partner" />
-        </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg" alt="partner" />
-        </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg" alt="partner" />
-        </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg" alt="partner" />
-        </div>
-        <div className="slide">
-          <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg" alt="partner" />
-        </div>
-      </section>
+      </div>
     </div>
   );
-}
+};
 
-export default PartnersSlider;
+export default Sponsors;
