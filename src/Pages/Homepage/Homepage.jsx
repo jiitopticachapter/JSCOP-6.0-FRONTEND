@@ -33,7 +33,7 @@ const Homepage = () => {
         </div>
         {/* <br /> */}
         <Timer />
-        <br />
+        {/* <br /> */}
         <div className="home-register-btn-div">
           <Link to="/register">
             <button className="home-register-btn">Register Now</button>

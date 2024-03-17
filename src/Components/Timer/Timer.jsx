@@ -42,7 +42,7 @@ const Timer = () => {
     <div className="timer">
       <section className="time-container">
         <div className="time-header">Time To Go !!</div>
-        <br />
+        {/* <br /> */}
         <div className="time-content">
           <div className="time days">
             <span className="time-number">
