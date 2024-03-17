@@ -7,6 +7,21 @@
   position: relative;
   margin-top: 20px;
   /* font-weight: bold; */
+  background: url("./../../assets/whatpic1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-gradient2 {
+  position: absolute;
+  width: 100%;
+  /* z-index: 10; */
+  left: 0;
+  height: 25vh;
+  top: 0vh;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 
 #aboutus {
@@ -19,6 +34,10 @@
   align-items: center;
   justify-content: center;
   flex-basis: 90%;
+  /* background: url("./../../assets/whatpic1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; */
 }
 
 .heading-about {
@@ -26,11 +45,13 @@
   font-weight: 600;
   margin-bottom: 3%;
   /* color: azure; */
-  z-index: 1.5;
+  z-index: 15;
   /* margin-top: 7%; */
   position: relative;
   color: white;
   text-align: center;
+  /* background-color: black; */
+  width: 100%;
 }
 
 .content {
