@@ -37,6 +37,9 @@ const About = () => {
             fugiat omnis?
           </div>
         </div>
+        <div className="home-gradient3"></div>
+        <div className="home-gradient3"></div>
+        <div className="home-gradient3"></div>
       </div>
       {/* <div className="roc"></div> */}
     </div>

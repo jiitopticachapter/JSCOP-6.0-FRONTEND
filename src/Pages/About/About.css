@@ -24,6 +24,16 @@
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 
+.home-gradient3 {
+  position: absolute;
+  width: 100%;
+  /* z-index: 10; */
+  left: 0;
+  height: 20vh;
+  bottom: 0vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+
 #aboutus {
   padding-top: 40px;
 }
