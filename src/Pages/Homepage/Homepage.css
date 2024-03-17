@@ -182,12 +182,12 @@
   animation: blink 1.5s infinite alternate;
 }
 
-@-webkit-keyframes blink {
+/* @-webkit-keyframes blink {
   100% {
     text-shadow: 0 0 2px #d8d7d7, 0 0 10px #bebdbd, 0 0 20px #bcbbbb,
       0 0 40px #1fa8c4, 0 0 70px #2a6f7d, 0 0 80px #0ba9ca;
   }
-}
+} */
 
 @keyframes mover {
   0% {
