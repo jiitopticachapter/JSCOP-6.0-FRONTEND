@@ -38,10 +38,10 @@ function App() {
     }, 10200);
   }, []);
 
-  // if (loading) {
-  //   return <Loader />;
-  // } else {
-  if (1) {
+  if (loading) {
+    return <Loader />;
+  } else {
+    // if (1) {
     return (
       <>
         <ScrollToTop />
