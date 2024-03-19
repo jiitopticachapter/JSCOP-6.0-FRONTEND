@@ -15,21 +15,6 @@ import About from "./Pages/About/About.jsx";
 import RegisterForm from "./Components/Register/RegisterForm.jsx";
 
 function App() {
-  // return (
-  //   <>
-  //     <Navbar />
-
-  //     <Routes>
-  //       <Route path="/" element={<Layout />} />
-  //       <Route path="/:id" element={<EvetDetailPage />} />
-  //       <Route path='/Webteam' element={<WebTeamComponent />} />
-  //       <Route path="/register" element={<Register />} />
-  //     </Routes>
-
-  //     <Footer />
-  //   </>
-  // );
-
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);

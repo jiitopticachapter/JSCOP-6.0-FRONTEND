@@ -1,3 +1,4 @@
+// import Heading from "../../Components/Heading/Heading";
 import Stars from "../../Components/Stars/Stars";
 import "./About.css";
 import { useEffect } from "react";
@@ -7,7 +8,11 @@ const About = () => {
     <div className="about" id="aboutus">
       <div className="left">
         {/* <Stars /> */}
-        <div className="heading-about">WHAT OPTICA DOES ?</div>
+        <div className="heading-about">
+          {/* <Heading /> */}
+          WHAT OPTICA DOES ?
+        </div>
+
         <div className="home-gradient2"></div>
         <div className="home-gradient2"></div>
         <div className="home-gradient2"></div>
