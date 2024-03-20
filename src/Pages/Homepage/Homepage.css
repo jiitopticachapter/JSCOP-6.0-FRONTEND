@@ -126,6 +126,8 @@
 
 .home-break {
   /* display: none; */
+  width: 100%;
+  height: 11px;
 }
 
 .home-heading-inner2 {
@@ -139,12 +141,12 @@
 
 .home-heading1 {
   /* font-size: 2rem; */
-  font-size: 5.5vh;
+  font-size: 5vh;
 }
 
 .home-heading2 {
   /* font-size: 2rem; */
-  font-size: 4.5vh;
+  font-size: 4vh;
 }
 
 .home-heading3 {

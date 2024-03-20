@@ -18,13 +18,9 @@ const Homepage = () => {
       <div className="home-heading">
         {/* <div className="home-heading-inner"> */}
         <div className="home-heading1">JIIT OPTICA</div>
-        <div className="home-break">
-          <br />
-        </div>
+        <div className="home-break">{/* <br /> */}</div>
         <div className="home-heading2">Presents</div>
-        <div className="home-break">
-          <br />
-        </div>
+        <div className="home-break">{/* <br /> */}</div>
         <div className="home-heading3">
           JSCOP <span className="six-point-zero"> 6.0</span>
         </div>
