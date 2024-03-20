@@ -19,7 +19,7 @@ const WebTeamData = [
     {
         name: "Harsh",
         surname: "Sharma",
-        photo: "/images/WebTeam/Harsh_sharma.jfif",
+        photo: "/images/WebTeam/Harsh_sharma.jpeg",
         insta: "https://www.instagram.com/x_harsh.sharma_x/?igshid=ZDdkNTZiNTM%3D",
         linkedin: "https://www.linkedin.com/in/harsh-sharma-507386232/",
         designation: "tech volunteer"

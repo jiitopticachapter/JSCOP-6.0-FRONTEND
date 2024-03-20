@@ -24,7 +24,7 @@ function MemberCard({ member }) {
             <ul className="social-icons">
                 {social.map((link, index) => (
                     <li key={index} style={{ '--i': index + 1 }}>
-                        <a href={link}>
+                        <a className='icons-linkscolor' href={link} >
                             {link.includes('instagram') ? (
                                 <FaInstagram />
                             ) : link.includes('linkedin') ? (

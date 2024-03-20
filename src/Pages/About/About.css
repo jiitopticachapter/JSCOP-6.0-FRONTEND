@@ -12,6 +12,7 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  margin: 0% 6%;
 }
 
 .home-gradient2 {
@@ -107,13 +108,22 @@
   .content {
     font-size: 1.2rem;
   }
+
+  .about {
+    margin: 0% 4%;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .heading-about {
     font-size: 1.8rem;
   }
+
   .content {
     font-size: 1.1rem;
+  }
+
+  .about {
+    margin: 0% 2%;
   }
 }
