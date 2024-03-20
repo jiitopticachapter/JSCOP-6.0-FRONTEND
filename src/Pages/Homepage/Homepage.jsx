@@ -4,6 +4,8 @@ import planet from "./planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
 import { Link } from "react-router-dom";
+import Astronaut3update from "./Astronaut3update.png";
+import jscop6heading from "../../assets/jscop6heading2.png";
 
 const Homepage = () => {
   const videoRef = useRef();
@@ -22,7 +24,9 @@ const Homepage = () => {
         <div className="home-heading2">Presents</div>
         <div className="home-break">{/* <br /> */}</div>
         <div className="home-heading3">
-          JSCOP <span className="six-point-zero"> 6.0</span>
+          {/* <img src={jscop6heading} alt="" className="homeLogo" />{" "} */}
+          JSCOP
+          <span className="six-point-zero"> 6.0</span>
         </div>
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
@@ -35,13 +39,14 @@ const Homepage = () => {
           <br />
         </div>
         <div className="home-register-btn-div">
-          <Link to="/register">
-            <button className="home-register-btn">Register Now</button>
-          </Link>
+          {/* <Link to="/register"> */}
+          <button className="home-register-btn">Register Now</button>
+          {/* </Link> */}
         </div>
         {/* </div> */}
       </div>
       <div className="astro"></div>
+
       <div className="spacestation"></div>
       <div className="home-gradient"></div>
       <div className="home-gradient"></div>

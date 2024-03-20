@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
+import jscop6logo from "../../assets/jscop6logo2.png";
 
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
@@ -32,6 +33,11 @@ const Sidenav = () => {
         className="sidenav"
         style={{ width: `${sidenavWidth}` }}
       >
+        {/* <div> */}
+        <Link to="/">
+          <img src={jscop6logo} alt="" className="sideNavBarLogo" />
+        </Link>
+        {/* </div> */}
         <Link href="" className="closebtn" onClick={closeNav}>
           &times;
         </Link>

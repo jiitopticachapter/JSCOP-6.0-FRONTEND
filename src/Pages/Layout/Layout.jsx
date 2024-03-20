@@ -13,17 +13,11 @@ const Layout = () => {
     <>
       <Homepage />
       <About />
-      
-      {/* <Event /> */}
-      <div style={{"textAlign":"center"}}><br/>
-      <h1 style={{"color":"white"}}>EVENTS</h1><br/>
-        <h2 style={{"color":"white"}}>COMING SOON...</h2><br/>
-      </div>
-      {/* <Timeline /> */}
-      <div style={{"textAlign":"center"}}>
-      <h1 style={{"color":"white"}}>TIMELINE</h1><br/>
-        <h2 style={{"color":"white"}}>COMING SOON...</h2>
-      </div>
+
+      <Event />
+
+      <Timeline />
+
       <WebTeamComponent />
       <Gallery />
       <Sponsors />

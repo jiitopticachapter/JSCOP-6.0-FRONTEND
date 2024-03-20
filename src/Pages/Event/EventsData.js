@@ -209,55 +209,6 @@ const Events = [
       },
     ],
   },
-  {
-    //ideathon
-    id: 5,
-    title: "IDEATHON",
-    // imgsrc: "/images/ideathon_long.jpeg",
-    imgsrc:
-      "https://drive.google.com/uc?export=view&id=1lWm5hu6GLRffrjw2HSSYAZ7By9nKiyfL",
-
-    description: `A spark which results in fire, a stream leading to a river and diamonds found in the rough. Everything big starts with something small. It takes an enormous amount of courage and and effort to take the road not taken and extreme passion to reach the other side.\nDo you have an idea that would change how things are done today? That makes you a dreamer and an inventor. Do you find yourself thinking and working on your idea in the oddest of times? That makes you a conqueror. Do you have what it takes to change the world? That makes you a wizard.\nIs the only thing standing between you and your dream money? Don’t worry, we’ve got you covered. OPTICA presents “IDEATHON”, an event where you get the opportunity to woo the judges with your ideas and win cash prizes and the really special ones will also get the chance to be funded.\n\nTime for all the brainstorming to payout!\nYou believe in your idea, we believe in your vision!`,
-    date: "16th APRIL 2023",
-    location: "AUDI / LT-4",
-    time: "1:30 pm",
-    deadline: "15-APRIL-2023,11:59 pm",
-    register_link:
-      "https://unstop.com/hackathons/ideathon-jscop-jaypee-institute-of-information-technology-jiit-noida-665370",
-    rules:
-      "https://docs.google.com/document/d/11RnMFbzhGNpEHhPMG60rSGFS_g3SDFWUBCH1nMx3gQI/edit?usp=sharing",
-    faq: [
-      {
-        question: "Is it an individual event?",
-        answer:
-          "You can participate individually or in a team of max 3 members.",
-        open: false,
-      },
-      {
-        question: "Is it only for JIIT?",
-        answer: "Yes",
-        open: false,
-      },
-    ],
-    OrgTeam: [
-      {
-        imgsrc: "/images/luv.jpg",
-        name: "LUV CHADDHA",
-      },
-      {
-        imgsrc: "/images/ayushthakur.jpg",
-        name: "AYUSH THAKUR",
-      },
-      {
-        imgsrc: "/images/pallavi.jpg",
-        name: "PALLAVI",
-      },
-      {
-        imgsrc: "/images/naman.jpg",
-        name: "NAMAN GUPTA",
-      },
-    ],
-  },
 ];
 
 export default Events;

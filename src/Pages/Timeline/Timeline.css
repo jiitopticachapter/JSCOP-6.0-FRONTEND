@@ -53,6 +53,7 @@
 .tlbtn2 {
   background-color: white;
   color: black;
+  padding: 4px 24px !important;
 }
 
 @keyframes scrolll {

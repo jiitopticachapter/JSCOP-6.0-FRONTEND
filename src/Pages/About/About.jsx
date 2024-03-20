@@ -19,27 +19,23 @@ const About = () => {
 
         <div className="content">
           <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet,
-            fuga quibusdam. Voluptates itaque maiores odio quaerat esse animi
-            corrupti consequatur asperiores voluptatum laborum. Aperiam magni
-            eligendi molestias, ipsam, soluta nam veritatis assumenda,
-            necessitatibus deleniti harum maiores modi nobis! Unde eaque nulla
-            amet cupiditate tempora, quaerat itaque officiis incidunt quis
-            possimus!
+            JIIT OPTICA, the institute's only internationally recognised
+            scientific body offers a forum for students to discover new worlds
+            outside of the academic curriculum and organises workshops, annual
+            festivals, national conferences, alumni gatherings, and educational
+            visits to reputable research and development institutions. In order
+            to inspire young minds, the club also hosts lectures by illustrious
+            scholar and researchers from a variety of subjects.
           </div>
           <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-            labore sed quibusdam sequi tenetur vero at accusantium ratione esse
-            dolore magni voluptates alias, minus quod amet dolor expedita
-            aliquid? Rem, explicabo voluptatibus velit recusandae dolorum et aut
-            pariatur, natus, vero quidem laudantium quas illum dolore? Maiores,
-            beatae. Quos aliquid culpa dolor doloribus, maxime totam accusantium
-            commodi harum libero repellendus hic soluta. Ipsa assumenda maxime
-            perspiciatis sequi. Labore maiores vero fugiat porro temporibus
-            magnam quod, aliquid reiciendis accusamus nisi beatae cumque cum
-            dignissimos ducimus alias ipsum tenetur neque fuga iusto, possimus
-            eaque velit molestiae? Excepturi, doloremque vel molestias sunt
-            fugiat omnis?
+            From a newly founded hub with a handful active members, JIIT OPTICA
+            has evolved into a reputable community with commendable social
+            outreach From following the footsteps and walking down the
+            well-trodden path to paving it’s very own, JIIT OPTICA has witnessed
+            bliss in it’s own making. From conducting technical seminars and
+            workshops to organising our flagship event JSCOP, JIIT OPTICA has
+            made a brand of its name and with each success our impeccable
+            efforts have set the bar high for the next.
           </div>
         </div>
         <div className="home-gradient3"></div>

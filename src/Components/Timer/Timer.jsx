@@ -46,8 +46,11 @@ const Timer = () => {
           <br />
         </div>
 
-        <div className="time-content">
-          <div className="time days">
+        <div
+          className="time-content"
+          style={{ width: "120%", height: "90px", marginLeft: "-10%" }}
+        >
+          {/* <div className="time days">
             <span className="time-number">
               {timeRemaining.days > 0 ? timeRemaining.days : "00"}
             </span>
@@ -70,7 +73,8 @@ const Timer = () => {
               {timeRemaining.seconds > 0 ? timeRemaining.seconds : "00"}
             </span>
             <span className="time-text">seconds</span>
-          </div>
+          </div> */}
+          <h2>COMING SOON ...</h2>
         </div>
       </section>
     </div>

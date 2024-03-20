@@ -107,10 +107,11 @@
 
   .content {
     font-size: 1.2rem;
+    padding: 4%;
   }
 
   .about {
-    margin: 0% 4%;
+    margin: 0% 0%;
   }
 }
 
@@ -124,6 +125,6 @@
   }
 
   .about {
-    margin: 0% 2%;
+    margin: 0% -1%;
   }
 }

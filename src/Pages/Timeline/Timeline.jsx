@@ -132,12 +132,12 @@ function Timeline() {
           <Tiline arr={arr} />
 
           <div id="tlbtndiv2" className="tlbtndiv">
-            <a href="./day1.png" download>
-              <button className="tlbtn tlbtn2">Download Day-1 Timeline</button>
-            </a>
-            <a href="./day2.png" download>
-              <button className="tlbtn tlbtn2">Download Day-2 Timeline</button>
-            </a>
+            {/* <a href="./day1.png" download> */}
+            <button className="tlbtn tlbtn2">Download Day-1 Schedule</button>
+            {/* </a> */}
+            {/* <a href="./day2.png" download> */}
+            <button className="tlbtn tlbtn2">Download Day-2 Schedule</button>
+            {/* </a> */}
           </div>
         </div>
       </div>

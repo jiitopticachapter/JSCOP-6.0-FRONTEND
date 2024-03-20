@@ -5,6 +5,11 @@
   overflow-y: hidden;
 }
 
+.homeLogo {
+  /* height: 10vw; */
+  width: 70vh;
+}
+
 .home-gradient {
   position: absolute;
   width: 100%;
