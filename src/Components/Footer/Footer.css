@@ -114,10 +114,6 @@
     /* padding-left: 10%; */
   }
 
-  #copyright {
-    font-size: 9px;
-  }
-
   .phone {
     position: relative;
     /* top: 5px; */
@@ -153,5 +149,11 @@
 
   .symbol p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+  .copyrighthide {
+    display: none;
   }
 }

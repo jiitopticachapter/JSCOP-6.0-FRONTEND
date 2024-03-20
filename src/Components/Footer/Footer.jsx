@@ -110,8 +110,8 @@ export default function Footer() {
           backgroundColor: "rgba(255,255,255,0.2)",
         }}
       >
-        <span> &copy;</span> &nbsp; Copyright : JIIT OPTICA Chapter | All Rights
-        Reserved
+        <span> &copy;</span> &nbsp; Copyright : JIIT OPTICA Chapter{" "}
+        <span className="copyrighthide">| All Rights Reserved</span>
       </div>
     </div>
   );
