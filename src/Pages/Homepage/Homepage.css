@@ -26,7 +26,7 @@
 } */
 
 .back {
-  background-image: url("planet2.jpg");
+  background-image: url("planet2hd.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -38,6 +38,7 @@
 .planet {
   /* height: 100%; */
   width: 50%;
+  mix-blend-mode: lighten;
   margin-left: -10%;
   margin-top: 12%;
   /* animation: rotateAnimation 25s infinite alternate; */
@@ -95,7 +96,7 @@
   text-align: center;
   color: white;
   z-index: 5;
-  top: 26px;
+  top: 20px;
   width: 98%;
   height: 100vh;
   /* background-color: black; */
@@ -115,7 +116,7 @@
   color: white;
   font-size: 1.5rem;
   margin-top: 20px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   width: fit-content;
   cursor: pointer;
   /* padding: 2rem 2.5rem; */
@@ -124,7 +125,7 @@
 }
 
 .home-break {
-  display: none;
+  /* display: none; */
 }
 
 .home-heading-inner2 {
@@ -154,7 +155,6 @@
   /* font-family: "Anta", sans-serif; */
   font-weight: 400;
   font-style: normal;
-  font-family: "Audiowide", cursive;
   text-transform: uppercase;
   /* font-size: 100px; */
   text-align: center;
@@ -175,9 +175,9 @@
     rgb(255, 255, 255) 0px 0px 1px, rgb(0, 51, 128) 0px 0px 100px,
     rgb(0, 51, 128) 0px 0px 250px; */
 
-  color: #eae8e8;
-  text-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 20px #0ba9ca,
-    0 0 30px #2998ae, 0 0 40px #349fb5, 0 0 50px #409eb0;
+  color: white;
+  text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 15px #0ba9ca,
+    0 0 25px #2998ae, 0 0 35px #349fb5, 0 0 45px #409eb0;
   -webkit-animation: blink 1.5s infinite alternate;
   animation: blink 1.5s infinite alternate;
 }

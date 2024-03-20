@@ -31,9 +31,13 @@ const Homepage = () => {
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
         </div>
-        {/* <br /> */}
+        <div className="home-break">
+          <br />
+        </div>
         <Timer />
-        {/* <br /> */}
+        <div className="home-break">
+          <br />
+        </div>
         <div className="home-register-btn-div">
           <Link to="/register">
             <button className="home-register-btn">Register Now</button>
