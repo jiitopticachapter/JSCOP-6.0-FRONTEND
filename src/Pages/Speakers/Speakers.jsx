@@ -13,7 +13,6 @@ function Speaker() {
         </div>
         <div className="content">
           <h3>This is content</h3>
-        
         </div>
       </div>
     </div>
@@ -24,7 +23,6 @@ function Speaker() {
         </div>
         <div className="content">
           <h3>This is content</h3>
-        
         </div>
       </div>
     </div>
@@ -35,13 +33,10 @@ function Speaker() {
         </div>
         <div className="content">
           <h3>This is content</h3>
-        
         </div>
       </div>
     </div>
-
     </div>
   );
 }
-
 export default Speaker;

@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.icons-linkscolor {
+  color: #fff;
+}
+
 .team-container h1 {
   text-align: center;
   margin-bottom: 10px;
@@ -22,7 +26,7 @@
   width: 300px;
   height: 300px;
   margin: 10px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.19);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   display: flex;
@@ -32,7 +36,7 @@
 }
 
 .member-card .content {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   margin: 10%;
   transition: 0.5s;
   color: #fff;

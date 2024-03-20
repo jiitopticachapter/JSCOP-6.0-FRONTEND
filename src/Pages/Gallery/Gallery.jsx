@@ -2,7 +2,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
-import {} from "../../oldassets/galleryImages/4.jpg";
+// import {} from "../../oldassets/galleryImages/4.jpg";
 export default function Gallery() {
   return (
     <div id="gallery" style={{ textAlign: "center" }}>

@@ -30,7 +30,7 @@ const Member = [
         social: ['https://www.instagram.com/yashmittal_05/', "https://www.linkedin.com/in/yash-mittal-433307251/", 'https://github.com/Geekyash10']
     },
     {
-        img: '/images/kriti.jpg',
+        img: '/images/Harsh_sharmabg.png',
         name: 'mehul',
         role: 'president',
         social: ['https://www.instagram.com/yashmittal_05/', "https://www.linkedin.com/in/yash-mittal-433307251/", 'https://github.com/Geekyash10']
