@@ -98,7 +98,7 @@ export default function Footer() {
       </div>
       {/* <hr style={{ color: "white" }} /> */}
       <div
-        id="copyright"
+        className="copyright"
         style={{
           color: "white",
           display: "flex",
@@ -110,8 +110,7 @@ export default function Footer() {
           backgroundColor: "rgba(255,255,255,0.2)",
         }}
       >
-        <span> &copy;</span> &nbsp; Copyright : JIIT OPTICA Chapter{" "}
-        <span className="copyrighthide">| All Rights Reserved</span>
+        &copy;&nbsp; Copyright : JIIT OPTICA Chapter | All Rights Reserved
       </div>
     </div>
   );

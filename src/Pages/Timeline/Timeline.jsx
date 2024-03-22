@@ -30,25 +30,6 @@ function Timeline() {
     },
     { pic: talk, name: "TALK 1", time: "11:00 AM - 12:00 PM", venue: "LT-4" },
     { pic: talk, name: "TALK 2", time: "12:00 PM - 12:45 PM", venue: "LT-4" },
-    { pic: lunch, name: "LUNCH", time: "12:45 PM - 2:00 PM", venue: "MESS" },
-    {
-      pic: code,
-      name: "BLIND CODING",
-      time: "2:00 PM - 4:00 PM",
-      venue: "CL-1 - CL-4",
-    },
-    {
-      pic: tea2,
-      name: "TEA BREAK 2",
-      time: "4:00 PM - 4:20 PM",
-      venue: "Infront of LT-4",
-    },
-    {
-      pic: ccc,
-      name: "CCC",
-      time: "4:20 PM - 5:30 PM",
-      venue: "Comm. Systems Lab EL-11",
-    },
   ];
 
   let arr2 = [
@@ -66,25 +47,6 @@ function Timeline() {
       venue: "Google Meet",
     },
     { pic: lunch, name: "LUNCH", time: "12:00 AM - 1:30 PM", venue: "Mess" },
-    {
-      pic: idea,
-      name: "IDEATHON",
-      time: "1:30 PM - 3:30 PM",
-      venue: "Audi/LT-4",
-    },
-    { pic: squid, name: "SQUID GAME", time: "3:00 PM - 4:30 PM", venue: "JBS" },
-    {
-      pic: tea,
-      name: "TEA BREAK",
-      time: "4:30 PM - 5:00 PM",
-      venue: "Infront of LT-4",
-    },
-    {
-      pic: closing,
-      name: "TCLOSING CEREMONY",
-      time: "5:00 PM - 6:30 PM",
-      venue: "Audi",
-    },
   ];
 
   const [arr, setArr] = useState(arr1);
