@@ -2,6 +2,15 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
+import image1 from '../../assets/galleryImages/4.jpeg';
+import image2 from '../../assets/galleryImages/5.jpeg';
+import image3 from '../../assets/galleryImages/6.jpeg';
+import image4 from '../../assets/galleryImages/7.jpeg';
+import image5 from '../../assets/galleryImages/8.jpeg';
+import image6 from '../../assets/galleryImages/9.jpeg';
+import image7 from '../../assets/galleryImages/10.jpeg';
+import image8 from '../../assets/galleryImages/11.jpeg';
+
 // import {} from "../../oldassets/galleryImages/4.jpg";
 export default function Gallery() {
   return (
@@ -12,40 +21,36 @@ export default function Gallery() {
       <div className="gallery-container">
         <div className="gallery">
           <img
-            src="src/oldassets/galleryImages/4.jpg"
-            alt="a forest after an apocalypse"
+            src={image1}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/5.jpg"
-            alt="a waterfall and many rocks"
+            src={image2}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/6.jpg"
-            alt="a house on a mountain"
+            src={image3}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/7.jpg"
-            alt="sime pink flowers"
+            src={image4}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/8.jpg"
-            alt="big rocks with some trees"
+            src={image5}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/9.jpg"
-            alt="a waterfall, a lot of tree and a great view from the sky"
+            src={image6}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/10.jpg"
-            alt="a cool landscape"
+            src={image7}
+            alt=""
           />
           <img
-            src="src/oldassets/galleryImages/11.jpg"
-            alt="inside a town between two big buildings"
-          />
-          <img
-            src="src/oldassets/galleryImages/4.jpg"
-            alt="a great view of the sea above the mountain"
+            src={image8}
+            alt=""
           />
         </div>
       </div>
