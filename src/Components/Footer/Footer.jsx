@@ -11,15 +11,16 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { color } from "framer-motion";
+import jscop6logo from "../../assets/jscop6logo2.png";
 
 export default function Footer() {
   return (
     <div id="Contact">
-      <div className="footer">
+      <div id="contactus" className="footer">
         <div className="Border">
           {/* <img className="bg-img" src={background} alt="" /> */}
           <div className="symbol">
-            <img className="logo" src={logo} alt="JSCOP Logo" />
+            <img className="logo" src={jscop6logo} alt="JSCOP Logo" />
           </div>
           <a
             className="phone"
@@ -97,19 +98,19 @@ export default function Footer() {
       </div>
       {/* <hr style={{ color: "white" }} /> */}
       <div
-        id="copyright"
+        className="copyright"
         style={{
           color: "white",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          marginBottom: "10px",
+          paddingBottom: "10px",
           paddingTop: "10px",
           borderTop: "1px solid white",
+          backgroundColor: "rgba(255,255,255,0.2)",
         }}
       >
-        <span style={{ fontSize: "20px" }}> &copy;</span> &nbsp; Copyright :
-        JIIT OPTICA Chapter | All Rights Reserved
+        &copy;&nbsp; Copyright : JIIT OPTICA Chapter | All Rights Reserved
       </div>
     </div>
   );

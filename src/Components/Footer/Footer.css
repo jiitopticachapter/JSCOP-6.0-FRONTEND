@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   /* background-image: url('../../assets/back.jpg'); */
   background-color: black;
   background-size: 100% 100%;
@@ -41,10 +41,6 @@
   padding-left: 50px;
 }
 
-.Location {
-  /* flex: 1; */
-}
-
 .Location p {
   font-weight: 800;
   font-size: 1.1rem;
@@ -64,11 +60,6 @@
 
 .Location .location-content p {
   margin: 5px;
-}
-
-.contact {
-  /* flex: 1; */
-  /* background-color: aqua; */
 }
 
 .contact p {
@@ -112,14 +103,19 @@
 .link {
   margin: 0 10px;
 }
-#copyright {
+/* #copyright {
   color: white;
-}
+} */
 
 @media (max-width: 892px) {
   .Border {
     flex-direction: column;
+    padding: 35px 0px;
     /* padding-left: 10%; */
+  }
+
+  .copyright {
+    font-size: 0.6rem;
   }
 
   .phone {

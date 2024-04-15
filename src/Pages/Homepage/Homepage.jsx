@@ -4,6 +4,8 @@ import planet from "./planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
 import { Link } from "react-router-dom";
+import Astronaut3update from "./Astronaut3update.png";
+import jscop6heading from "../../assets/jscop6heading2.png";
 
 const Homepage = () => {
   const videoRef = useRef();
@@ -12,31 +14,43 @@ const Homepage = () => {
   };
   return (
     <div className="homepage">
-      <Stars />
-      <img src={planet} alt="planet" className="planet" />
+      <Stars speed={0.04} />
 
+      <img src={planet} alt="planet" className="planet" />
       <div className="home-heading">
         {/* <div className="home-heading-inner"> */}
         <div className="home-heading1">JIIT OPTICA</div>
-        <br />
+        <div className="home-break">{/* <br /> */}</div>
         <div className="home-heading2">Presents</div>
-        <br />
-        <div className="home-heading3">JSCOP 6.0</div>
+        <div className="home-break">{/* <br /> */}</div>
+        <div className="home-heading3">
+          {/* <img src={jscop6heading} alt="" className="homeLogo" />{" "} */}
+          JSCOP
+          <span className="six-point-zero"> 6.0</span>
+        </div>
         <div className="home-heading-inner2">
           JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
         </div>
-        {/* <br /> */}
+        <div className="home-break">
+          <br />
+        </div>
         <Timer />
-        <br />
-        <div>
-          <Link to="/register">
-            <button className="home-register-btn">Register Now</button>
-          </Link>
+        <div className="home-break">
+          <br />
+        </div>
+        <div className="home-register-btn-div">
+          {/* <Link to="/register"> */}
+          <button className="home-register-btn">Register Now</button>
+          {/* </Link> */}
         </div>
         {/* </div> */}
       </div>
       <div className="astro"></div>
+
       <div className="spacestation"></div>
+      <div className="home-gradient"></div>
+      <div className="home-gradient"></div>
+      <div className="home-gradient"></div>
     </div>
   );
 };

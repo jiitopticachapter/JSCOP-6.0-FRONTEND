@@ -1,47 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 .about {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3% 5%;
-    color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding: 3% 5%; */
+  color: white;
+  position: relative;
+  margin-top: 20px;
+  /* font-weight: bold; */
+  background: url("./../../assets/whatpic1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  margin: 0% 6%;
+}
+
+.home-gradient2 {
+  position: absolute;
+  width: 100%;
+  /* z-index: 10; */
+  left: 0;
+  height: 25vh;
+  top: 0vh;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+
+.home-gradient3 {
+  position: absolute;
+  width: 100%;
+  /* z-index: 10; */
+  left: 0;
+  height: 20vh;
+  bottom: 0vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+
+#aboutus {
+  padding-top: 40px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 90%;
+  /* background: url("./../../assets/whatpic1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center; */
 }
 
 .heading-about {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 3%;
-
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3%;
+  /* color: azure; */
+  z-index: 2;
+  /* margin-top: 7%; */
+  position: relative;
+  color: white;
+  text-align: center;
+  /* background-color: black; */
+  width: 100%;
 }
 
 .content {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 30px;
+  /* background-color: rgb(43, 45, 47); */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2%;
+  z-index: 2;
+}
+
+/* .roc {
+  background-image: url(/src/assets/roc.png);
+  position: absolute;
+  height: 50vh;
+  width: 20%;
+  left: 0;
+  bottom: 0%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  animation: roc 4s infinite alternate;
+  flex-basis: 20%;
+}
+
+@keyframes roc {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-70px);
+  }
+} */
+
+@media only screen and (max-width: 650px) {
+  .heading-about {
+    font-size: 2.3rem;
+  }
+
+  .content {
     font-size: 1.2rem;
-    text-align: justify;
-    line-height: 30px;
-    background-color: rgb(35, 41, 46);
-    border-radius: 2%;
-    padding: 2%;
+    padding: 4%;
+  }
+
+  .about {
+    margin: 0% 0%;
+  }
 }
 
-@media only screen and (max-width:650px){
-.heading-about {
-    
-        font-size: 2.3rem;
-    }
-    .content{
-        font-size: 1.2rem;
-    }
-}
+@media only screen and (max-width: 550px) {
+  .heading-about {
+    font-size: 1.8rem;
+  }
 
-@media only screen and (max-width:550px){
-.heading-about {
-    
-        font-size: 1.8rem;
-    }
-    .content{
-        font-size: 1.1rem;
-    }
+  .content {
+    font-size: 1.1rem;
+  }
+
+  .about {
+    margin: 0% -1%;
+  }
 }

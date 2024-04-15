@@ -21,7 +21,7 @@ const Timer = () => {
 
   function getTimeRemaining() {
     const currentDate = new Date();
-    const targetDate = new Date("2024-03-20T23:59:00"); // Set your target date and time
+    const targetDate = new Date("2024-03-17T03:44:00"); // Set your target date and time
 
     const total = targetDate - currentDate;
     const seconds = Math.floor((total / 1000) % 60);
@@ -42,24 +42,39 @@ const Timer = () => {
     <div className="timer">
       <section className="time-container">
         <div className="time-header">Time To Go !!</div>
-        <br />
-        <div className="time-content">
-          <div className="time days">
-            <span className="time-number">{timeRemaining.days}</span>
+        <div className="home-break">
+          <br />
+        </div>
+
+        <div
+          className="time-content"
+          style={{ width: "120%", height: "90px", marginLeft: "-10%" }}
+        >
+          {/* <div className="time days">
+            <span className="time-number">
+              {timeRemaining.days > 0 ? timeRemaining.days : "00"}
+            </span>
             <span className="time-text">days</span>
           </div>
           <div className="time hours">
-            <span className="time-number">{timeRemaining.hours}</span>
+            <span className="time-number">
+              {timeRemaining.hours > 0 ? timeRemaining.hours : "00"}
+            </span>
             <span className="time-text">hours</span>
           </div>
           <div className="time minutes">
-            <span className="time-number">{timeRemaining.minutes}</span>
+            <span className="time-number">
+              {timeRemaining.minutes > 0 ? timeRemaining.minutes : "00"}
+            </span>
             <span className="time-text">minutes</span>
           </div>
           <div className="time seconds">
-            <span className="time-number">{timeRemaining.seconds}</span>
+            <span className="time-number">
+              {timeRemaining.seconds > 0 ? timeRemaining.seconds : "00"}
+            </span>
             <span className="time-text">seconds</span>
-          </div>
+          </div> */}
+          <h2>COMING SOON ...</h2>
         </div>
       </section>
     </div>

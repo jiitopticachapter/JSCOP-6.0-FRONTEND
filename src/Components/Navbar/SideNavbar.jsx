@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
+import jscop6logo from "../../assets/jscop6logo2.png";
 
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Timeline", path: "/timeline" },
-    { name: "Team", path: "/team" },
+    { name: "About", path: "aboutus" },
+    { name: "Events", path: "events" },
+    { name: "Timeline", path: "timeline" },
+    { name: "Web Team", path: "webteam" },
+    { name: "Gallery", path: "gallery" },
+    { name: "Contact Us", path: "contactus" },
   ]);
 
   var currentURL = window.location.href;
@@ -29,6 +33,11 @@ const Sidenav = () => {
         className="sidenav"
         style={{ width: `${sidenavWidth}` }}
       >
+        {/* <div> */}
+        <Link to="/">
+          <img src={jscop6logo} alt="" className="sideNavBarLogo" />
+        </Link>
+        {/* </div> */}
         <Link href="" className="closebtn" onClick={closeNav}>
           &times;
         </Link>
@@ -37,13 +46,13 @@ const Sidenav = () => {
         {sidenavItems.map((item, index) => {
           return (
             <div className="sidenavbarsections" key={index}>
-              <Link
+              <a
                 className="sidelink nav-link"
-                to={item.link}
+                href={`#${item.path}`}
                 onClick={closeNav}
               >
                 {item.name}
-              </Link>
+              </a>
               {/* <hr style={{ color: "white" }} /> */}
             </div>
           );

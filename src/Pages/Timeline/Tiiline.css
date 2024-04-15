@@ -1,0 +1,228 @@
+/* @property --clip-vertical {
+  syntax: "<percentage>";
+  initial-value: 95%;
+  inherits: false;
+}
+
+@property --clip-horizontal {
+  syntax: "<percentage>";
+  initial-value: 100%;
+  inherits: false;
+}
+
+@property --intro-radial {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+} */
+
+.tlinebody {
+  padding-bottom: 8vh;
+}
+
+main {
+  --timeline-width: 95%;
+
+  position: relative;
+  /* padding-block: 300px; */
+  max-width: 1000px;
+  margin-inline: auto;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    margin-left: -28px;
+    border-right: 4px double rgba(255, 255, 255, 0.8);
+    content: "";
+  }
+}
+
+.stop {
+  --clip-horizontal: 100%;
+  --clip-vertical: 93%;
+
+  position: relative;
+  /* min-height: 55vh; */
+  /* padding-top: 15vh; */
+  width: calc(var(--timeline-width) / 2);
+  padding-inline: 50px;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 12px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 3px solid white;
+    content: "";
+    translate: 50% 0;
+    transform-origin: center;
+    animation: popIn linear both;
+    animation-timeline: view(block);
+    animation-range: cover 5% contain 22%;
+  }
+
+  &:nth-child(even) {
+    justify-content: flex-end;
+    text-align: end;
+    margin-left: calc(var(--timeline-width) / 2);
+    &::before {
+      right: auto;
+      left: 0;
+      translate: -50% 0;
+    }
+    &::after {
+      right: auto;
+      left: 40px;
+      border-width: 3px 3px 0 0;
+      clip-path: inset(0 var(--clip-horizontal) var(--clip-vertical) 0);
+    }
+  }
+}
+
+.text {
+  animation: slideIn linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 12%;
+}
+
+/* keyframes */
+@keyframes popIn {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+}
+
+@keyframes moveGradient {
+  to {
+    --intro-radial: 100%;
+  }
+}
+
+@keyframes showLine {
+  0% {
+    --clip-horizontal: 100%;
+    --clip-vertical: 95%;
+  }
+  60% {
+    --clip-horizontal: 0%;
+    --clip-vertical: 95%;
+  }
+  100% {
+    --clip-horizontal: 0%;
+    --clip-vertical: 0%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    translate: 0 50%;
+  }
+  100% {
+    opacity: 1;
+    translate: 0 3%;
+  }
+}
+
+/* Default styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 0;
+}
+
+header {
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  /* background-color: rgb(43, 45, 47); */
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 2px solid white;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  padding: 1.1rem;
+
+  border-radius: 0.6rem;
+}
+
+.tlimh {
+  /* width: 250px; */
+  width: 100%;
+  height: 260px;
+  /* margin-block-start: 1.05rem; */
+  border: 1px solid #eee;
+  background: white;
+}
+
+header {
+  text-align: center;
+}
+
+@media screen and (width <= 600px) {
+  .tlinebody {
+    padding-bottom: 3vw;
+  }
+  main {
+    &::before {
+      top: 0;
+      width: 0;
+      height: 100%;
+      content: "";
+    }
+  }
+  .tlimh {
+    height: 228px;
+  }
+  main::before {
+    left: 30px;
+    margin-left: 0;
+  }
+  .stop,
+  .stop:nth-child(even) {
+    justify-content: flex-end;
+    text-align: end;
+    margin-bottom: 30px;
+    margin-left: 33px;
+    width: calc(var(--timeline-width) - 33px);
+    padding-inline: 30px 8px;
+    &::before {
+      right: auto;
+      left: 0;
+      translate: -50% 0;
+    }
+    &::after {
+      right: auto;
+      left: 40px;
+      border-width: 3px 3px 0 0;
+      clip-path: inset(0 var(--clip-horizontal) var(--clip-vertical) 0);
+    }
+    header {
+      text-align: center;
+    }
+  }
+}

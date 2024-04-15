@@ -2,72 +2,55 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Gallery.css";
+import image1 from '../../assets/galleryImages/4.jpeg';
+import image2 from '../../assets/galleryImages/5.jpeg';
+import image3 from '../../assets/galleryImages/6.jpeg';
+import image4 from '../../assets/galleryImages/7.jpeg';
+import image5 from '../../assets/galleryImages/8.jpeg';
+import image6 from '../../assets/galleryImages/9.jpeg';
+import image7 from '../../assets/galleryImages/10.jpeg';
+import image8 from '../../assets/galleryImages/11.jpeg';
+
+// import {} from "../../oldassets/galleryImages/4.jpg";
 export default function Gallery() {
   return (
-    <div className="gallery-body">
-      <h1 className="gallery-title">GALLERY</h1>
-      <div className="middle">
+    <div id="gallery" style={{ textAlign: "center" }}>
+      <h1 style={{ color: "white", margin: "30px", fontSize: "3rem" }}>
+        GALLERY
+      </h1>
+      <div className="gallery-container">
         <div className="gallery">
-          {/* <div className="fade"></div> */}
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image1}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image2}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image3}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image4}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image5}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image6}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image7}
             alt=""
-            className="gallery-image"
           />
           <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+            src={image8}
             alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
-          />
-          <img
-            src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
-            alt=""
-            className="gallery-image"
           />
         </div>
       </div>

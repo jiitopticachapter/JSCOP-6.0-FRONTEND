@@ -1,0 +1,29 @@
+.social-links {
+  /* margin-top: 10px; */
+  /* position: relative; */
+  position: absolute;
+  left: -125%;
+  top: 55%;
+  transition: left 0.3s ease;
+  /* Added transition for left property */
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  left: 50%;
+  transition: transform 0.3s ease-in-out;
+  /* Added transition for transform property */
+}
+
+.web-member-card .webteam-icons {
+  opacity: 0.5;
+  /* transform: all 0.3s ease-in-out; */
+}
+
+.web-member-card:hover .webteam-icons {
+  opacity: 1;
+  /* transform: translateY(-10px); */
+  color: white;
+}

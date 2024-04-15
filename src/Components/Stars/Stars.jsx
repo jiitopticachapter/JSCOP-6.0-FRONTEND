@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const Stars = () => {
+const Stars = ({ speed }) => {
   const canvasRef = useRef(null);
   let canvas, c, w, h, stars, prevTime;
 
@@ -56,7 +56,7 @@ const Stars = () => {
     let elapsed = time - prevTime;
     prevTime = time;
 
-    moveStars(elapsed * 0.04);
+    moveStars(elapsed * speed);
 
     clear();
 

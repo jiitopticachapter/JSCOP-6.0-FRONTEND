@@ -1,79 +1,110 @@
-import "./time.css"
-import React,{useState} from 'react';
-import { motion } from 'framer-motion';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import timelineElements from './TimeLineElement';
-import { FaLocationDot,FaClock } from "react-icons/fa6";
-import Heading from './Heading';
+import React, { useEffect, useState } from "react";
+import "./Timeline.css";
 
+import Tiline from "./Tline";
+import talk from "./talk.png";
+import tea2 from "./tea2.png";
+import squid from "./squid.png";
+import tea from "./tea.png";
+import opening from "./opening.png";
+import onlinem from "./onlinem.png";
+import lunch from "./lunch.png";
+import idea from "./idea.png";
+import code from "./code.png";
+import closing from "./closing.png";
+import ccc from "./ccc.png";
 
-const TimelineWithAnimations = () => {
-  const [x, setX] = useState(0); // Define x and its setter function
-  const [y, setY] = useState(0); // Define y and its setter function
-  const [isHovered, setIsHovered] = useState(false); // Define isHovered state
+function Timeline() {
+  let arr1 = [
+    {
+      pic: opening,
+      name: "INAUGRATION CEREMONY",
+      time: "10:00 AM - 10:30 AM",
+      venue: "LT-4",
+    },
+    {
+      pic: tea,
+      name: "TEA BREAK",
+      time: "10:30 AM - 11:00 AM",
+      venue: "Infront of LT-4",
+    },
+    { pic: talk, name: "TALK 1", time: "11:00 AM - 12:00 PM", venue: "LT-4" },
+    { pic: talk, name: "TALK 2", time: "12:00 PM - 12:45 PM", venue: "LT-4" },
+  ];
 
-  const handleHover = (e) => {
-    const rect = e.target.getBoundingClientRect();
-    const width = rect.width;
-    const height = rect.height;
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-    const xPct = mouseX / width - 0.5;
-    const yPct = mouseY / height - 0.5;
-    setX(xPct);
-    setY(yPct);
-  };
+  let arr2 = [
+    { pic: talk, name: "TALK3", time: "10:00 AM - 10:45 AM", venue: "LT-4" },
+    {
+      pic: tea2,
+      name: "TEA BREAK",
+      time: "10:45 AM - 11:15 AM",
+      venue: "Infront of LT-4",
+    },
+    {
+      pic: onlinem,
+      name: "ONLINE TALK",
+      time: "11:05 AM - 12:00 PM",
+      venue: "Google Meet",
+    },
+    { pic: lunch, name: "LUNCH", time: "12:00 AM - 1:30 PM", venue: "Mess" },
+  ];
 
-  const handleLeave = () => {
-    setIsHovered(false);
-    
-    setX(0);
-    setY(0);
-  };
+  const [arr, setArr] = useState(arr1);
+  const [reference, setReference] = useState(1);
+
+  function showschedule(day) {
+    if (day == 1) {
+      setArr(arr1);
+      setReference(1);
+    } else {
+      setArr(arr2);
+      setReference(2);
+    }
+  }
 
   return (
-    <div>
-    <Heading text="TIMELINE"/>
-    <div className="flex flex-wrap place-content-center px-14 py-14 text-slate-900 bg-transparent">
-      <VerticalTimeline>
-        {timelineElements.map((element) => (
-          <VerticalTimelineElement
-            key={element.id}
-            
-          >
-            <motion.div
-              onMouseEnter={handleHover}
-              onMouseLeave={handleLeave}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="timeline-content bg-gradient-to-br from-indigo-300 to-violet-300  rounded-xl shadow-lg "
+    <div id="timeline" className="timet">
+      <div className="timeline">
+        <div className="theading">TIMELINE</div>
+
+        <div className="acttime">
+          <div id="tlbtndiv1" className="tlbtndiv">
+            <button
+              style={{
+                backgroundColor: reference === 1 ? "white" : "black",
+                color: reference === 1 ? "black" : "white",
+              }}
+              className="tlbtn"
+              onClick={() => showschedule(1)}
             >
-              <motion.img
-                src={element.url}
-                alt="Event"
-                className="timeline-image rounded-xl h-52 w-full"
-                whileHover={{ rotate: 360 }}
-              />
+              Day-1 Timeline
+            </button>
+            <button
+              style={{
+                backgroundColor: reference === 2 ? "white" : "black",
+                color: reference === 2 ? "black" : "white",
+              }}
+              className="tlbtn"
+              onClick={() => showschedule(2)}
+            >
+              Day-2 Timeline
+            </button>
+          </div>
 
-    
-              <h3 className="vertical-timeline-element-title text-white font-bold flex justify-center items-center uppercase bg-[#7167e2] rounded">
-                {element.title}
-              </h3>
+          <Tiline arr={arr} />
 
-              {/* Location and Time */}
-              <div className="location-time text-center text-gray-700">
-                <p className="vertical-timeline-element-subtitle flex justify-center items-center text-white font-bold"><span className='px-4 flex items-center'><FaLocationDot/></span>{element.location}</p>
-                <p className="vertical-timeline-element-subtitle flex justify-center items-center  text-white font-bold"><span className='px-4 flex items-center'><FaClock/></span>{element.time}</p>
-              </div>
-
-            </motion.div>
-          </VerticalTimelineElement>
-        ))}
-      </VerticalTimeline>
-    </div>
+          <div id="tlbtndiv2" className="tlbtndiv">
+            {/* <a href="./day1.png" download> */}
+            <button className="tlbtn tlbtn2">Download Day-1 Schedule</button>
+            {/* </a> */}
+            {/* <a href="./day2.png" download> */}
+            <button className="tlbtn tlbtn2">Download Day-2 Schedule</button>
+            {/* </a> */}
+          </div>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
-export default TimelineWithAnimations;
+export default Timeline;
