@@ -15,6 +15,7 @@ function Register() {
   });
 
   const [status, setStatus] = useState({});
+  const [image, setImage] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,9 +25,31 @@ function Register() {
     }));
   };
 
+
+   const handleImage = (f) => {
+      const file = f.target.files[0];
+      setFileToBase(file);
+      // console.log(file);
+      // console.log(file.size);
+      if (file.size > 500000) {
+        alert("File size is too large, please upload a file less than 500kb");
+      }
+    }
+    const setFileToBase = (file) =>  {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onloadend = () => {
+        setImage(reader.result);
+      }
+     }
+  
+ 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
+    // console.log(image);
+   
 
     if (
       !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.email)
@@ -38,21 +61,25 @@ function Register() {
       alert("Invalid phone number");
     }
 
+     const formDataObj = {
+    data: formData
+  };
+     const Img = {
+      image: image
+     }
+    const Final = {
+     ...formDataObj,
+      ...Img
+    }
+    console.log(Final);
+
     try {
-      // const res = await axios.post(`/register`, formData);
-      // console.log(res.data);
-      // if (res.data.success) {
-      //   toast.success("Registered successful");
-      // } else {
-      //   toast.error("Invalid Credentials");
-      //   return;
-      // }
       let response = await fetch("http://localhost:4000/api/register-new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(Final),
       });
       let result = await response.json();
        setFormData(formData);
@@ -123,7 +150,21 @@ function Register() {
               className="register-input"
               required
             />
+           <input 
+            onChange={handleImage} 
+            type="file"
+            id="formupload" 
+            name="image" 
+            className="register-input"
+            required
+            />
+            <label 
+            htmlFor="form4Example2">
+              Payment-ScreenShot
+            </label>
           </div>
+          
+          
 
           <div className="register-btns">
             <button className="register-btn" type="submit">
