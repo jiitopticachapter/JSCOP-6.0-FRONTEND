@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
-import jscop6logo from "../../assets/jscop6logo2.png";
+import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
 
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
     { name: "Home", path: "/" },
-    { name: "About", path: "aboutus" },
     { name: "Events", path: "events" },
     { name: "Timeline", path: "timeline" },
     { name: "Web Team", path: "webteam" },
-    { name: "Gallery", path: "gallery" },
-    { name: "Contact Us", path: "contactus" },
+
   ]);
 
   var currentURL = window.location.href;

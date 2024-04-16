@@ -54,6 +54,7 @@
 }
 
 @keyframes shake {
+
   5%,
   15%,
   25%,
@@ -96,6 +97,7 @@
 }
 
 @keyframes crack1 {
+
   0%,
   95% {
     transform: translate(-50%, -50%);
@@ -107,6 +109,7 @@
 }
 
 @keyframes crack2 {
+
   0%,
   95% {
     transform: translate(-50%, -50%);

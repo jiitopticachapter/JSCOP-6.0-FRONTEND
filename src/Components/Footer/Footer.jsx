@@ -1,7 +1,7 @@
 import React from "react";
 // import background from '../../assets/back.jpg';
 import "./Footer.css";
-import logo from "../../assets/JSCOP_LOGO.png";
+// import logo from "../../assets/JSCOP_LOGO.png";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
@@ -11,7 +11,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { color } from "framer-motion";
-import jscop6logo from "../../assets/jscop6logo2.png";
+import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
 
 export default function Footer() {
   return (
@@ -31,7 +31,6 @@ export default function Footer() {
               <div>
                 <IoLocationSharp fontSize="medium" />
                 <div className="location-content">
-                  <p>JSCOP 6.O</p>
                   <p>Jaypee Institute Of Information Technology</p>
                   <p> Sector-62 , Noida </p>
                   <p>India</p>
@@ -107,7 +106,7 @@ export default function Footer() {
           paddingBottom: "10px",
           paddingTop: "10px",
           borderTop: "1px solid white",
-          backgroundColor: "rgba(255,255,255,0.2)",
+          backgroundColor: "rgba(0,0,0,1)",
         }}
       >
         &copy;&nbsp; Copyright : JIIT OPTICA Chapter | All Rights Reserved

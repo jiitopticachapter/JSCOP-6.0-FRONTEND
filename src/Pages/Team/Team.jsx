@@ -1,6 +1,6 @@
 // Team.js
 import React from 'react';
-import MemberData from './Teammember'; // Import your Member data
+import MemberData from '../../assets/Data/Teammember.js' // Import your Member data
 import './Team.css'; // Import your CSS file
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 

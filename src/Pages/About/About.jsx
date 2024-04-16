@@ -1,7 +1,6 @@
 // import Heading from "../../Components/Heading/Heading";
-import Stars from "../../Components/Stars/Stars";
 import "./About.css";
-import { useEffect } from "react";
+
 
 const About = () => {
   return (

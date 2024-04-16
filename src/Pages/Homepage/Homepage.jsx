@@ -1,11 +1,11 @@
 import "./Homepage.css";
 import { useRef } from "react";
-import planet from "./planet2.jpg";
+import planet from "../../assets/Homeimages/planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
-import { Link } from "react-router-dom";
-import Astronaut3update from "./Astronaut3update.png";
-import jscop6heading from "../../assets/jscop6heading2.png";
+// import { Link } from "react-router-dom";
+// import Astronaut3update from "../../assets/Homeimages/Astronaut3update.png";
+// import jscop6heading from "../../assets/jscop6heading2.png";
 
 const Homepage = () => {
   const videoRef = useRef();

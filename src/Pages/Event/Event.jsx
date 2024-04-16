@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom"; // Import useNavigate and Link
 import "./Events.css";
 import "./Events.scss";
-import photo from "./Code-of-duty.jpeg";
-import Detail from "./EventsData.js";
+// import photo from "./Code-of-duty.jpeg";
+import Detail from '../../assets/Data/EventsData'
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 

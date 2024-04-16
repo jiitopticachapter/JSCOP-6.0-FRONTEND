@@ -64,6 +64,20 @@
   cursor: pointer;
 }
 
+.navbarregistorbutton {
+  text-decoration: none;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  /* margin-top: 10px; */
+  padding: 6px 10px;
+  width: fit-content;
+  cursor: pointer;
+  /* padding: 2rem 2.5rem; */
+  border-radius: 0.5rem;
+  background: black;
+}
+
 @media (max-width: 768px) {
   .NavbarComponent {
     display: none;

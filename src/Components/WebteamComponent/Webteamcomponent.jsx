@@ -1,7 +1,7 @@
 // WebTeamComponent.js
 import React from "react";
 import Webteam from "../../Pages/Webteam/Webteam"; // Import the Webteam component
-import WebTeamData from "../../oldassets/Data/WebTeamdata"; // Import the WebTeamData array
+import WebTeamData from "../../assets/Data/WebTeamdata"; // Import the WebTeamData array
 import './WebteamComponent.css';
 
 const WebTeamComponent = () => {

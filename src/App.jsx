@@ -8,10 +8,10 @@ import { useState, useEffect } from "react";
 import Layout from "./Pages/Layout/Layout.jsx";
 // import Team from "./Pages/Team/Team.jsx";
 import Loader from "./Pages/Loader/Loader.jsx";
-import Webteam from "./Pages/Webteam/Webteam.jsx";
+// import Webteam from "./Pages/Webteam/Webteam.jsx";
 import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
-import About from "./Pages/About/About.jsx";
+// import About from "./Pages/About/About.jsx";
 import RegisterForm from "./Components/Register/RegisterForm.jsx";
 
 function App() {
