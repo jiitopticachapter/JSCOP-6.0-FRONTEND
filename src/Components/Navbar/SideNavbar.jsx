@@ -10,7 +10,7 @@ const Sidenav = () => {
     { name: "Events", path: "events" },
     { name: "Timeline", path: "timeline" },
     { name: "Web Team", path: "webteam" },
-
+    { name: "Register", path: "register" },
   ]);
 
   var currentURL = window.location.href;
@@ -45,7 +45,8 @@ const Sidenav = () => {
           return (
             <div className="sidenavbarsections" key={index}>
               <a
-                className="sidelink nav-link"
+                id={item.name === "Register" ? "sidenav-register" : ""}
+                className="sidelink nav-link sidenav-all-btn"
                 href={`#${item.path}`}
                 onClick={closeNav}
               >
@@ -55,6 +56,7 @@ const Sidenav = () => {
             </div>
           );
         })}
+        {/* <button className="navbarregistorbutton">REGISTER NOW</button> */}
       </div>
 
       <span
