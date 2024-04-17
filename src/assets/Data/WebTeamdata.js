@@ -143,7 +143,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/ansh-kilhor-b875b224a",
   },
   {
-    photo: "/images/Webteamimages/kaavyaberniwal.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
     name: "Kaavya",
     surname: "Baranwal",
     designation: "Technical Head",
