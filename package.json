@@ -19,7 +19,6 @@
     "@merc/react-timeline": "^0.1.42",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
-    "framer": "^2.4.1",
     "framer-motion": "^11.1.3",
     "motion": "^10.17.0",
     "react": "^18.2.0",
