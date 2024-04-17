@@ -12,7 +12,7 @@ const WebTeamData = [
   {
     name: "Kaavya",
     surname: "Beniwal",
-    photo: "/images/Webteamimages/kaavyaberniwal.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
     insta: "https://www.instagram.com/kaavyabaranwal?igsh=aWlma2J2bHRpNTl3",
     linkedin:
       "https://www.linkedin.com/in/kaavya-baranwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -21,7 +21,7 @@ const WebTeamData = [
   {
     name: "Teesha",
     surname: "Kakkar",
-    photo: "/images/Webteamimages/teesha.jpg",
+    photo: "/images/Webteamimages/teeshanew.jpg",
     insta: "https://www.instagram.com/tee_sha_14?igsh=NHY1a2RsMHQ2cGRu",
     linkedin: "https://www.linkedin.com/in/teesha-kakkar-7283b6264",
     designation: "Tech Volunteer",
@@ -29,14 +29,14 @@ const WebTeamData = [
   {
     name: "Nandini",
     surname: "Jindal",
-    photo: "/images/Webteamimages/Nandini.jpeg",
+    photo: "/images/Webteamimages/Nandininew.jpeg",
     linkedin: "https://www.linkedin.com/in/nandini-jindal-33a3a7282/",
     designation: "Tech Volunteer",
   },
   {
     name: "Yash",
     surname: "Mittal",
-    photo: "/images/Webteamimages/YashMittal.jpeg",
+    photo: "/images/Webteamimages/YashMittalnew.jpeg",
     insta: "https://www.instagram.com/yashmittal_05?igsh=MXI2MGR4YWhwZnQ5Yw==",
     linkedin: "https://www.linkedin.com/in/yash-mittal-433307251/",
     designation: "Tech Volunteer",
@@ -45,7 +45,7 @@ const WebTeamData = [
   {
     name: "Kartik",
     surname: "Aggarwal",
-    photo: "/images/Webteamimages/kartik.jpg",
+    photo: "/images/Webteamimages/kartiknew.jpg",
     linkedin:
       "https://www.linkedin.com/in/kartik-aggarwal-951a6a194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/hii__kartik?igsh=dGNncHFpaWdsdjc2",
@@ -54,7 +54,7 @@ const WebTeamData = [
   {
     name: "Rajat",
     surname: "Bhati",
-    photo: "/images/Webteamimages/RajatBhati.jpg",
+    photo: "/images/Webteamimages/RajatBhatinew.jpg",
     linkedin: "https://www.linkedin.com/in/rajat-bhati-6a2114216/",
     insta: "https://www.instagram.com/rajat___.13?igsh=NWVpaWxxMzRpc2ht",
     designation: "Tech Volunteer",
@@ -62,7 +62,7 @@ const WebTeamData = [
   {
     name: "Rishika",
     surname: "Aggarwal",
-    photo: "/images/Webteamimages/Rishika.jpg",
+    photo: "/images/Webteamimages/Rishikanew.jpg",
     linkedin: "https://www.linkedin.com/in/rishika-aggarwal-462b2a280",
     insta: "https://www.instagram.com/rishika_772713/",
     designation: "Tech Volunteer",
@@ -78,7 +78,7 @@ const WebTeamData = [
   {
     name: "Kshitij",
     surname: "Gupta",
-    photo: "/images/Webteamimages/ksitij.jpeg",
+    photo: "/images/Webteamimages/ksitijnew.jpeg",
     linkedin: "https://www.linkedin.com/in/kshitijgupta0707/",
     insta: "https://www.instagram.com/iamkshitijm?igsh=MTZzenp0OGxoa3AzNg==",
     designation: "Tech Volunteer",
@@ -143,7 +143,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/ansh-kilhor-b875b224a",
   },
   {
-    photo: "/images/Webteamimages/kaavyaberniwal.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
     name: "Kaavya",
     surname: "Baranwal",
     designation: "Technical Head",
