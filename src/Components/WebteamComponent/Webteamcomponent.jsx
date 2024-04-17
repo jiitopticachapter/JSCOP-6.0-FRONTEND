@@ -19,9 +19,9 @@ const WebTeamComponent = () => {
     }
   }
   return (
-    <div id="webteam">
+    <div id="team">
       <div className="webteamheading">
-        <h1>OUR TEAM</h1>
+        <h1>OUR WEB TEAM</h1>
         <br />
         <br />
         <div id="tlbtndiv1" className="tlbtndiv">

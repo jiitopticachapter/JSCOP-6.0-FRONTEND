@@ -13,34 +13,50 @@ import WebTeamComponent from "./Components/WebteamComponent/Webteamcomponent.jsx
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 // import About from "./Pages/About/About.jsx";
 import RegisterForm from "./Components/Register/RegisterForm.jsx";
+import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // Start with loading true
+
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
-      setLoading(false);
+      setLoading(false); // Set loading to false after a timeout
     }, 10200);
   }, []);
 
-  // if (loading) {
-  //   return <Loader />;
-  // } else {
-  if (1) {
-    return (
-      <>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Layout />} />
-          <Route path="/:id" element={<EvetDetailPage />} />
-          <Route path="/Webteam" element={<WebTeamComponent />} />
-          <Route path="/register" element={<RegisterForm />} />
-        </Routes>
-        <Footer />
-      </>
-    );
-  }
+  return (
+    <AnimatePresence mode="wait">
+      {loading ? (
+        <motion.div
+          key="loader"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Loader />
+        </motion.div>
+      ) : (
+        <motion.div
+          key="content"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <>
+            <ScrollToTop />
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Layout />} />
+              <Route path="/:id" element={<EvetDetailPage />} />
+              <Route path="/Webteam" element={<WebTeamComponent />} />
+              <Route path="/register" element={<RegisterForm />} />
+            </Routes>
+            <Footer />
+          </>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 }
 
 export default App;

@@ -186,7 +186,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/rijul-raj-660113245/",
   },
   {
-    phot: "/images/coreteamimg/Anshul_Chaturvedi.png",
+    photo: "/images/coreteamimg/Anshul_Chaturvedi.png",
     name: "Anshul",
     surname: "Chaturvedi",
     designation: "Digital Head",

@@ -9,7 +9,7 @@ const Sidenav = () => {
     { name: "Home", path: "/" },
     { name: "Events", path: "events" },
     { name: "Timeline", path: "timeline" },
-    { name: "Web Team", path: "webteam" },
+    { name: "Our Team", path: "team" },
     { name: "Register", path: "register" },
   ]);
 

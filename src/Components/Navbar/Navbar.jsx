@@ -49,8 +49,8 @@ const Navbar = () => {
           <a href="/#timeline">
             <li className="nav-link">TIMELINE</li>
           </a>
-          <a href="#webteam">
-            <li className="nav-link">WEBTEAM</li>
+          <a href="#team">
+            <li className="nav-link">OUR TEAM</li>
           </a>
           <a href="#webteam">
             <li className="nav-link">SPEAKERS</li>
