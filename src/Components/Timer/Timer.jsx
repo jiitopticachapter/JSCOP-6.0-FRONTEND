@@ -21,7 +21,7 @@ const Timer = () => {
 
   function getTimeRemaining() {
     const currentDate = new Date();
-    const targetDate = new Date("2024-03-17T03:44:00"); // Set your target date and time
+    const targetDate = new Date("2024-04-27T09:00:00"); // Set your target date and time
 
     const total = targetDate - currentDate;
     const seconds = Math.floor((total / 1000) % 60);
@@ -50,7 +50,7 @@ const Timer = () => {
           className="time-content"
           style={{ width: "120%", height: "90px", marginLeft: "-10%" }}
         >
-          {/* <div className="time days">
+          <div className="time days">
             <span className="time-number">
               {timeRemaining.days > 0 ? timeRemaining.days : "00"}
             </span>
@@ -73,8 +73,8 @@ const Timer = () => {
               {timeRemaining.seconds > 0 ? timeRemaining.seconds : "00"}
             </span>
             <span className="time-text">seconds</span>
-          </div> */}
-          <h2>COMING SOON ...</h2>
+          </div>
+          {/* <h2>COMING SOON ...</h2> */}
         </div>
       </section>
     </div>

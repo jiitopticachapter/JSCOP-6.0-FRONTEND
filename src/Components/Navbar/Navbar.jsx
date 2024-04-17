@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import jscop6logo from "../../assets/jscop6logo2.png";
+import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
 
 import Sidenav from "./SideNavbar";
 import { Link, NavLink } from "react-router-dom";
@@ -34,34 +34,28 @@ const Navbar = () => {
       <div className={`NavbarComponent `} style={navbarStyle2}>
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
-          <Link to="/">
+          <Link to="/home">
             <img src={jscop6logo} alt="" />
           </Link>
         </div>
         <div className={`NavbarContent `}>
-          <a href="/">
+          <Link to="/home">
             <li className="nav-link">HOME</li>
-          </a>
-          <a href="#aboutus">
-            <li className="nav-link">ABOUT</li>
-          </a>
-          <a href="/#timeline">
-            <li className="nav-link">TIMELINE</li>
-          </a>
-          <a href="#events">
+          </Link>
+          <Link to="/events">
             {" "}
             <li className="nav-link">EVENTS</li>{" "}
-          </a>
-          <a href="#gallery">
-            {" "}
-            <li className="nav-link">GALLERY</li>{" "}
-          </a>
-          <a href="#webteam">
-            <li className="nav-link">WEBTEAM</li>
-          </a>
-          <a href="#contactus">
-            <li className="nav-link">CONTACT</li>
-          </a>
+          </Link>
+          <Link to="/timeline">
+            <li className="nav-link">TIMELINE</li>
+          </Link>
+          <Link to="/team">
+            <li className="nav-link">OUR TEAM</li>
+          </Link>
+          <Link to="/speaker">
+            <li className="nav-link">SPEAKERS</li>
+          </Link>
+          {/* <button className="navbarregistorbutton">REGISTER NOW</button> */}
         </div>
       </div>
 

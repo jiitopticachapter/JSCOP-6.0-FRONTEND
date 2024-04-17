@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom"; // Import useNavigate and 
 import "./Events.css";
 import "./Events.scss";
 import photo from "./Code-of-duty.jpeg";
-import Detail from "./EventsData.js";
+import Detail from "../../assets/Data/EventsData";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -23,7 +23,10 @@ const Event = () => {
                   <h2 className="EventNameHEAD">{item.title}</h2>
                   <div className="tokenInfo">
                     <div className="duration">
-                      <Link to={`/${item.id}`} className="event-btn">
+                      <Link
+                        to={`/eventDetails/${item.id}`}
+                        className="event-btn"
+                      >
                         Read more
                       </Link>
                     </div>

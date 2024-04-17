@@ -14,6 +14,7 @@ const RegisterForm = () => {
     enroll: "",
     batch: "",
     branch: "",
+    enrollmentType: "",
   });
   const formRef = useRef(null);
   const [image, setImage] = useState([]);
@@ -25,11 +26,12 @@ const RegisterForm = () => {
     batch: "",
     branch: "",
     screenshot: "",
+    enrollmentType: "",
   });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-
+    console.log("name: ", name, "value: ", value);
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -56,14 +58,14 @@ const RegisterForm = () => {
     if (file.size > 500000) {
       alert("File size is too large, please upload a file less than 500kb");
     }
-  }
-  const setFileToBase = (file) =>  {
+  };
+  const setFileToBase = (file) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onloadend = () => {
       setImage(reader.result);
-    }
-   }
+    };
+  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -73,6 +75,9 @@ const RegisterForm = () => {
 
     if (!formData.name.trim()) {
       errors.name = "Name is required";
+    }
+    if (!formData.batch.trim()) {
+      errors.batch = "Batch is required";
     }
 
     if (!formData.email.trim()) {
@@ -91,8 +96,8 @@ const RegisterForm = () => {
     if (!formData.enroll.trim()) {
       errors.enroll = "Enrollment number is required";
     }
-    if (!formData.batch.trim()) {
-      errors.batch = "Batch is required";
+    if (!formData.enrollmentType.trim()) {
+      errors.enrollmentType = "Enrollment Type is required";
     }
     if (!formData.branch.trim()) {
       errors.branch = "Branch is required";
@@ -112,40 +117,40 @@ const RegisterForm = () => {
       }
 
       const formDataObj = {
-        data: formData
+        data: formData,
       };
-         const Img = {
-          image: image
-         }
-        const Final = {
-         ...formDataObj,
-          ...Img
-        }
-        console.log(Final);
-    
-        try {
-          let response = await fetch("http://localhost:4000/api/register-new", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(Final),
+      const Img = {
+        image: image,
+      };
+      const Final = {
+        ...formDataObj,
+        ...Img,
+      };
+      console.log(Final);
+
+      try {
+        let response = await fetch("http://localhost:4000/api/register-new", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(Final),
+        });
+        let result = await response.json();
+        setFormData(formData);
+        if (result.code == 200) {
+          console.log("done!!!");
+          setStatus({ succes: true, message: "User Saved successfully!!" });
+        } else {
+          setStatus({
+            succes: false,
+            message: "Something went wrong, please try again later.",
           });
-          let result = await response.json();
-           setFormData(formData);
-            if (result.code == 200) {
-              console.log("done!!!")
-                setStatus({ succes: true, message: 'User Saved successfully!!'});
-            }
-            else {
-                setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-            }
-        } catch (error) {
-          console.error("Error during register:", error);
-          toast.error("An error occured during registration");
         }
-
-
+      } catch (error) {
+        console.error("Error during register:", error);
+        toast.error("An error occured during registration");
+      }
 
       //reset the form
       setFormData({
@@ -382,11 +387,53 @@ const RegisterForm = () => {
                 <p className="error">{formErrors.enroll}</p>
               </div>
 
+              {/* <label htmlFor="phone">
+                Enrollment Type <span className="registernecessary"> * </span>:
+              </label> */}
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <div>
+                  {" "}
+                  <label
+                    style={{ display: "flex", alignItems: "center" }}
+                    htmlFor="dayscholar"
+                  >
+                    <input
+                      type="radio"
+                      id="dayscholar"
+                      name="enrollmentType"
+                      value="dayScholar"
+                      // checked={formData.enrollmentType === "day_scholar"}
+                      onChange={handleInputChange}
+                    />
+                    &nbsp; Day Scholar &nbsp;
+                  </label>
+                </div>
+                &nbsp; &nbsp;
+                <div>
+                  {" "}
+                  <label
+                    style={{ display: "flex", alignItems: "center" }}
+                    htmlFor="hosteller"
+                  >
+                    <input
+                      type="radio"
+                      id="hosteller"
+                      name="enrollmentType"
+                      value="hosteller"
+                      // checked={formData.enrollmentType === "day_scholar"}
+                      onChange={handleInputChange}
+                    />
+                    &nbsp; Hosteller &nbsp;
+                  </label>
+                </div>
+              </div>
+              <p className="error">{formErrors.enrollmentType}</p>
+
               <div>
                 <label htmlFor="batch">
                   Batch <span className="registernecessary"> * </span> :
                 </label>
-                <input
+                {/* <input
                   className="reginput"
                   type="text"
                   id="batch"
@@ -394,7 +441,25 @@ const RegisterForm = () => {
                   placeholder="Enter your batch"
                   value={formData.batch}
                   onChange={handleInputChange}
-                />
+                /> */}
+                <select
+                  className="reginput"
+                  id="batch"
+                  name="batch"
+                  value={formData.batch}
+                  onChange={handleInputChange}
+                  style={{ width: "120px" }}
+                >
+                  <option value="" disabled>
+                    Select Batch
+                  </option>
+                  {/* Generate options for batches from B1 to B14 */}
+                  {[...Array(14)].map((_, index) => (
+                    <option key={`batch-${index + 1}`} value={`B${index + 1}`}>
+                      B{index + 1}
+                    </option>
+                  ))}
+                </select>
                 <p className="error">{formErrors.batch}</p>
               </div>
 

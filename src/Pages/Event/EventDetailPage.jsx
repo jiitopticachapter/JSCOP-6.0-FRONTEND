@@ -7,7 +7,7 @@ import './EventDetailPage.css';
 import photo from './Code-of-duty.jpeg';
 import Team from '../Team/Team';
 import FAQ from './faqtoggle.jsx'; // Import the FAQ component
-import Data from './EventsData'; // Import your events data
+import Data from '../../assets/Data/EventsData.js' // Import your events data
 import Part from './Part.jsx';
 import './faq.css';
 const EventDetailPage = () => {

@@ -1,9 +1,9 @@
 import React from "react";
-import devfolio1 from "./devfolio1.png";
-import filecoin1 from "./filecoin1.png";
-import poygon1 from "./poygon1.png";
-import replit1 from "./replit1.png";
-import solana1 from "./solana1.png";
+import devfolio1 from "../../assets/sponsoresimages/devfolio1.png";
+import filecoin1 from "../../assets/sponsoresimages/filecoin1.png";
+import poygon1 from "../../assets/sponsoresimages/polygon1.png";
+import replit1 from "../../assets/sponsoresimages/replit1.png";
+import solana1 from "../../assets/sponsoresimages/solana1.png";
 import { useEffect } from "react";
 import "./Sponsors.css";
 

@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
-import jscop6logo from "../../assets/jscop6logo2.png";
+import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
 
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
-    { name: "Home", path: "/" },
-    { name: "About", path: "aboutus" },
-    { name: "Events", path: "events" },
-    { name: "Timeline", path: "timeline" },
-    { name: "Web Team", path: "webteam" },
-    { name: "Gallery", path: "gallery" },
-    { name: "Contact Us", path: "contactus" },
+    { name: "Home", path: "/home" },
+    { name: "Events", path: "/events" },
+    { name: "Timeline", path: "/timeline" },
+    { name: "Our Team", path: "/team" },
+    // { name: "Register", path: "/register" },
   ]);
 
   var currentURL = window.location.href;
@@ -34,7 +32,7 @@ const Sidenav = () => {
         style={{ width: `${sidenavWidth}` }}
       >
         {/* <div> */}
-        <Link to="/">
+        <Link to="/home">
           <img src={jscop6logo} alt="" className="sideNavBarLogo" />
         </Link>
         {/* </div> */}
@@ -46,17 +44,19 @@ const Sidenav = () => {
         {sidenavItems.map((item, index) => {
           return (
             <div className="sidenavbarsections" key={index}>
-              <a
-                className="sidelink nav-link"
-                href={`#${item.path}`}
+              <Link
+                id={item.name === "Register" ? "sidenav-register" : ""}
+                className="sidelink nav-link sidenav-all-btn"
+                to={`${item.path}`}
                 onClick={closeNav}
               >
                 {item.name}
-              </a>
+              </Link>
               {/* <hr style={{ color: "white" }} /> */}
             </div>
           );
         })}
+        {/* <button className="navbarregistorbutton">REGISTER NOW</button> */}
       </div>
 
       <span
