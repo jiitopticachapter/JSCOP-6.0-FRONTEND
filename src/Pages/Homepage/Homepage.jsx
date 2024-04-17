@@ -49,7 +49,9 @@ const Homepage = () => {
         </div>
         <div className="home-register-btn-div">
           {/* <Link to="/register"> */}
-          <button className="home-register-btn">Register Now</button>
+          <button className="home-register-btn">
+            Registerations Starting Soon
+          </button>
           {/* </Link> */}
         </div>
         {/* </div> */}

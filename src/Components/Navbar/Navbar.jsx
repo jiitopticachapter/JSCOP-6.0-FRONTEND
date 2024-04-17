@@ -55,7 +55,7 @@ const Navbar = () => {
           <Link to="/speaker">
             <li className="nav-link">SPEAKERS</li>
           </Link>
-          <button className="navbarregistorbutton">REGISTER NOW</button>
+          {/* <button className="navbarregistorbutton">REGISTER NOW</button> */}
         </div>
       </div>
 

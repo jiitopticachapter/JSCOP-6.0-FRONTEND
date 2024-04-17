@@ -27,16 +27,6 @@ const WebTeamComponent = () => {
         <div id="tlbtndiv1" className="tlbtndiv">
           <button
             style={{
-              backgroundColor: reference === 1 ? "white" : "black",
-              color: reference === 1 ? "black" : "white",
-            }}
-            className="tlbtn"
-            onClick={() => showschedule(1)}
-          >
-            Web Team
-          </button>
-          <button
-            style={{
               backgroundColor: reference === 2 ? "white" : "black",
               color: reference === 2 ? "black" : "white",
             }}
@@ -44,6 +34,16 @@ const WebTeamComponent = () => {
             onClick={() => showschedule(2)}
           >
             Core Team
+          </button>
+          <button
+            style={{
+              backgroundColor: reference === 1 ? "white" : "black",
+              color: reference === 1 ? "black" : "white",
+            }}
+            className="tlbtn"
+            onClick={() => showschedule(1)}
+          >
+            Web Team
           </button>
         </div>
       </div>

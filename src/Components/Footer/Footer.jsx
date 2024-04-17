@@ -54,8 +54,11 @@ export default function Footer() {
             <div className="footer-contact">
               <MdEmail fontSize="15px" />
 
-              <a href="mailto:mittalyas1234@gmail.com" className="phone">
-                Email : xyz@gmail.com
+              <a
+                href="mailto:opticastudentchapterjiit@gmail.com"
+                className="phone"
+              >
+                Email : opticastudentchapterjiit@gmail.com
               </a>
             </div>
           </div>

@@ -10,7 +10,7 @@ const Sidenav = () => {
     { name: "Events", path: "/events" },
     { name: "Timeline", path: "/timeline" },
     { name: "Our Team", path: "/team" },
-    { name: "Register", path: "/register" },
+    // { name: "Register", path: "/register" },
   ]);
 
   var currentURL = window.location.href;

@@ -19,7 +19,7 @@ const Event = () => {
             <div className="event-cardss">
               <div className="nft">
                 <div className="mainn">
-                  <img className="tokenImage" src={photo} alt="NFT" />
+                  {/* <img className="tokenImage" src={photo} alt="NFT" />
                   <h2 className="EventNameHEAD">{item.title}</h2>
                   <div className="tokenInfo">
                     <div className="duration">
@@ -30,8 +30,8 @@ const Event = () => {
                         Read more
                       </Link>
                     </div>
-                  </div>
-                  {/* <SkeletonTheme
+                  </div> */}
+                  <SkeletonTheme
                     key={index}
                     color="#e0e0e0"
                     baseColor="#cdcbcb"
@@ -60,7 +60,7 @@ const Event = () => {
                     </div>
                     <br />
                     <br />
-                  </SkeletonTheme> */}
+                  </SkeletonTheme>
                   <hr />
                 </div>
               </div>
