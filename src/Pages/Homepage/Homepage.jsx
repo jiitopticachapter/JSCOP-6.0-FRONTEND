@@ -39,9 +39,9 @@ const Homepage = () => {
           <br />
         </div>
         <div className="home-register-btn-div">
-          {/* <Link to="/register"> */}
+          <Link to="/register">
           <button className="home-register-btn">Register Now</button>
-          {/* </Link> */}
+          </Link>
         </div>
         {/* </div> */}
       </div>
