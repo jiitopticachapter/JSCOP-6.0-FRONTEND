@@ -12,7 +12,7 @@ const WebTeamData = [
   {
     name: "Kaavya",
     surname: "Beniwal",
-    photo: "/images/Webteamimages/kaavyaberniwal.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
     insta: "https://www.instagram.com/kaavyabaranwal?igsh=aWlma2J2bHRpNTl3",
     linkedin:
       "https://www.linkedin.com/in/kaavya-baranwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
