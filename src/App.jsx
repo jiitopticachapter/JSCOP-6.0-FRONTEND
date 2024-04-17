@@ -31,8 +31,8 @@ function App() {
           key="loader"
           initial={{ opacity: 0 }}
           animate={{
-            opacity: 1,
-            color: "white",
+            opacity: 1, 
+            color:'rgb(0,0,0)',
             transition: { duration: 0.2 },
           }}
           exit={{ opacity: 0 }}
