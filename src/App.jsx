@@ -30,7 +30,11 @@ function App() {
         <motion.div
           key="loader"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{
+            opacity: 1,
+            color: "white",
+            transition: { duration: 0.2 },
+          }}
           exit={{ opacity: 0 }}
         >
           <Loader />
@@ -47,8 +51,9 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Layout />} />
-              <Route path="/:id" element={<EvetDetailPage />} />
-              <Route path="/Webteam" element={<WebTeamComponent />} />
+              <Route path="/eventDetails/:id" element={<EvetDetailPage />} />
+              <Route path="/:id" element={<Layout />} />
+              {/* <Route path="/webteam" element={<WebTeamComponent />} /> */}
               <Route path="/register" element={<RegisterForm />} />
             </Routes>
             <Footer />

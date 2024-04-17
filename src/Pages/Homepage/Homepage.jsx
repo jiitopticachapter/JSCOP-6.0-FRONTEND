@@ -1,8 +1,9 @@
 import "./Homepage.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import planet from "../../assets/Homeimages/planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
+import { useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import Astronaut3update from "../../assets/Homeimages/Astronaut3update.png";
 // import jscop6heading from "../../assets/jscop6heading2.png";
@@ -12,8 +13,16 @@ const Homepage = () => {
   const setPlayBack = () => {
     videoRef.current.playbackRate = 2;
   };
+  const { id } = useParams();
+
+  useEffect(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [id]);
   return (
-    <div className="homepage">
+    <div id="home" className="homepage">
       <Stars speed={0.04} />
 
       <img src={planet} alt="planet" className="planet" />

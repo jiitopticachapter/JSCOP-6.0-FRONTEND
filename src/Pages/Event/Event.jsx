@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom"; // Import useNavigate and Link
 import "./Events.css";
 import "./Events.scss";
-// import photo from "./Code-of-duty.jpeg";
-import Detail from '../../assets/Data/EventsData'
+import photo from "./Code-of-duty.jpeg";
+import Detail from "../../assets/Data/EventsData";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -19,16 +19,19 @@ const Event = () => {
             <div className="event-cardss">
               <div className="nft">
                 <div className="mainn">
-                  {/* <img className="tokenImage" src={photo} alt="NFT" />
+                  <img className="tokenImage" src={photo} alt="NFT" />
                   <h2 className="EventNameHEAD">{item.title}</h2>
                   <div className="tokenInfo">
                     <div className="duration">
-                      <Link to={`/${item.id}`} className="event-btn">
+                      <Link
+                        to={`/eventDetails/${item.id}`}
+                        className="event-btn"
+                      >
                         Read more
                       </Link>
                     </div>
-                  </div> */}
-                  <SkeletonTheme
+                  </div>
+                  {/* <SkeletonTheme
                     key={index}
                     color="#e0e0e0"
                     baseColor="#cdcbcb"
@@ -57,7 +60,7 @@ const Event = () => {
                     </div>
                     <br />
                     <br />
-                  </SkeletonTheme>
+                  </SkeletonTheme> */}
                   <hr />
                 </div>
               </div>

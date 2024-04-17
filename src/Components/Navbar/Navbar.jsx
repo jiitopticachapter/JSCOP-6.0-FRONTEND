@@ -34,27 +34,27 @@ const Navbar = () => {
       <div className={`NavbarComponent `} style={navbarStyle2}>
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
-          <Link to="/">
+          <Link to="/home">
             <img src={jscop6logo} alt="" />
           </Link>
         </div>
         <div className={`NavbarContent `}>
-          <a href="/#">
+          <Link to="/home">
             <li className="nav-link">HOME</li>
-          </a>
-          <a href="#events">
+          </Link>
+          <Link to="/events">
             {" "}
             <li className="nav-link">EVENTS</li>{" "}
-          </a>
-          <a href="/#timeline">
+          </Link>
+          <Link to="/timeline">
             <li className="nav-link">TIMELINE</li>
-          </a>
-          <a href="#team">
+          </Link>
+          <Link to="/team">
             <li className="nav-link">OUR TEAM</li>
-          </a>
-          <a href="#webteam">
+          </Link>
+          <Link to="/speaker">
             <li className="nav-link">SPEAKERS</li>
-          </a>
+          </Link>
           <button className="navbarregistorbutton">REGISTER NOW</button>
         </div>
       </div>

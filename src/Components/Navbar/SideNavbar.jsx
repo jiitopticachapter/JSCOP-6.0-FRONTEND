@@ -6,11 +6,11 @@ import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");
   const [sidenavItems, setSidenavItems] = useState([
-    { name: "Home", path: "/" },
-    { name: "Events", path: "events" },
-    { name: "Timeline", path: "timeline" },
-    { name: "Our Team", path: "team" },
-    { name: "Register", path: "register" },
+    { name: "Home", path: "/home" },
+    { name: "Events", path: "/events" },
+    { name: "Timeline", path: "/timeline" },
+    { name: "Our Team", path: "/team" },
+    { name: "Register", path: "/register" },
   ]);
 
   var currentURL = window.location.href;
@@ -32,7 +32,7 @@ const Sidenav = () => {
         style={{ width: `${sidenavWidth}` }}
       >
         {/* <div> */}
-        <Link to="/">
+        <Link to="/home">
           <img src={jscop6logo} alt="" className="sideNavBarLogo" />
         </Link>
         {/* </div> */}
@@ -44,14 +44,14 @@ const Sidenav = () => {
         {sidenavItems.map((item, index) => {
           return (
             <div className="sidenavbarsections" key={index}>
-              <a
+              <Link
                 id={item.name === "Register" ? "sidenav-register" : ""}
                 className="sidelink nav-link sidenav-all-btn"
-                href={`#${item.path}`}
+                to={`${item.path}`}
                 onClick={closeNav}
               >
                 {item.name}
-              </a>
+              </Link>
               {/* <hr style={{ color: "white" }} /> */}
             </div>
           );

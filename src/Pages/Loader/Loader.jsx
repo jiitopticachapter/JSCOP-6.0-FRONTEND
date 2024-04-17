@@ -70,7 +70,7 @@ const Loader = () => {
         </div>
       </div>
       <div className="mid-label">
-        <div className="mid-label__text">
+        <div className="mid-label__text" id="optica_presents">
           JIIT OPTICA <br />
           PRESENTS
         </div>

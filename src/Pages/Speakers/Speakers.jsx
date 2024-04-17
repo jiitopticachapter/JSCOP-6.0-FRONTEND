@@ -6,7 +6,7 @@ import Aman_Tripathi from "./Aman_Tripathi.jpg";
 
 const Speakers = () => {
   return (
-    <div className="speakers">
+    <div className="speakers" id="speaker">
       {" "}
       <h1
         style={{
