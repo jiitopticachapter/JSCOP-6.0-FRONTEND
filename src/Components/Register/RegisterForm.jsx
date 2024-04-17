@@ -31,7 +31,7 @@ const RegisterForm = () => {
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-
+    console.log("name: ", name, "value: ", value);
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -75,6 +75,9 @@ const RegisterForm = () => {
 
     if (!formData.name.trim()) {
       errors.name = "Name is required";
+    }
+    if (!formData.batch.trim()) {
+      errors.batch = "Batch is required";
     }
 
     if (!formData.email.trim()) {
@@ -384,9 +387,9 @@ const RegisterForm = () => {
                 <p className="error">{formErrors.enroll}</p>
               </div>
 
-              <label htmlFor="phone">
+              {/* <label htmlFor="phone">
                 Enrollment Type <span className="registernecessary"> * </span>:
-              </label>
+              </label> */}
               <div style={{ display: "flex", alignItems: "center" }}>
                 <div>
                   {" "}
@@ -394,7 +397,6 @@ const RegisterForm = () => {
                     style={{ display: "flex", alignItems: "center" }}
                     htmlFor="dayscholar"
                   >
-                    Day Scholar &nbsp;
                     <input
                       type="radio"
                       id="dayscholar"
@@ -403,6 +405,7 @@ const RegisterForm = () => {
                       // checked={formData.enrollmentType === "day_scholar"}
                       onChange={handleInputChange}
                     />
+                    &nbsp; Day Scholar &nbsp;
                   </label>
                 </div>
                 &nbsp; &nbsp;
@@ -412,7 +415,6 @@ const RegisterForm = () => {
                     style={{ display: "flex", alignItems: "center" }}
                     htmlFor="hosteller"
                   >
-                    Hosteller &nbsp;
                     <input
                       type="radio"
                       id="hosteller"
@@ -421,6 +423,7 @@ const RegisterForm = () => {
                       // checked={formData.enrollmentType === "day_scholar"}
                       onChange={handleInputChange}
                     />
+                    &nbsp; Hosteller &nbsp;
                   </label>
                 </div>
               </div>
@@ -430,7 +433,7 @@ const RegisterForm = () => {
                 <label htmlFor="batch">
                   Batch <span className="registernecessary"> * </span> :
                 </label>
-                <input
+                {/* <input
                   className="reginput"
                   type="text"
                   id="batch"
@@ -438,7 +441,25 @@ const RegisterForm = () => {
                   placeholder="Enter your batch"
                   value={formData.batch}
                   onChange={handleInputChange}
-                />
+                /> */}
+                <select
+                  className="reginput"
+                  id="batch"
+                  name="batch"
+                  value={formData.batch}
+                  onChange={handleInputChange}
+                  style={{ width: "120px" }}
+                >
+                  <option value="" disabled>
+                    Select Batch
+                  </option>
+                  {/* Generate options for batches from B1 to B14 */}
+                  {[...Array(14)].map((_, index) => (
+                    <option key={`batch-${index + 1}`} value={`B${index + 1}`}>
+                      B{index + 1}
+                    </option>
+                  ))}
+                </select>
                 <p className="error">{formErrors.batch}</p>
               </div>
 
