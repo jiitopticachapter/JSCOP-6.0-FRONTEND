@@ -16,7 +16,7 @@ import RegisterForm from "./Components/Register/RegisterForm.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
-  const [loading, setLoading] = useState(true); // Start with loading true
+  const [loading, setLoading] = useState(false); // Start with loading true
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,7 +32,7 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            color: "rgb(0,0,0)",
+            color: "white",
             transition: { duration: 0.2 },
           }}
           exit={{ opacity: 0 }}

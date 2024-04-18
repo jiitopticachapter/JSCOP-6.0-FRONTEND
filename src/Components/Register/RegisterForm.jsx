@@ -477,15 +477,34 @@ const RegisterForm = () => {
                     <option value={`others`}>others</option>
                   </select>
                 ) : (
-                  <input
-                    className="reginput"
-                    type="text"
-                    id="college"
-                    name="college"
-                    placeholder="Enter your college"
-                    value={formData.college}
-                    onChange={handleInputChange}
-                  />
+                  <div style={{ display: "flex" }}>
+                    <input
+                      className="reginput"
+                      type="text"
+                      id="college"
+                      name="college"
+                      placeholder="Enter your college"
+                      value={formData.college}
+                      onChange={handleInputChange}
+                    />
+                    {/* <select
+                      style={{ width: "15px" }}
+                      className="reginput"
+                      id="college"
+                      name="college"
+                      value={formData.college}
+                      onChange={handleInputChange}
+                    >
+                      <option value="" disabled></option>
+
+                      <option value={`JIIT-62`}>JIIT-62</option>
+                      <option value={`JIIT-128`}>JIIT-128</option>
+                      <option value={`others`}>others</option>
+                    </select> */}
+                    {/* <span style={{ width: "40px" }} className="reginput">
+                      &#8964;
+                    </span> */}
+                  </div>
                 )}
                 <p className="error">{formErrors.college}</p>
               </div>

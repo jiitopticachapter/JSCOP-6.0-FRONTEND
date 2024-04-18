@@ -21,7 +21,7 @@ const Layout = () => {
 
       <WebTeamComponent />
       <Gallery />
-      <Sponsors />
+      {/* <Sponsors /> */}
     </>
   );
 };
