@@ -3,8 +3,8 @@ import "./RegisterForm.scss";
 
 // import { motion } from "framer-motion";
 // import SectionHeader from "../../Components/SectionHeader/SectionHeader";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -165,7 +165,7 @@ const RegisterForm = () => {
   };
   return (
     <>
-      {/* <ToastContainer /> */}
+      <ToastContainer />
       <div className="registerr-header">Register Now</div>
       <div className="RegistrationPage">
         <div className="RegistrationPageSection">
