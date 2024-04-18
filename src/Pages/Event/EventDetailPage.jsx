@@ -66,7 +66,7 @@ const EventDetailPage = () => {
                                 {Data[id - 1].description}
                             </p>
                             <h1>
-                                Team
+                                ORGANISING TEAM
                             </h1>
                             <div>
                                 <Team />
