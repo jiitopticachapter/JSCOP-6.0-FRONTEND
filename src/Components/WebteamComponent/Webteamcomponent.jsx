@@ -1,16 +1,16 @@
-// WebTeamComponent.js
-import React from "react";
-import Webteam from "../../Pages/Webteam/Webteam"; // Import the Webteam component
-import { WebTeamData, CoreTeamData } from "../../assets/Data/WebTeamdata"; // Import the WebTeamData array
+import React, { useState, lazy, Suspense } from "react";
+import { WebTeamData, CoreTeamData } from "../../assets/Data/WebTeamdata";
 import "./WebteamComponent.css";
-import { useState } from "react";
+
+// Lazy loading the Webteam component
+const LazyWebteam = lazy(() => import("../../Pages/Webteam/Webteam"));
 
 const WebTeamComponent = () => {
   const [arr, setArr] = useState(WebTeamData);
   const [reference, setReference] = useState(1);
 
   function showschedule(team) {
-    if (team == 1) {
+    if (team === 1) {
       setArr(WebTeamData);
       setReference(1);
     } else {
@@ -18,6 +18,7 @@ const WebTeamComponent = () => {
       setReference(2);
     }
   }
+
   return (
     <div id="team">
       <div className="webteamheading">
@@ -48,10 +49,13 @@ const WebTeamComponent = () => {
         </div>
       </div>
       <div className="webteam-container">
-        {/* Map over the WebTeamData array and render a Webteam component for each member */}
-        {arr.map((member, index) => (
-          <Webteam key={index} member={member} />
-        ))}
+        {/* Wrap LazyWebteam component with Suspense and specify a fallback */}
+        <Suspense fallback={<div>Loading...</div>}>
+          {/* Map over the WebTeamData array and render a Webteam component for each member */}
+          {arr.map((member, index) => (
+            <LazyWebteam key={index} member={member} />
+          ))}
+        </Suspense>
       </div>
     </div>
   );
