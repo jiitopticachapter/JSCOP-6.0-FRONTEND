@@ -5,6 +5,7 @@ import "./RegisterForm.scss";
 // import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -14,9 +15,11 @@ const RegisterForm = () => {
     enroll: "",
     batch: "",
     branch: "",
+    college: "",
     enrollmentType: "",
   });
   const formRef = useRef(null);
+  const [changeField, setChangeField] = useState(1);
   const [image, setImage] = useState([]);
   const [formErrors, setFormErrors] = useState({
     name: "",
@@ -25,12 +28,22 @@ const RegisterForm = () => {
     enroll: "",
     batch: "",
     branch: "",
+    college: "",
     screenshot: "",
     enrollmentType: "",
   });
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
+    if (name == "college" && value == "others") {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: "",
+      }));
+      setChangeField(0);
+
+      return;
+    }
     console.log("name: ", name, "value: ", value);
     setFormData((prevData) => ({
       ...prevData,
@@ -76,10 +89,12 @@ const RegisterForm = () => {
     if (!formData.name.trim()) {
       errors.name = "Name is required";
     }
-    if (!formData.batch.trim()) {
-      errors.batch = "Batch is required";
+    if (!formData.college.trim()) {
+      errors.college = "College name is required";
     }
-
+    // if (!formData.batch.trim()) {
+    //   errors.batch = "Batch is required";
+    // }
     if (!formData.email.trim()) {
       errors.email = "Email is required";
     } else if (
@@ -102,6 +117,9 @@ const RegisterForm = () => {
     if (!formData.branch.trim()) {
       errors.branch = "Branch is required";
     }
+    if (!/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9])$/.test(formData.batch)) {
+      errors.batch = "Invalid batch format";
+    }
 
     setFormErrors(errors);
 
@@ -113,7 +131,7 @@ const RegisterForm = () => {
         //   position: toast.POSITION.TOP_CENTER,
         //   className: "custom-toast-error",
         // });
-        return; // Stop execution if email exists
+        return;
       }
 
       // const formDataObj = {
@@ -129,23 +147,29 @@ const RegisterForm = () => {
       console.log(Final);
 
       try {
-        let response = await fetch("http://localhost:4000/api/register-new", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(Final),
-        });
-        let result = await response.json();
+        // let response = await fetch(
+        //   "https://temp-jscop-backend-74c1d15b652d.herokuapp.com/api/register-new",
+        //   {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json;charset=utf-8",
+        //     },
+        //     body: JSON.stringify(Final),
+        //   }
+        // );
+
+        // let result = await response.json();
+        let result = await axios.post(
+          `https://temp-jscop-backend-74c1d15b652d.herokuapp.com/api/register-new`,
+          Final
+        );
         setFormData(formData);
-        if (result.code == 200) {
+        if (result.status == 201) {
           console.log("done!!!");
-          setStatus({ succes: true, message: "User Saved successfully!!" });
+
+          toast.success("Registration Completed");
         } else {
-          setStatus({
-            succes: false,
-            message: "Something went wrong, please try again later.",
-          });
+          toast.error("Something went wrong");
         }
       } catch (error) {
         console.error("Error during register:", error);
@@ -160,6 +184,8 @@ const RegisterForm = () => {
         enroll: "",
         batch: "",
         branch: "",
+        college: "",
+        enrollmentType: "",
       });
     }
   };
@@ -430,10 +456,45 @@ const RegisterForm = () => {
               <p className="error">{formErrors.enrollmentType}</p>
 
               <div>
-                <label htmlFor="batch">
-                  Batch <span className="registernecessary"> * </span> :
+                <label htmlFor="college">
+                  College <span className="registernecessary"> * </span> :
                 </label>
-                {/* <input
+                {/* */}
+                {changeField ? (
+                  <select
+                    className="reginput"
+                    id="college"
+                    name="college"
+                    value={formData.college}
+                    onChange={handleInputChange}
+                  >
+                    <option value="" disabled>
+                      Select College
+                    </option>
+
+                    <option value={`JIIT-62`}>JIIT-62</option>
+                    <option value={`JIIT-128`}>JIIT-128</option>
+                    <option value={`others`}>others</option>
+                  </select>
+                ) : (
+                  <input
+                    className="reginput"
+                    type="text"
+                    id="college"
+                    name="college"
+                    placeholder="Enter your college"
+                    value={formData.college}
+                    onChange={handleInputChange}
+                  />
+                )}
+                <p className="error">{formErrors.college}</p>
+              </div>
+
+              <div>
+                <label htmlFor="batch">
+                  Batch <span className="registernecessary"> </span> :
+                </label>
+                <input
                   className="reginput"
                   type="text"
                   id="batch"
@@ -441,8 +502,8 @@ const RegisterForm = () => {
                   placeholder="Enter your batch"
                   value={formData.batch}
                   onChange={handleInputChange}
-                /> */}
-                <select
+                />
+                {/* <select
                   className="reginput"
                   id="batch"
                   name="batch"
@@ -453,13 +514,13 @@ const RegisterForm = () => {
                   <option value="" disabled>
                     Select Batch
                   </option>
-                  {/* Generate options for batches from B1 to B14 */}
+                  
                   {[...Array(14)].map((_, index) => (
                     <option key={`batch-${index + 1}`} value={`B${index + 1}`}>
                       B{index + 1}
                     </option>
                   ))}
-                </select>
+                </select> */}
                 <p className="error">{formErrors.batch}</p>
               </div>
 
