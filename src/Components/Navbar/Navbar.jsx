@@ -55,7 +55,9 @@ const Navbar = () => {
           <Link to="/speaker">
             <li className="nav-link">SPEAKERS</li>
           </Link>
-          {/* <button className="navbarregistorbutton">REGISTER NOW</button> */}
+          <Link to="/register">
+            <button className="navbarregistorbutton">REGISTER NOW</button>
+          </Link>
         </div>
       </div>
 
