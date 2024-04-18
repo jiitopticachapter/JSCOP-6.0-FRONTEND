@@ -116,14 +116,14 @@ const RegisterForm = () => {
         return; // Stop execution if email exists
       }
 
-      const formDataObj = {
-        data: formData,
-      };
+      // const formDataObj = {
+      //   data: formData,
+      // };
       const Img = {
         image: image,
       };
       const Final = {
-        ...formDataObj,
+        ...formData,
         ...Img,
       };
       console.log(Final);
