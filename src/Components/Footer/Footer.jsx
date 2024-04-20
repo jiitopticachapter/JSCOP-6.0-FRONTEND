@@ -112,7 +112,7 @@ export default function Footer() {
           backgroundColor: "rgba(0,0,0,1)",
         }}
       >
-        &copy;&nbsp; Copyright : JIIT OPTICA Chapter | All Rights Reserved
+        Copyright &copy; &nbsp;: JIIT OPTICA Chapter | All Rights Reserved
       </div>
     </div>
   );
