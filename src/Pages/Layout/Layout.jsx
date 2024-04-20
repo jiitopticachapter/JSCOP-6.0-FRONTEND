@@ -6,7 +6,6 @@ import Gallery from "../Gallery/Gallery";
 import Timeline from "../Timeline/Timeline";
 // import Webteam from "../Webteam/Webteam";
 import WebTeamComponent from "../../Components/WebteamComponent/Webteamcomponent";
-import Sponsors from "../Sponsors/Sponsors";
 import Speakers from "../Speakers/Speakers";
 // import NFTCard from "../../Components/Events/Events";
 const Layout = () => {
@@ -21,7 +20,6 @@ const Layout = () => {
 
       <WebTeamComponent />
       <Gallery />
-      {/* <Sponsors /> */}
     </>
   );
 };

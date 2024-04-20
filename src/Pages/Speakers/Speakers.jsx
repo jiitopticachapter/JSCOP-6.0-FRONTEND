@@ -2,11 +2,11 @@ import React from "react";
 import "./Speakers.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import Aman_Tripathi from "./Aman_Tripathi.jpg";
+// import Aman_Tripathi from "./Aman_Tripathi.jpg";
 
 const Speakers = () => {
   return (
-    <div className="speakers" id="speaker">
+    <div className="speakers" style={{ paddingTop: "30px" }} id="speaker">
       {" "}
       <h1
         style={{

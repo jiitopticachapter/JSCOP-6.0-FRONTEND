@@ -21,7 +21,7 @@ const Timer = () => {
 
   function getTimeRemaining() {
     const currentDate = new Date();
-    const targetDate = new Date("2024-04-27T09:00:00"); // Set your target date and time
+    const targetDate = new Date("2024-04-27T10:00:00"); // Set your target date and time
 
     const total = targetDate - currentDate;
     const seconds = Math.floor((total / 1000) % 60);

@@ -12,7 +12,7 @@ const WebTeamData = [
   {
     name: "Kaavya",
     surname: "Beniwal",
-    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.jpeg",
     insta: "https://www.instagram.com/kaavyabaranwal?igsh=aWlma2J2bHRpNTl3",
     linkedin:
       "https://www.linkedin.com/in/kaavya-baranwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -45,7 +45,7 @@ const WebTeamData = [
   {
     name: "Kartik",
     surname: "Aggarwal",
-    photo: "/images/Webteamimages/kartiknew.jpg",
+    photo: "/images/Webteamimages/kartiknew.jpeg",
     linkedin:
       "https://www.linkedin.com/in/kartik-aggarwal-951a6a194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/hii__kartik?igsh=dGNncHFpaWdsdjc2",
@@ -86,7 +86,7 @@ const WebTeamData = [
   {
     name: "Ayush",
     surname: "Tomar",
-    photo: "/images/Webteamimages/AyushTomar.jpg",
+    photo: "/images/Webteamimages/AyushTomar.jpeg",
     linkedin:
       "https://www.linkedin.com/in/ayush-kumar-tomar-a1a368270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/tomar_ayush?igsh=NDYweTBwM3NnOGNw",
@@ -95,7 +95,7 @@ const WebTeamData = [
 ];
 const CoreTeamData = [
   {
-    photo: "/images/coreteamimg/Aman_Tripathi.jpg",
+    photo: "/images/coreteamimg/Aman_Tripathi.jpeg",
     name: "Aman",
     surname: "Tripathi",
     designation: "President",
@@ -143,7 +143,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/ansh-kilhor-b875b224a",
   },
   {
-    photo: "/images/Webteamimages/kaavyaberniwalnew.png",
+    photo: "/images/Webteamimages/kaavyaberniwalnew.jpeg",
     name: "Kaavya",
     surname: "Baranwal",
     designation: "Technical Head",

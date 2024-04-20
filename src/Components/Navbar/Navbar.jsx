@@ -49,15 +49,16 @@ const Navbar = () => {
           <Link to="/timeline">
             <li className="nav-link">TIMELINE</li>
           </Link>
-          <Link to="/team">
-            <li className="nav-link">OUR TEAM</li>
-          </Link>
           <Link to="/speaker">
             <li className="nav-link">SPEAKERS</li>
           </Link>
-          <Link to="/register">
-            <button className="navbarregistorbutton">REGISTER NOW</button>
+          <Link to="/team">
+            <li className="nav-link">OUR TEAM</li>
           </Link>
+
+          {/* <Link to="/register">
+            <button className="navbarregistorbutton">REGISTER NOW</button>
+          </Link> */}
         </div>
       </div>
 
