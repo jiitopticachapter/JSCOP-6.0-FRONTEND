@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Timeline.css";
 import Tiline from "./Tline.jsx";
 
-
 function Timeline() {
   let arr1 = [
     {
@@ -82,14 +81,12 @@ function Timeline() {
 
           <Tiline arr={arr1} />
 
-          <div id="tlbtndiv2" className="tlbtndiv">
-            {/* <a href="./day1.png" download> */}
+          {/* <div id="tlbtndiv2" className="tlbtndiv">
+            <a href="./day1.png" download>
             <button className="tlbtn tlbtn2">Download Schedule</button>
-            {/* </a> */}
-            {/* <a href="./day2.png" download> */}
-            {/* <button className="tlbtn tlbtn2">Download Day-2 Schedule</button> */}
-            {/* </a> */}
-          </div>
+            </a>
+           
+          </div> */}
         </div>
       </div>
     </div>

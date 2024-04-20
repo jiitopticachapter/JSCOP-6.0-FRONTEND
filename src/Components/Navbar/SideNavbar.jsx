@@ -9,6 +9,7 @@ const Sidenav = () => {
     { name: "Home", path: "/home" },
     { name: "Events", path: "/events" },
     { name: "Timeline", path: "/timeline" },
+    { name: "Speakers", path: "/speaker" },
     { name: "Our Team", path: "/team" },
     // { name: "Register", path: "/register" },
   ]);
@@ -56,14 +57,14 @@ const Sidenav = () => {
             </div>
           );
         })}
-        <Link to="/register">
+        {/* <Link to="/register">
           <br />
           <div style={{ textAlign: "center" }}>
             <button className="navbarregistorbutton" onClick={closeNav}>
               REGISTER NOW
             </button>
           </div>
-        </Link>
+        </Link> */}
       </div>
 
       <span

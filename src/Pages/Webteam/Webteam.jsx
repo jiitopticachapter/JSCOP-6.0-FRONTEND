@@ -21,9 +21,11 @@ const Webteam = ({ member }) => {
             <a href={member.linkedin}>
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href={member.insta}>
-              <i className="fab fa-instagram"></i>
-            </a>
+            {member.insta && (
+              <a href={member.insta}>
+                <i className="fab fa-instagram"></i>
+              </a>
+            )}
           </div>
         </div>
       </div>
