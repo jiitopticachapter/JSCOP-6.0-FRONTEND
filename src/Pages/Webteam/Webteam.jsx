@@ -14,10 +14,19 @@ const Webteam = ({ member }) => {
       <img src={member.photo} alt={member.name} style={photoStyle} />
       <div className="hero-description" style={heroDescriptionStyle}>
         <div>
-          <h2 style={{ textAlign: "center" }}>{member.name}</h2>
-          <h2 style={{ textAlign: "center" }}>{member.surname}</h2>
-          <p style={{ textAlign: "center" }}>{member.designation}</p>
-          <div className="social-links webteam-icons">
+          <h2 style={{ textAlign: "center", fontSize: "17px" }}>
+            {member.name}
+          </h2>
+          <h2 style={{ textAlign: "center", fontSize: "17px" }}>
+            {member.surname}
+          </h2>
+          <p style={{ textAlign: "center", fontSize: "12px" }}>
+            {member.designation}
+          </p>
+          <div
+            style={{ left: "-120px", top: "28px" }}
+            className="social-links webteam-icons"
+          >
             <a href={member.linkedin}>
               <i className="fab fa-linkedin"></i>
             </a>
@@ -36,9 +45,9 @@ const Webteam = ({ member }) => {
 const heroStyle = {
   display: "inline-block",
   position: "relative",
-  width: "300px",
-  minWidth: "300px",
-  height: "300px",
+  width: "250px",
+  minWidth: "250px",
+  height: "250px",
   borderRadius: "30px",
   overflow: "hidden",
   boxShadow: "5px 5px 30px rgba(0, 0, 0, 0.3)",

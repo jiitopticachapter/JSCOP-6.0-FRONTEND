@@ -25,10 +25,10 @@ export default function Gallery() {
           <img src={image8} alt="" />
           <img src={image9} alt="" />
           <img src={image10} alt="" />
-          <img src={image11} alt="" />
+          <img src={image14} alt="" />
           <img src={image12} alt="" />
           <img src={image13} alt="" />
-          <img src={image14} alt="" />
+          <img src={image11} alt="" />
           <img src={image22} alt="" />
         </div>
       </div>
