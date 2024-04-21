@@ -11,7 +11,7 @@ const WebTeamData = [
 
   {
     name: "Kaavya",
-    surname: "Beniwal",
+    surname: "Baranwal",
     photo: "/images/Webteamimages/kaavyaberniwalnew.jpeg",
     insta: "https://www.instagram.com/kaavyabaranwal?igsh=aWlma2J2bHRpNTl3",
     linkedin:
