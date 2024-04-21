@@ -122,7 +122,7 @@ const CoreTeamData = [
         photo: "/images/coreteamimg/Anukriti_Mishra.jpg",
         name: "Anukriti",
         surname: "Mishra",
-        degisnation: "Secretary",
+        designation: "Secretary",
         insta: "https://www.instagram.com/anukriti_mishra._/",
         linkedin: "https://www.linkedin.com/in/anukriti-mishra16",
     },
