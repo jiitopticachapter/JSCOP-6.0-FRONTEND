@@ -38,7 +38,7 @@ const Homepage = () => {
           <span className="six-point-zero"> 6.0</span>
         </div>
         <div className="home-heading-inner2">
-          JIIT STUDENTS CONFERENCE FOR OPTICS AND PHOTONICS
+          JIIT STUDENTS CONFERENCE ON OPTICS AND PHOTONICS
         </div>
         <div className="home-break">
           <br />

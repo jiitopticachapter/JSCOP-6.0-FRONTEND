@@ -14,8 +14,12 @@ const Webteam = ({ member }) => {
       <img src={member.photo} alt={member.name} style={photoStyle} />
       <div className="hero-description" style={heroDescriptionStyle}>
         <div>
-          <h2 style={{ textAlign: "center" }}>{member.name}</h2>
-          <h2 style={{ textAlign: "center" }}>{member.surname}</h2>
+          <h2 style={{ textAlign: "center", fontSize: "20px" }}>
+            {member.name}
+          </h2>
+          <h2 style={{ textAlign: "center", fontSize: "20px" }}>
+            {member.surname}
+          </h2>
           <p style={{ textAlign: "center" }}>{member.designation}</p>
           <div className="social-links webteam-icons">
             <a href={member.linkedin}>

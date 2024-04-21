@@ -120,8 +120,9 @@ const CoreTeamData = [
   },
   {
     photo: "/images/coreteamimg/Anukriti_Mishra.jpg",
-    name: "Anukriti Mishra",
-    surname: "Secratary",
+    name: "Anukriti ",
+    surname: "Mishra",
+    designation: "Secretary",
     insta: "https://www.instagram.com/anukriti_mishra._/",
     linkedin: "https://www.linkedin.com/in/anukriti-mishra16",
   },
