@@ -50,7 +50,7 @@ const Homepage = () => {
         <div className="home-register-btn-div">
           {/* <Link to="/register"> */}
           <button className="home-register-btn">
-            Registerations Starting Soon
+            Registrations Starting Soon
           </button>
           {/* </Link> */}
         </div>
