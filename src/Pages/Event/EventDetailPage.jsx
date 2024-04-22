@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { BsTrophyFill } from "react-icons/bs";
+// import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaClock } from "react-icons/fa";
 import './EventDetailPage.css';
 import photo from './Code-of-duty.jpeg';
 import Team from '../Team/Team';
@@ -42,14 +43,16 @@ const EventDetailPage = () => {
                             <img src={photo} alt="" />
                         </div>
                         <div className='container-buttons'>
-                            <button className='container-button1'>Register</button>
+
+                            <button className='container-button1'> <a className='container-link' href={Data[id - 1].register_link} target="_blank" rel="noopener noreferrer">Register</a></button>
+
                             <button className='container-button1'>Rules</button>
                         </div>
                     </div>
                     <div className='container-part-second'>
                         <div className='container-part-text1'>
                             <div className='container-part-secondicons'>
-                                <BsTrophyFill /> 50000
+                                <FaClock /> {Data[id - 1].time}
                             </div>
                             <div className='container-part-secondicons'>
                                 <SlCalender />  {Data[id - 1].date}
@@ -69,7 +72,7 @@ const EventDetailPage = () => {
                                 ORGANISING TEAM
                             </h1>
                             <div>
-                                <Team />
+                                <Team id={id - 1} />
                             </div>
                             <h1>FAQS</h1>
                             <div className="FAQS">
