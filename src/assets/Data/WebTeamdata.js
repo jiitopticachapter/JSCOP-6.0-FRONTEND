@@ -92,6 +92,16 @@ const WebTeamData = [
     insta: "https://www.instagram.com/tomar_ayush?igsh=NDYweTBwM3NnOGNw",
     designation: "Tech Volunteer",
   },
+  {
+    name: "Arnav",
+    surname: "Goyal",
+    photo: "/images/Webteamimages/arnav.jpeg",
+    linkedin:
+      "https://www.linkedin.com/in/arnav-goyal-1a26ba123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    insta:
+      "https://www.instagram.com/mee_arnavv?utm_source=qr&igsh=MXIwYnYyeDJmdnBo",
+    designation: "Tech Volunteer",
+  },
 ];
 const CoreTeamData = [
   {
