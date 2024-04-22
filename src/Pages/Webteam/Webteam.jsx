@@ -2,6 +2,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./Webteam.css";
+
 const Webteam = ({ member }) => {
   return (
     <div className="first hero web-member-card" style={heroStyle}>
@@ -11,7 +12,12 @@ const Webteam = ({ member }) => {
         style={heroDescriptionBackground}
       ></div>
       {/* </div> */}
-      <img src={member.photo} alt={member.name} style={photoStyle} />
+      <img
+        src={member.photo}
+        loading="lazy"
+        alt={member.name}
+        style={photoStyle}
+      />
       <div className="hero-description" style={heroDescriptionStyle}>
         <div>
           <h2 style={{ textAlign: "center", fontSize: "17px" }}>
