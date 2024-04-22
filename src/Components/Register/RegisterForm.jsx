@@ -166,6 +166,11 @@ const RegisterForm = () => {
       };
       console.log(Final);
 
+      if (batch === "") batch = "Not selected";
+      if (enroll === "") enroll = "Not selected";
+      if (enrollmentType === "") enrollmentType = "Not selected";
+      if (branch === "") branch = "Not selected";
+
       try {
         // let response = await fetch(
         //   "https://temp-jscop-backend-74c1d15b652d.herokuapp.com/api/register-new",
@@ -183,6 +188,7 @@ const RegisterForm = () => {
           `http://172.20.10.2:4000/api/register-new`,
           Final
         );
+        console.log(" result is ", result);
         setFormData(formData);
         if (result.status == 201) {
           console.log("done!!!");
@@ -192,6 +198,9 @@ const RegisterForm = () => {
           toast.error("Something went wrong");
         }
       } catch (error) {
+        if (error.status == 400) {
+          toast.error();
+        }
         console.error("Error during register:", error);
         toast.error("An error occured during registration");
       }
