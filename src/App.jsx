@@ -16,7 +16,7 @@ import RegisterForm from "./Components/Register/RegisterForm.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
-  const [loading, setLoading] = useState(false); // Start with loading true
+  const [loading, setLoading] = useState(true); // Start with loading true
 
   useEffect(() => {
     setTimeout(() => {

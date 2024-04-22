@@ -166,11 +166,6 @@ const RegisterForm = () => {
       };
       console.log(Final);
 
-      if (batch === "") batch = "Not selected";
-      if (enroll === "") enroll = "Not selected";
-      if (enrollmentType === "") enrollmentType = "Not selected";
-      if (branch === "") branch = "Not selected";
-
       try {
         // let response = await fetch(
         //   "https://temp-jscop-backend-74c1d15b652d.herokuapp.com/api/register-new",
@@ -185,7 +180,7 @@ const RegisterForm = () => {
 
         // let result = await response.json();
         let result = await axios.post(
-          `http://172.20.10.2:4000/api/register-new`,
+          `http://143.244.136.203:4000/api/register-new`,
           Final
         );
         console.log(" result is ", result);
