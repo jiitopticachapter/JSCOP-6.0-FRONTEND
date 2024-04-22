@@ -6,6 +6,7 @@ import "./RegisterForm.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import qr from "../../assets/qrimage/qr.jpeg";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ const RegisterForm = () => {
     college: "",
     enrollmentType: "",
   });
+  const [clg, setclg] = useState("");
   const formRef = useRef(null);
   const [changeField, setChangeField] = useState(1);
   const [image, setImage] = useState([]);
@@ -40,9 +42,15 @@ const RegisterForm = () => {
         ...prevData,
         [name]: "",
       }));
+      setclg("others");
       setChangeField(0);
 
       return;
+    }
+    if (name == "college" && (value == "JIIT-62" || value == "JIIT-128")) {
+      setclg("default");
+      // setChangeField(0);
+      // return;
     }
     console.log("name: ", name, "value: ", value);
     setFormData((prevData) => ({
@@ -108,16 +116,28 @@ const RegisterForm = () => {
     } else if (!/^\d{10}$/.test(formData.phone)) {
       errors.phone = "Invalid phone number";
     }
-    if (!formData.enroll.trim()) {
+    if (
+      !formData.enroll.trim() &&
+      (formData.college === "JIIT-62" || formData.college === "JIIT-128")
+    ) {
       errors.enroll = "Enrollment number is required";
     }
-    if (!formData.enrollmentType.trim()) {
+    if (
+      !formData.enrollmentType.trim() &&
+      (formData.college === "JIIT-62" || formData.college === "JIIT-128")
+    ) {
       errors.enrollmentType = "Enrollment Type is required";
     }
-    if (!formData.branch.trim()) {
+    if (
+      !formData.branch.trim() &&
+      (formData.college === "JIIT-62" || formData.college === "JIIT-128")
+    ) {
       errors.branch = "Branch is required";
     }
-    if (!/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9])$/.test(formData.batch)) {
+    if (
+      !/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9])$/.test(formData.batch) &&
+      (formData.college === "JIIT-62" || formData.college === "JIIT-128")
+    ) {
       errors.batch = "Invalid batch format";
     }
 
@@ -160,9 +180,10 @@ const RegisterForm = () => {
 
         // let result = await response.json();
         let result = await axios.post(
-          `https://temp-jscop-backend-74c1d15b652d.herokuapp.com/api/register-new`,
+          `http://143.244.136.203:4000/api/register-new`,
           Final
         );
+        console.log(" result is ", result);
         setFormData(formData);
         if (result.status == 201) {
           console.log("done!!!");
@@ -172,6 +193,9 @@ const RegisterForm = () => {
           toast.error("Something went wrong");
         }
       } catch (error) {
+        if (error.status == 400) {
+          toast.error();
+        }
         console.error("Error during register:", error);
         toast.error("An error occured during registration");
       }
@@ -185,6 +209,7 @@ const RegisterForm = () => {
         batch: "",
         branch: "",
         college: "",
+        clgname: "",
         enrollmentType: "",
       });
     }
@@ -206,94 +231,74 @@ const RegisterForm = () => {
                 </div>
               </div>
               <div className="regisGuidelines">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla atque dolorum ab delectus praesentium soluta labore
-                  aliquid ipsam! Dolor, veniam.
-                </p>
+                <p>Rules for JSCOP 6.0 are as follow :</p>
                 <br />
 
-                <span className="regis-sub-heading">Registration</span>
+                <div
+                  style={{ textAlign: "center" }}
+                  className="regis-sub-heading"
+                >
+                  General Instructions
+                </div>
 
                 <ol style={{ listStyleType: "decimal" }}>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Pariatur, aliquam.
+                  <li style={{ textAlign: "justify" }}>
+                    The registration charges asked are for the the lunch and
+                    refreshments which we will provide.
                   </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Iste, libero quisquam! Eveniet consequatur vitae quisquam?
+                  <li style={{ textAlign: "justify" }}>
+                    Individual event registration can be looked for in the
+                    events section.
                   </li>
 
                   {/* </ol> */}
                   <br />
 
-                  <span className="regis-sub-heading">Entry</span>
+                  <div
+                    style={{ textAlign: "center" }}
+                    className="regis-sub-heading"
+                  >
+                    Registration Process Details
+                  </div>
 
                   {/* <ol style={{ listStyleType: "decimal" }}> */}
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere, maxime!
+                  <li style={{ textAlign: "justify" }}>
+                    Fill your details carefully, specially name, email, phone
+                    number.
                   </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                    blanditiis repellendus nostrum voluptatum molestiae,
-                    temporibus neque incidunt?
+                  <li style={{ textAlign: "justify" }}>
+                    Scan the QR given below and make the payment of Rs.70/- ,
+                    the account holder name is Mridul Sharaswat.
                   </li>
-                  <li>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quod voluptas ullam iure praesentium natus?
+                  <li style={{ textAlign: "justify" }}>
+                    After filling details & putting the screenshot (max size of
+                    500 kb) submit the form.
                   </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos nobis esse aperiam?
+                  <li style={{ textAlign: "justify" }}>
+                    Your payment will be verified and you will recieve
+                    confirmation within next 24 hours through email.
                   </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto modi odio aliquid consectetur distinctio qui rem?
-                    Magnam, natus.
+                  <li style={{ textAlign: "justify" }}>
+                    In case you do not receive any confirmation within next 24
+                    hours you can contact us on whatsapp : 8923969236 or through
+                    mail : opticastudentchapterjiit@gmail.com
                   </li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-
-                  <br />
-
-                  {/* <div className="regis-sub-heading">General</div>
-
-                  <li>
-                    Kindly observe general discipline and decorum. Be mindful of
-                    the classes ongoing during the Literature Fest.
-                  </li>
-                  <li>
-                    Parking at the venue is highly limited. We strongly
-                    encourage attendees to use public transport.
-                  </li>
-                  <li>
-                    Entry to the Statue Lawn, Stadium and the SRCC Main building
-                    is restricted for outsiders.
-                  </li>
-                  <li>
-                    We are aiming for a 100% ecologically sustainable event.
-                    Kindly do not litter in the venue.
-                  </li>
-                  <li>
-                    Please carry your own water bottles to help us further
-                    reduce the ecological footprint of the event.
-                  </li>
-                  <li>
-                    This is an event for appreciation of literature and literary
-                    thought. Therefore, political activity of any kind is highly
-                    prohibited during the course of the festival.
-                  </li>
-                  <li>
-                    For smooth and meaningful functioning of the programme,
-                    kindly follow the instructions as given by the Organizing
-                    team.
-                  </li>
-                  <li>
-                    The discretion of the Organizing team and SRCC over any
-                    issue pertaining to the festival shall be final.
-                  </li> */}
                 </ol>
+                <br />
+                <div
+                  style={{ textAlign: "center" }}
+                  className="regis-sub-heading"
+                >
+                  QR CODE
+                </div>
+                <br />
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <img
+                    src={qr}
+                    style={{ height: "200px", paddingBottom: "16px" }}
+                    alt="qr code"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -397,86 +402,27 @@ const RegisterForm = () => {
               </div> */}
 
               <div>
-                <label htmlFor="enroll">
-                  Enrollment Number
-                  <span className="registernecessary"> * </span>:
-                </label>
-                <input
-                  className="reginput"
-                  type="text"
-                  id="enroll"
-                  name="enroll"
-                  placeholder="Enter your Enrollment number"
-                  value={formData.enroll}
-                  onChange={handleInputChange}
-                />
-                <p className="error">{formErrors.enroll}</p>
-              </div>
-
-              {/* <label htmlFor="phone">
-                Enrollment Type <span className="registernecessary"> * </span>:
-              </label> */}
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <div>
-                  {" "}
-                  <label
-                    style={{ display: "flex", alignItems: "center" }}
-                    htmlFor="dayscholar"
-                  >
-                    <input
-                      type="radio"
-                      id="dayscholar"
-                      name="enrollmentType"
-                      value="dayScholar"
-                      // checked={formData.enrollmentType === "day_scholar"}
-                      onChange={handleInputChange}
-                    />
-                    &nbsp; Day Scholar &nbsp;
-                  </label>
-                </div>
-                &nbsp; &nbsp;
-                <div>
-                  {" "}
-                  <label
-                    style={{ display: "flex", alignItems: "center" }}
-                    htmlFor="hosteller"
-                  >
-                    <input
-                      type="radio"
-                      id="hosteller"
-                      name="enrollmentType"
-                      value="hosteller"
-                      // checked={formData.enrollmentType === "day_scholar"}
-                      onChange={handleInputChange}
-                    />
-                    &nbsp; Hosteller &nbsp;
-                  </label>
-                </div>
-              </div>
-              <p className="error">{formErrors.enrollmentType}</p>
-
-              <div>
                 <label htmlFor="college">
                   College <span className="registernecessary"> * </span> :
                 </label>
                 {/* */}
-                {changeField ? (
-                  <select
-                    className="reginput"
-                    id="college"
-                    name="college"
-                    value={formData.college}
-                    onChange={handleInputChange}
-                  >
-                    <option value="" disabled>
-                      Select College
-                    </option>
 
-                    <option value={`JIIT-62`}>JIIT-62</option>
-                    <option value={`JIIT-128`}>JIIT-128</option>
-                    <option value={`others`}>others</option>
-                  </select>
-                ) : (
+                <select
+                  className="reginput"
+                  id="college"
+                  name="college"
+                  value={formData.college}
+                  onChange={handleInputChange}
+                >
+                  <option value="" disabled>
+                    Select College
+                  </option>
+
+                  <option value={`JIIT-62`}>JIIT-62</option>
+                  <option value={`JIIT-128`}>JIIT-128</option>
+                  <option value={`others`}>others</option>
+                </select>
+                {clg === `others` ? (
                   <div style={{ display: "flex" }}>
                     <input
                       className="reginput"
@@ -487,42 +433,89 @@ const RegisterForm = () => {
                       value={formData.college}
                       onChange={handleInputChange}
                     />
-                    {/* <select
-                      style={{ width: "15px" }}
-                      className="reginput"
-                      id="college"
-                      name="college"
-                      value={formData.college}
-                      onChange={handleInputChange}
-                    >
-                      <option value="" disabled></option>
-
-                      <option value={`JIIT-62`}>JIIT-62</option>
-                      <option value={`JIIT-128`}>JIIT-128</option>
-                      <option value={`others`}>others</option>
-                    </select> */}
-                    {/* <span style={{ width: "40px" }} className="reginput">
-                      &#8964;
-                    </span> */}
                   </div>
+                ) : (
+                  ""
                 )}
                 <p className="error">{formErrors.college}</p>
               </div>
 
-              <div>
-                <label htmlFor="batch">
-                  Batch <span className="registernecessary"> </span> :
-                </label>
-                <input
-                  className="reginput"
-                  type="text"
-                  id="batch"
-                  name="batch"
-                  placeholder="Enter your batch"
-                  value={formData.batch}
-                  onChange={handleInputChange}
-                />
-                {/* <select
+              {/* <label htmlFor="phone">
+                Enrollment Type <span className="registernecessary"> * </span>:
+              </label> */}
+              {formData.college === "JIIT-62" ||
+              formData.college === "JIIT-128" ? (
+                <div>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <div>
+                      {" "}
+                      <label
+                        style={{ display: "flex", alignItems: "center" }}
+                        htmlFor="dayscholar"
+                      >
+                        <input
+                          type="radio"
+                          id="dayscholar"
+                          name="enrollmentType"
+                          value="dayScholar"
+                          // checked={formData.enrollmentType === "day_scholar"}
+                          onChange={handleInputChange}
+                        />
+                        &nbsp; Day Scholar &nbsp;
+                      </label>
+                    </div>
+                    &nbsp; &nbsp;
+                    <div>
+                      {" "}
+                      <label
+                        style={{ display: "flex", alignItems: "center" }}
+                        htmlFor="hosteller"
+                      >
+                        <input
+                          type="radio"
+                          id="hosteller"
+                          name="enrollmentType"
+                          value="hosteller"
+                          // checked={formData.enrollmentType === "day_scholar"}
+                          onChange={handleInputChange}
+                        />
+                        &nbsp; Hosteller &nbsp;
+                      </label>
+                    </div>
+                  </div>
+                  <p className="error">{formErrors.enrollmentType}</p>
+
+                  <div>
+                    <label htmlFor="enroll">
+                      Enrollment Number
+                      <span className="registernecessary"> * </span>:
+                    </label>
+                    <input
+                      className="reginput"
+                      type="text"
+                      id="enroll"
+                      name="enroll"
+                      placeholder="Enter your Enrollment number"
+                      value={formData.enroll}
+                      onChange={handleInputChange}
+                    />
+                    <p className="error">{formErrors.enroll}</p>
+                  </div>
+
+                  <div>
+                    <label htmlFor="batch">
+                      Batch <span className="registernecessary">* </span> :
+                    </label>
+                    <input
+                      className="reginput"
+                      type="text"
+                      id="batch"
+                      name="batch"
+                      placeholder="Enter your batch"
+                      value={formData.batch}
+                      onChange={handleInputChange}
+                    />
+                    {/* <select
                   className="reginput"
                   id="batch"
                   name="batch"
@@ -540,24 +533,28 @@ const RegisterForm = () => {
                     </option>
                   ))}
                 </select> */}
-                <p className="error">{formErrors.batch}</p>
-              </div>
+                    <p className="error">{formErrors.batch}</p>
+                  </div>
 
-              <div>
-                <label htmlFor="branch">
-                  Branch <span className="registernecessary"> * </span>:
-                </label>
-                <input
-                  className="reginput"
-                  type="text"
-                  id="branch"
-                  name="branch"
-                  placeholder="Enter your branch"
-                  value={formData.branch}
-                  onChange={handleInputChange}
-                />
-                <p className="error">{formErrors.branch}</p>
-              </div>
+                  <div>
+                    <label htmlFor="branch">
+                      Branch <span className="registernecessary"> * </span>:
+                    </label>
+                    <input
+                      className="reginput"
+                      type="text"
+                      id="branch"
+                      name="branch"
+                      placeholder="Enter your branch"
+                      value={formData.branch}
+                      onChange={handleInputChange}
+                    />
+                    <p className="error">{formErrors.branch}</p>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
 
               <div>
                 <label htmlFor="screenshot">
