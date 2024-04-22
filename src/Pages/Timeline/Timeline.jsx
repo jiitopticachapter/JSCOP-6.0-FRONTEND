@@ -6,18 +6,52 @@ function Timeline() {
   let arr1 = [
     {
       pic: "",
-      name: "INAUGRATION CEREMONY",
+      name: "INAUGURATION CEREMONY",
       time: "10:00 AM - 10:30 AM",
       venue: "LT-4",
     },
     {
       pic: "",
-      name: "TEA BREAK",
+      name: "Physics Talk",
       time: "10:30 AM - 11:00 AM",
-      venue: "Infront of LT-4",
+      venue: "LT-4",
     },
-    { pic: "", name: "TALK 1", time: "11:00 AM - 12:00 PM", venue: "LT-4" },
-    { pic: "", name: "TALK 2", time: "12:00 PM - 12:45 PM", venue: "LT-4" },
+    {
+      pic: "",
+      name: "Refreshments ",
+      time: "11:30 AM - 12:00 PM",
+      venue: "JBS Atrium",
+    },
+    {
+      pic: "",
+      name: "Physics Talk",
+      time: "12:00 PM - 1:00 PM",
+      venue: "LT-4",
+    },
+    {
+      pic: "",
+      name: "LUNCH ",
+      time: "1:00 PM - 2:30 PM",
+      venue: "Mess Ground floor",
+    },
+    {
+      pic: "",
+      name: " CSE, ECE Event",
+      time: "2:30 PM - 4:00 PM",
+      venue: "CL-01, ADC LAB Respectively",
+    },
+    {
+      pic: "",
+      name: "FUN Event",
+      time: "4:00 PM - 6:00 PM",
+      venue: "JBS Atrium",
+    },
+    {
+      pic: "",
+      name: "Closing ceremony",
+      time: "6:00 PM - 7:00 PM",
+      venue: "Auditorium",
+    },
   ];
 
   // let arr2 = [

@@ -10,13 +10,13 @@ function Tiline({ arr }) {
         {arr.map((item, index) => (
           <article key={index} className="stop">
             <div className="text">
-              {/* <img className="tlimh" src={item.pic} alt="" />
+              {/* <img className="tlimh" src={item.pic} alt="" /> */}
               <header>
                 <h3>{item.name}</h3>
                 <time>{item.time}</time>
                 <br /> {item.venue}
-              </header> */}
-              <SkeletonTheme
+              </header>
+              {/* <SkeletonTheme
                 color="#e0e0e0"
                 baseColor="#cdcbcb"
                 highlightColor="#f5f5f5"
@@ -29,9 +29,8 @@ function Tiline({ arr }) {
                     alignItems: "center",
                   }}
                 >
-                  {/* <div style={{ padding: "20px 30px 0px 0px" }}> */}
                   <Skeleton width={250} height={225} />
-                  {/* </div> */}
+
                   <br />
                   <Skeleton width={240} height={25} />
                   <br />
@@ -44,7 +43,7 @@ function Tiline({ arr }) {
                 </div>
                 <br />
                 <br />
-              </SkeletonTheme>
+              </SkeletonTheme> */}
             </div>
           </article>
         ))}

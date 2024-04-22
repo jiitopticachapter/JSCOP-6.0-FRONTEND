@@ -2,7 +2,8 @@ import React from "react";
 import "./Speakers.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-// import Aman_Tripathi from "./Aman_Tripathi.jpg";
+import bipin from "../../assets/speakerimages/bipin.png";
+import gagan from "../../assets/speakerimages/gagan.png";
 
 const Speakers = () => {
   return (
@@ -26,31 +27,33 @@ const Speakers = () => {
       >
         <div className=" speaker-1 speaker-cardBox">
           <div className=" speaker-card speaker-card-fontsize">
-            {/* <img
-              src={Aman_Tripathi}
+            <img
+              src={gagan}
               className="speaker-image speaker-h2"
               alt="speaker-image"
             />
             <h2
-              className="speaker-h2 speaker-card-fontsize"
+              className="speaker-h2 speaker-h2-name  speaker-card-fontsize"
               style={{ paddingTop: "300px" }}
             >
-              NAME
+              Prof. Gagan Kumar
             </h2>
 
             <div className="speaker-content">
-              <h3 className="speaker-h3">Lorem Ipsum</h3>
-              <h3 className="speaker-h3">Designation</h3>
+              <h4 className="speaker-h3"> Prof. Gagan Kumar</h4>
+              <h4 className="speaker-h3">IIT Guwahati</h4>
               <div className="speaker-p">
-                This is Sachin Samal, your tech mate!!! I love you all. Lets
-                make this world a better place for all of us. Keep
-                prospering...Keep learning!!!
-                <h4 className="speaker-h3">Date : </h4>
-                <h4 className="speaker-h3">Time : </h4>
-                <h4 className="speaker-h3">Venue : </h4>
+                We are more than delighted to announce that Dr Gagan Kumar will
+                be joining us as our guest speaker at JSCOP 6.0. Enhance your
+                knowledge on the topics of microfabrication and nanotechnology
+                as you attend the enriching session with the expert in this
+                field, Dr Gagan Kumar, Associate Professor ai IIT Guwahati.
+                <h5 className="speaker-h5">Date : </h5>
+                <h5 className="speaker-h5">Time : </h5>
+                <h5 className="speaker-h5">Venue : </h5>
               </div>
-            </div> */}
-            <SkeletonTheme
+            </div>
+            {/* <SkeletonTheme
               color="#e0e0e0"
               baseColor="#cdcbcb"
               highlightColor="#f5f5f5"
@@ -76,36 +79,39 @@ const Speakers = () => {
               </div>
               <br />
               <br />
-            </SkeletonTheme>
+            </SkeletonTheme> */}
           </div>
         </div>
         <div className=" speaker-2 speaker-cardBox">
           <div className=" speaker-card speaker-card-fontsize">
-            {/* <img
-              src={Aman_Tripathi}
+            <img
+              src={bipin}
               className="speaker-image speaker-h2"
               alt="speaker-image"
             />
             <h2
-              className="speaker-h2 speaker-card-fontsize"
+              className="speaker-h2 speaker-h2-name speaker-card-fontsize"
               style={{ paddingTop: "300px" }}
             >
-              NAME
+              Dr. Bipin Kumar Gupta
             </h2>
 
             <div className="speaker-content">
-              <h3 className="speaker-h3">Lorem Ipsum</h3>
-              <h3 className="speaker-h3">Designation</h3>
+              <h4 className="speaker-h3"> Dr. Bipin Kumar Gupta</h4>
+              <h4 className="speaker-h3">CSIR NPL</h4>
               <div className="speaker-p">
-                This is Sachin Samal, your tech mate!!! I love you all. Lets
-                make this world a better place for all of us. Keep
-                prospering...Keep learning!!!
-                <h4 className="speaker-h3">Date : </h4>
-                <h4 className="speaker-h3">Time : </h4>
-                <h4 className="speaker-h3">Venue : </h4>
+                We're delighted to announce the distinguished presence of Dr.
+                Bipin Kumar Gupta from CSIR India at JSCOP 6.0. Join us and
+                Prepare to embark on a journey through the realms of
+                microfabrication and nanotechnology as Dr. Gupta, an esteemed
+                Associate Professor, shares his expert insights and expan your
+                knowledge horizon.
+                <h5 className="speaker-h5">Date : </h5>
+                <h5 className="speaker-h5">Time : </h5>
+                <h5 className="speaker-h5">Venue : </h5>
               </div>
-            </div> */}
-            <SkeletonTheme
+            </div>
+            {/* <SkeletonTheme
               color="#e0e0e0"
               baseColor="#cdcbcb"
               highlightColor="#f5f5f5"
@@ -131,7 +137,7 @@ const Speakers = () => {
               </div>
               <br />
               <br />
-            </SkeletonTheme>
+            </SkeletonTheme> */}
           </div>
         </div>
       </div>

@@ -35,11 +35,11 @@
           line-height: normal;
           letter-spacing: 0.0875rem;
           width: 95%;
-          padding-left: 5%;
 
           ol {
             li {
-              margin: 2% 0;
+              margin: 2% 0% 2% 5%;
+              // padding-left: 5% !important;
             }
           }
         }

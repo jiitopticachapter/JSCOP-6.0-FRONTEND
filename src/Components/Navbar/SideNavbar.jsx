@@ -57,14 +57,14 @@ const Sidenav = () => {
             </div>
           );
         })}
-        {/* <Link to="/register">
+        <Link to="/register">
           <br />
           <div style={{ textAlign: "center" }}>
             <button className="navbarregistorbutton" onClick={closeNav}>
               REGISTER NOW
             </button>
           </div>
-        </Link> */}
+        </Link>
       </div>
 
       <span
