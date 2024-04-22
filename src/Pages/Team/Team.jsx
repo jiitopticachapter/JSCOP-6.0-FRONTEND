@@ -1,17 +1,19 @@
 // Team.js
 import React from 'react';
-import MemberData from '../../assets/Data/Teammember.js' // Import your Member data
+import Events from '../../assets/Data/EventsData.js' // Import your Member data
+
 import './Team.css'; // Import your CSS file
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function MemberCard({ member }) {
-    const { img, name, role, social } = member;
+    const { imgsrc, name, role, social } = member;
+
 
     return (
         <div className="member-card">
             <div className="content">
                 <div className="img">
-                    <img src={img} alt={name} />
+                    <img src={imgsrc} />
                 </div>
                 <div className="card-content">
                     <h3>
@@ -40,14 +42,20 @@ function MemberCard({ member }) {
     );
 }
 
-function Team() {
+function Team({ id }) {
+    const team = Events[id].OrgTeam;
+
+
     return (
         <div className="team-container">
+
+
             <div className="team-members">
-                {MemberData.map((member, index) => (
-                    <MemberCard key={index} member={member} />
+                {team.map((member, memberIndex) => (
+                    <MemberCard key={memberIndex} member={member} />
                 ))}
             </div>
+
         </div>
     );
 }
