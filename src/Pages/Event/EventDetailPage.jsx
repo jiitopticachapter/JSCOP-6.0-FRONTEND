@@ -40,13 +40,13 @@ const EventDetailPage = () => {
                 <div className='container'>
                     <div className='container-part-first'>
                         <div className='container-img'>
-                            <img src={photo} alt="" />
+                            <img src={Data[id - 1].imgsrc} alt="" />
                         </div>
                         <div className='container-buttons'>
 
                             <button className='container-button1'> <a className='container-link' href={Data[id - 1].register_link} target="_blank" rel="noopener noreferrer">Register</a></button>
 
-                            <button className='container-button1'>Rules</button>
+                            <button className='container-button1'> <a className='container-link' href={Data[id - 1].rules} target="_blank" rel="noopener noreferrer">Rules</a></button>
                         </div>
                     </div>
                     <div className='container-part-second'>

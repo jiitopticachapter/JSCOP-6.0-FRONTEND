@@ -2,7 +2,7 @@ const Events = [
   {
     id: 1,
     title: "CODE WARS",
-    imgsrc: "https://drive.google.com/uc?export=view&id=1xOkfAxUZlOM3mUNK7ShRffARoAAybKUq",
+    imgsrc: "/images/eventimages/Cseevent.png",
     description: `Dive into the cosmic battlefield of Code Wars with your elite team of 1-3 players.  
     Each challenge conquered represents a planet under your control, propelling your team closer to domination of entire star systems. 
     In this thrilling tournament-style competition, assemble your team, hone your coding skills, and outmaneuver your opponents through multiple rounds and elimination phases. 
@@ -14,7 +14,7 @@ const Events = [
     time: "2:30 - 4:00 PM",
     // deadline: "11-April-2023, 10:00 pm",
     register_link: `https://docs.google.com/forms/d/e/1FAIpQLSeGUTmdfO04crjLv2Btw_NLKS1-6or03u9nkYoxWsOcer6MOQ/viewform`,
-    rules: "https://docs.google.com/document/d/16FQ9ccotl9odfv6eNKsgkIcxLwBdxjdDj2aKFxJ7O0w/edit?usp=sharing",
+    rules: "https://docs.google.com/document/d/17JY0kbyIkRPsboRl9SmMVCxPdsFNONRZ4wPuq2IWBNY/edit?usp=sharing",
     faq: [
       {
         question: "Is there any cost for registration?",
@@ -47,26 +47,20 @@ const Events = [
         role: 'president',
         social: ['https://www.instagram.com/yashmittal_05/', "https://www.linkedin.com/in/yash-mittal-433307251/", 'https://github.com/Geekyash10']
       },
-      {
-        imgsrc: "/images/shreya.jpg",
-        name: "KRISNA DEOL",
-        role: 'president',
-        social: ['https://www.instagram.com/yashmittal_05/', "https://www.linkedin.com/in/yash-mittal-433307251/", 'https://github.com/Geekyash10']
-      },
     ]
   },
   {
     //blind coding
     id: 2,
     title: "ELECTRIFY DASH",
-    imgsrc: "https://drive.google.com/uc?export=view&id=1UP0MKGXiwyM0zwionnPGXnjmQbAsNF2g",
-    description: `"Talk is cheap. Show me your code!"\nAttention all the budding coders!\nAren't you all bored of the monotonous coding routines and wanna exolore something fun?\nHere's your chance as JSCOP 5.0 presents you the Blind Coding Competition in which you have to type the code with your monitors off.\nDoesn't this sound exciting?Yes it is!\nSo what are you waiting for?\nFill the registration form and join us in this crazy fun-filled event and maximize your chances of winning exciting prizes and goodies worth 25k+.\nFurther details will be revealed soon so just gear up!`,
+    imgsrc: "/images/eventimages/Eceevent.jpeg",
+    description: `"Welcome to the Intergalactic Design Challenge Event! In this event, you will be forming teams to design and construct a 3-stage circuit using logic gates and comparators. The goal of this event is to create a circuit that can light up an LED when a certain output is achieved based on the input from the first and second stages. The first stage will use AND, OR, and NOT gates to process the input, the second stage will use an AND/OR/NOT gate to perform the logic operations, and the third stage will include a comparator connected to an LED. Your task is to work as a team to design and build this circuit using components such as wires, resistors, LEDs, and logic gates. This is a great opportunity for you to put your design skills to the test, work with other teams, and have fun as you build and test your circuits. Make sure to follow the safety guidelines provided by the team, and remember to be respectful and supportive of your fellow team members. So, get ready to build, learn, and have a blast at the Intergalactic Design Challenge Event!"`,
     date: "27th April 2023",
-    location: "EDC LAB",
+    location: "ADC LAB",
     time: "2:30 - 4:00 PM",
     // deadline: "14-March-2023,11:59 pm",
     register_link: "https://docs.google.com/forms/d/e/1FAIpQLScows2cJH3FpUBvI9oIXuGgrW-98ivIQlEAj4BV3Vs_5MO6nw/viewform",
-    rules: "https://docs.google.com/document/d/1gT87Tn-DF7Q76PyWmiU0CoGCfOFZD_6ETpiYsD9K1Lw/edit?usp=sharing",
+    rules: "https://docs.google.com/document/d/1XZ58egXMJp2K8ldDEHzaAZIXC-S0EeqBX3GqVBrX-xY/edit?usp=sharing",
     faq: [
       {
         question: "Is this a team event?",
@@ -83,10 +77,10 @@ const Events = [
     ],
     OrgTeam: [
       {
-        imgsrc: "/images/shreya.jpg",
+        imgsrc: "/images/Eventconduct/shantanu.png",
         name: "SHANTANU ",
         role: 'Ece Volunteer',
-        social: ['https://www.instagram.com/shantanu_pandey_108?igsh=c3hxZmswODRsaGt6', "https://www.linkedin.com/in/shantanu-pandey-b0609925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", 'https://github.com/Geekyash10']
+        social: ['https://www.instagram.com/shantanu_pandey_108?igsh=c3hxZmswODRsaGt6', "https://www.linkedin.com/in/shantanu-pandey-b0609925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",]
       },
     ]
 
