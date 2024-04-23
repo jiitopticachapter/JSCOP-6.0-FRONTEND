@@ -27,7 +27,13 @@
 .container-part-first .container-img img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    position: relative;
+    z-index: 200;
 }
+
+
+
 
 .container-buttons {
     width: 50%;
