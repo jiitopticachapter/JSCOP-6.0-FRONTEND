@@ -13,7 +13,7 @@ function Timeline() {
     {
       pic: "",
       name: "Physics Talk",
-      time: "10:30 AM - 11:00 AM",
+      time: "10:30 AM - 11:30 AM",
       venue: "LT-4",
     },
     {
@@ -42,7 +42,7 @@ function Timeline() {
     },
     {
       pic: "",
-      name: "FUN Event",
+      name: "Secret Games",
       time: "4:00 PM - 6:00 PM",
       venue: "JBS Atrium",
     },
