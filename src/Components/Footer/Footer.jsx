@@ -40,13 +40,13 @@ export default function Footer() {
           </a>
           <div className="contact">
             <div className="footer-contact">
-              <FaPhone fontSize="12px" />
+              <FaPhone fontSize="15px" />
               <a className="phone" href="tel:+919116457772">
                 Aman Tripathi : +91 8115610105
               </a>
             </div>
             <div className="footer-contact">
-              <FaPhone fontSize="12px" />
+              <FaPhone fontSize="15px" />
               <a className="phone" href="tel:+919506424755">
                 Harsh Sharma : +91 8383936346
               </a>
@@ -55,6 +55,7 @@ export default function Footer() {
               <MdEmail fontSize="15px" />
 
               <a
+                id="email-footer"
                 href="mailto:opticastudentchapterjiit@gmail.com"
                 className="phone"
               >

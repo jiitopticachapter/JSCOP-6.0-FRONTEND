@@ -42,15 +42,21 @@ const Speakers = () => {
             <div className="speaker-content">
               <h4 className="speaker-h3"> Prof. Gagan Kumar</h4>
               <h4 className="speaker-h3">IIT Guwahati</h4>
-              <div className="speaker-p">
+              <div style={{ textAlign: "left" }} className="speaker-p">
                 We are more than delighted to announce that Dr Gagan Kumar will
                 be joining us as our guest speaker at JSCOP 6.0. Enhance your
                 knowledge on the topics of microfabrication and nanotechnology
                 as you attend the enriching session with the expert in this
                 field, Dr Gagan Kumar, Associate Professor ai IIT Guwahati.
-                <h5 className="speaker-h5">Date : </h5>
-                <h5 className="speaker-h5">Time : </h5>
-                <h5 className="speaker-h5">Venue : </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Date : 27-04-2024
+                </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Time : 10:30 AM - 11:30 AM
+                </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Venue : LT-4
+                </h5>
               </div>
             </div>
             {/* <SkeletonTheme
@@ -99,16 +105,22 @@ const Speakers = () => {
             <div className="speaker-content">
               <h4 className="speaker-h3"> Dr. Bipin Kumar Gupta</h4>
               <h4 className="speaker-h3">CSIR NPL</h4>
-              <div className="speaker-p">
+              <div style={{ textAlign: "left" }} className="speaker-p">
                 We're delighted to announce the distinguished presence of Dr.
                 Bipin Kumar Gupta from CSIR India at JSCOP 6.0. Join us and
                 Prepare to embark on a journey through the realms of
                 microfabrication and nanotechnology as Dr. Gupta, an esteemed
                 Associate Professor, shares his expert insights and expan your
                 knowledge horizon.
-                <h5 className="speaker-h5">Date : </h5>
-                <h5 className="speaker-h5">Time : </h5>
-                <h5 className="speaker-h5">Venue : </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Date : 27-04-2024
+                </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Time : 12:00 AM - 1:00 AM
+                </h5>
+                <h5 style={{ textAlign: "left" }} className="speaker-h5">
+                  Venue : LT-4
+                </h5>
               </div>
             </div>
             {/* <SkeletonTheme

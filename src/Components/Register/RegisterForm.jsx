@@ -37,26 +37,42 @@ const RegisterForm = () => {
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
-    if (name == "college" && value == "others") {
+    // if (name == "clg" && value == "others") {
+    //   setFormData((prevData) => ({
+    //     ...prevData,
+    //     [name]: "",
+    //   }));
+    //   setclg("others");
+    //   setChangeField(0);
+
+    //   return;
+    // }
+    if (name == "clg" && (value == "JIIT-62" || value == "JIIT-128")) {
+      setclg(value);
       setFormData((prevData) => ({
         ...prevData,
-        [name]: "",
+        college: value,
       }));
-      setclg("others");
-      setChangeField(0);
-
       return;
-    }
-    if (name == "college" && (value == "JIIT-62" || value == "JIIT-128")) {
-      setclg("default");
+      // setclg("others");
+      setChangeField(0);
       // setChangeField(0);
       // return;
+    } else if (name == "clg" && value == "others") {
+      setclg("others");
+      setFormData((prevData) => ({
+        ...prevData,
+        college: "",
+      }));
+      return;
     }
     console.log("name: ", name, "value: ", value);
+    // if (name != "clg") {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
+    // }
   };
 
   const checkEmailExists = async (email) => {
@@ -76,8 +92,8 @@ const RegisterForm = () => {
   const handleImage = (f) => {
     const file = f.target.files[0];
     setFileToBase(file);
-    if (file.size > 500000) {
-      alert("File size is too large, please upload a file less than 500kb");
+    if (file.size > 1000000) {
+      alert("File size is too large, please upload a file less than 1MB");
     }
   };
   const setFileToBase = (file) => {
@@ -90,7 +106,7 @@ const RegisterForm = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-
+    // console.log("formdata is : ", formData);
     // Perform form validation
     const errors = {};
 
@@ -193,11 +209,13 @@ const RegisterForm = () => {
           toast.error("Something went wrong");
         }
       } catch (error) {
-        if (error.status == 400) {
-          toast.error();
+        if (error?.response?.data?.msg) {
+          toast.error(error.response.data.msg);
+        } else {
+          toast.error("Something went wrong. Please try again");
         }
-        console.error("Error during register:", error);
-        toast.error("An error occured during registration");
+        // console.error("Error during register:", error);
+        // toast.error("An error occured during registration");
       }
 
       //reset the form
@@ -212,6 +230,7 @@ const RegisterForm = () => {
         clgname: "",
         enrollmentType: "",
       });
+      setclg("");
     }
   };
   return (
@@ -225,14 +244,14 @@ const RegisterForm = () => {
               <div className="RegistrationPageHeader">
                 <div className="RegistrationPageHeaderSectionHeader_text">
                   <div className="RegistrationPageHeaderSectionHeader_text_text-content">
-                    Rules of JSCOP 6.0
+                    Guidelines For JSCOP 6.0
                   </div>
                   <div className="RegistrationPageHeaderUnderline"></div>
                 </div>
               </div>
               <div className="regisGuidelines">
-                <p>Rules for JSCOP 6.0 are as follow :</p>
-                <br />
+                {/* <p>Rules for JSCOP 6.0 are as follow :</p>
+                <br /> */}
 
                 <div
                   style={{ textAlign: "center" }}
@@ -243,12 +262,17 @@ const RegisterForm = () => {
 
                 <ol style={{ listStyleType: "decimal" }}>
                   <li style={{ textAlign: "justify" }}>
-                    The registration charges asked are for the the lunch and
-                    refreshments which we will provide.
+                    The registration charges asked during the registration is
+                    for the lunch and refreshments which will be provided on the
+                    day of the event.
                   </li>
                   <li style={{ textAlign: "justify" }}>
-                    Individual event registration can be looked for in the
-                    events section.
+                    There are limited registrations only for the lunch and
+                    refreshments, forms may close anytime the slots are filled.
+                  </li>
+                  <li style={{ textAlign: "justify" }}>
+                    Individual event registration are free of cost and can be
+                    done from Event section at the home page.
                   </li>
 
                   {/* </ol> */}
@@ -263,25 +287,38 @@ const RegisterForm = () => {
 
                   {/* <ol style={{ listStyleType: "decimal" }}> */}
                   <li style={{ textAlign: "justify" }}>
-                    Fill your details carefully, specially name, email, phone
-                    number.
+                    Fill the form correctly, make the payment of Rs 70/- only by
+                    scanning the QR given below of the account holder named
+                    Mridul Saraswat.
                   </li>
                   <li style={{ textAlign: "justify" }}>
-                    Scan the QR given below and make the payment of Rs.70/- ,
-                    the account holder name is Mridul Sharaswat.
+                    Fill the details accurately, make the payment and than
+                    attach a screenshot of the payment with visible time, date
+                    and the name of the sender in it. In case, if these details
+                    are not present your registration will not be accepted.
                   </li>
                   <li style={{ textAlign: "justify" }}>
-                    After filling details & putting the screenshot (max size of
-                    500 kb) submit the form.
+                    After the form is submitted, within 24 hours you will get a
+                    confirmation mail of the payment recieved and an a QR
+                    attached with it.
                   </li>
                   <li style={{ textAlign: "justify" }}>
-                    Your payment will be verified and you will recieve
-                    confirmation within next 24 hours through email.
+                    The QR is the Lunch coupon which will be required at the
+                    mess.
                   </li>
                   <li style={{ textAlign: "justify" }}>
-                    In case you do not receive any confirmation within next 24
-                    hours you can contact us on whatsapp : 8923969236 or through
-                    mail : opticastudentchapterjiit@gmail.com
+                    Timeline and events can be viewed at the home page.
+                  </li>
+                  {/* <li style={{ textAlign: "justify" }}>
+                    In case of any technical glitch or not receiving the
+                    confirmation mail. You can contact - Mridul Saraswat :
+                    8923969236
+                  </li> */}
+                  <li style={{ textAlign: "justify" }}>
+                    In case you have any query or do not receive any
+                    confirmation within next 24 hours you can contact us on
+                    whatsapp : 8923969236 or through mail :
+                    opticastudentchapterjiit@gmail.com
                   </li>
                 </ol>
                 <br />
@@ -409,9 +446,9 @@ const RegisterForm = () => {
 
                 <select
                   className="reginput"
-                  id="college"
-                  name="college"
-                  value={formData.college}
+                  id="clg"
+                  name="clg"
+                  value={clg}
                   onChange={handleInputChange}
                 >
                   <option value="" disabled>
@@ -429,7 +466,7 @@ const RegisterForm = () => {
                       type="text"
                       id="college"
                       name="college"
-                      placeholder="Enter your college"
+                      placeholder="Enter your college name"
                       value={formData.college}
                       onChange={handleInputChange}
                     />
