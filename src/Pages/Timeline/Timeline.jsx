@@ -32,13 +32,13 @@ function Timeline() {
       pic: "",
       name: "LUNCH ",
       time: "1:00 PM - 2:30 PM",
-      venue: "Mess Ground floor",
+      venue: "Annapurna",
     },
     {
       pic: "",
       name: " CSE, ECE Event",
       time: "2:30 PM - 4:00 PM",
-      venue: "CL-01, ADC LAB Respectively",
+      venue: "CL-01, EDC LAB Respectively",
     },
     {
       pic: "",
