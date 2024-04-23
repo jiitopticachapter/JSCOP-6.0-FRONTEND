@@ -196,7 +196,7 @@ const RegisterForm = () => {
 
         // let result = await response.json();
         let result = await axios.post(
-          `http://143.244.136.203:4000/api/register-new`,
+          `https://backend.jiitopticachapter.com/api/register-new`,
           Final
         );
         console.log(" result is ", result);
