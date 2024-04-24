@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import qr from "../../assets/qrimage/qr.jpeg";
+import Loadingspinner from "./Loadingspinner";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +17,7 @@ const RegisterForm = () => {
     college: "",
     enrollmentType: "",
   });
+  const [loading, setLoading] = useState(false);
   const [clg, setclg] = useState("");
   const formRef = useRef(null);
   const [changeField, setChangeField] = useState(1);
@@ -103,6 +105,8 @@ const RegisterForm = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+
     // console.log("formdata is : ", formData);
     // Perform form validation
     const errors = {};
@@ -122,6 +126,10 @@ const RegisterForm = () => {
       !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.email)
     ) {
       errors.email = "Invalid email format";
+    }
+
+    if (image.length == 0) {
+      errors.screenshot = "Screenshot of payment is required";
     }
 
     if (!formData.phone.trim()) {
@@ -148,7 +156,7 @@ const RegisterForm = () => {
       errors.branch = "Branch is required";
     }
     if (
-      !/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9]|b[1-9]|b1[0-4]|a[1-7]|c[1-9]|F[1-11]|f[1-11]|E[1-9]|e[1-9])$/.test(formData.batch) &&
+      !/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9]|b[1-9]|b1[0-4]|a[1-7]|c[1-9]|F[1-9]|f[1-9]|E[1-9]|e[1-9])$/.test(formData.batch) &&
       (formData.college === "JIIT-62" || formData.college === "JIIT-128")
     ) {
       errors.batch = "Invalid batch format";
@@ -178,6 +186,8 @@ const RegisterForm = () => {
         ...Img,
       };
       console.log(Final);
+
+      setLoading(true);
 
       try {
         // let response = await fetch(
@@ -213,6 +223,9 @@ const RegisterForm = () => {
         }
         // console.error("Error during register:", error);
         // toast.error("An error occured during registration");
+      } finally {
+        setLoading(false); // Set loading state back to false after registration attempt
+        console.log("loading : ", loading);
       }
 
       //reset the form
@@ -228,11 +241,13 @@ const RegisterForm = () => {
         enrollmentType: "",
       });
       setclg("");
+      setImage([]);
     }
   };
   return (
     <>
       <ToastContainer />
+      <Loadingspinner show={loading} />
       <div className="registerr-header">Register Now</div>
       <div className="RegistrationPage">
         <div className="RegistrationPageSection">
