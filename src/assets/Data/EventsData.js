@@ -2,7 +2,7 @@ const Events = [
   {
     id: 1,
     title: "CODE WARS",
-    imgsrc: "/images/eventimages/Cseevent.png",
+    imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713953806/1_23_mijkxc.jpg",
     description: `Dive into the cosmic battlefield of Code Wars with your elite team of 1-3 players.  
     Each challenge conquered represents a planet under your control, propelling your team closer to domination of entire star systems. 
     In this thrilling tournament-style competition, assemble your team, hone your coding skills, and outmaneuver your opponents through multiple rounds and elimination phases. 
@@ -77,7 +77,7 @@ const Events = [
       },
 
       {
-        imgsrc: "/images/Webteamimages/krishnadeol.jpg",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941451/JSCOP6.0/krishnadeol_y3tpj3.jpg",
         name: "Krishna Deol",
         role: "Tech Volunteer",
         social: [
@@ -92,7 +92,7 @@ const Events = [
     //blind coding
     id: 2,
     title: "ELECTRIFY DASH",
-    imgsrc: "/images/eventimages/Eceevent.jpeg",
+    imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941592/JSCOP6.0/Eceevent_mcit2h.jpg",
     description: `"Welcome to the Intergalactic Design Challenge Event! In this event, you will be forming teams to design and construct a 3-stage circuit using logic gates and comparators. The goal of this event is to create a circuit that can light up an LED when a certain output is achieved based on the input from the first and second stages. The first stage will use AND, OR, and NOT gates to process the input, the second stage will use an AND/OR/NOT gate to perform the logic operations, and the third stage will include a comparator connected to an LED. Your task is to work as a team to design and build this circuit using components such as wires, resistors, LEDs, and logic gates. This is a great opportunity for you to put your design skills to the test, work with other teams, and have fun as you build and test your circuits. Make sure to follow the safety guidelines provided by the team, and remember to be respectful and supportive of your fellow team members. So, get ready to build, learn, and have a blast at the Intergalactic Design Challenge Event!"`,
     date: "27th April 2023",
     location: "EDC LAB",
@@ -125,7 +125,7 @@ const Events = [
         ],
       },
       {
-        imgsrc: "/images/Eventconduct/shantanu.png",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941748/JSCOP6.0/shantanu_isjcsw.png",
         name: "SHANTANU ",
         role: "Management Volunteer",
         social: [

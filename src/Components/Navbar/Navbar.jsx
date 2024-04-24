@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className={`NavbarToggle `}></div>
         <div className="NavabrLogo">
           <Link to="/home">
-            <img src={jscop6logo} alt="" />
+            <img src="https://res.cloudinary.com/dnqsoxydq/image/upload/v1713942236/JSCOP6.0/jscop6logo2_ubjyj8.png" alt="" />
           </Link>
         </div>
         <div className={`NavbarContent `}>
