@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import "./Webteam.css";
 import { motion } from "framer-motion";
 
-const Webteam = ({ member }) => {
+const Coreteam = ({ member }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -115,4 +115,4 @@ const heroDescriptionStyle = {
   fontSize: "1rem",
 };
 
-export default Webteam;
+export default Coreteam;
