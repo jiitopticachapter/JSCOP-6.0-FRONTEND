@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 200;
+  /* z-index: 200; */
 }
 
 .member-card .content {
@@ -126,7 +126,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 200;
+    /* z-index: 200; */
   }
 }
 
@@ -142,6 +142,6 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 200;
+    /* z-index: 200; */
   }
 }
