@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-// import { BsTrophyFill } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 import './EventDetailPage.css';
-import photo from './Code-of-duty.jpeg';
 import Team from '../Team/Team';
 import FAQ from './faqtoggle.jsx'; // Import the FAQ component
 import Data from '../../assets/Data/EventsData.js' // Import your events data

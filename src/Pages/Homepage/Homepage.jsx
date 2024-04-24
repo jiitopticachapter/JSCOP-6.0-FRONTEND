@@ -1,12 +1,10 @@
 import "./Homepage.css";
 import { useEffect, useRef } from "react";
-import planet from "../../assets/Homeimages/planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import Astronaut3update from "../../assets/Homeimages/Astronaut3update.png";
-// import jscop6heading from "../../assets/jscop6heading2.png";
+
 
 const Homepage = () => {
   const videoRef = useRef();
@@ -25,7 +23,7 @@ const Homepage = () => {
     <div id="home" className="homepage">
       <Stars speed={0.04} />
 
-      <img src={planet} alt="planet" className="planet" />
+      <img src="https://res.cloudinary.com/dnqsoxydq/image/upload/v1713942200/JSCOP6.0/planet2_suu7g8.jpg" alt="planet" className="planet" />
       <div className="home-heading">
         {/* <div className="home-heading-inner"> */}
         <div className="home-heading1">JIIT OPTICA</div>

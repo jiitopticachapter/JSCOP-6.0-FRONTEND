@@ -1,9 +1,8 @@
 import React from "react";
 import "./Speakers.css";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+// import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import bipin from "../../assets/speakerimages/bipin.png";
-import gagan from "../../assets/speakerimages/gagan.png";
+
 
 const Speakers = () => {
   return (
@@ -28,7 +27,7 @@ const Speakers = () => {
         <div className=" speaker-1 speaker-cardBox">
           <div className=" speaker-card speaker-card-fontsize">
             <img
-              src={gagan}
+              src="https://res.cloudinary.com/dnqsoxydq/image/upload/v1713942256/JSCOP6.0/gagan_tbj6jq.png"
               className="speaker-image speaker-h2"
               alt="speaker-image"
             />
@@ -87,7 +86,7 @@ const Speakers = () => {
         <div className=" speaker-2 speaker-cardBox">
           <div className=" speaker-card speaker-card-fontsize">
             <img
-              src={bipin}
+              src="https://res.cloudinary.com/dnqsoxydq/image/upload/v1713942243/JSCOP6.0/bipin_utwzz1.png"
               className="speaker-image speaker-h2"
               alt="speaker-image"
             />
