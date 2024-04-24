@@ -2,6 +2,7 @@ import React, { useState, lazy, Suspense } from "react";
 import { WebTeamData, CoreTeamData } from "../../assets/Data/WebTeamdata";
 import "./WebteamComponent.css";
 import Webteam from "../../Pages/Webteam/Webteam";
+import Coreteam from "../../Pages/Webteam/Coreteam";
 
 const WebTeamComponent = () => {
   const [arr, setArr] = useState(WebTeamData);
@@ -46,15 +47,19 @@ const WebTeamComponent = () => {
           </button>
         </div>
       </div>
-      <div className="webteam-container">
-        {/* Wrap LazyWebteam component with Suspense and specify a fallback */}
-        {/* <Suspense fallback={<div>Loading...</div>}> */}
-        {/* Map over the WebTeamData array and render a Webteam component for each member */}
-        {arr.map((member, index) => (
-          <Webteam key={index} member={member} />
-        ))}
-        {/* </Suspense> */}
-      </div>
+      {reference === 1 ? (
+        <div className="webteam-container">
+          {WebTeamData.map((member, index) => (
+            <Webteam key={index} member={member} />
+          ))}
+        </div>
+      ) : (
+        <div className="webteam-container">
+          {CoreTeamData.map((member, index) => (
+            <Coreteam key={index} member={member} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
