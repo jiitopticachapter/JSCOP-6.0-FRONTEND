@@ -2,17 +2,17 @@ const WebTeamData = [
   {
     name: "Harsh",
     surname: "Sharma",
-    photo: "/images/Webteamimages/Harsh_sharma.png",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941423/JSCOP6.0/Harsh_sharma_lpzstx.jpg",
     linkedin:
       "https://www.linkedin.com/in/harshsharma20503?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    insta: "https://www.instagram.com/x_harsh.sharma_x?igsh=c2YwZjFwYW42d2dp",
+    insta: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941423/JSCOP6.0/Harsh_sharma_lpzstx.jpg",
     designation: "Vice President",
   },
 
   {
     name: "Kaavya",
     surname: "Baranwal",
-    photo: "/images/Webteamimages/kaavyaberniwalnew.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941431/JSCOP6.0/kaavyaberniwalnew_qabed8.jpg",
     insta: "https://www.instagram.com/kaavyabaranwal?igsh=aWlma2J2bHRpNTl3",
     linkedin:
       "https://www.linkedin.com/in/kaavya-baranwal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -21,40 +21,41 @@ const WebTeamData = [
   {
     name: "Teesha",
     surname: "Kakkar",
-    photo: "/images/Webteamimages/teeshanew.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941488/JSCOP6.0/teeshanew_zqwa3i.jpg",
     insta: "https://www.instagram.com/tee_sha_14?igsh=NHY1a2RsMHQ2cGRu",
     linkedin: "https://www.linkedin.com/in/teesha-kakkar-7283b6264",
     designation: "Tech Volunteer",
   },
   {
-    name: "Nandini",
-    surname: "Jindal",
-    photo: "/images/Webteamimages/Nandininew.jpeg",
-    linkedin: "https://www.linkedin.com/in/nandini-jindal-33a3a7282/",
-    designation: "Tech Volunteer",
-  },
-  {
-    name: "Yash",
-    surname: "Mittal",
-    photo: "/images/Webteamimages/YashMittalnew.jpeg",
-    insta: "https://www.instagram.com/yashmittal_05?igsh=MXI2MGR4YWhwZnQ5Yw==",
-    linkedin: "https://www.linkedin.com/in/yash-mittal-433307251/",
-    designation: "Tech Volunteer",
-  },
-
-  {
     name: "Kartik",
     surname: "Aggarwal",
-    photo: "/images/Webteamimages/kartiknew.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941441/JSCOP6.0/kartiknew_rcb0nj.jpg",
     linkedin:
       "https://www.linkedin.com/in/kartik-aggarwal-951a6a194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/hii__kartik?igsh=dGNncHFpaWdsdjc2",
     designation: "Tech Volunteer",
   },
   {
+    name: "Nandini",
+    surname: "Jindal",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941462/JSCOP6.0/Nandininew_so0roz.jpg",
+    linkedin: "https://www.linkedin.com/in/nandini-jindal-33a3a7282/",
+    designation: "Tech Volunteer",
+  },
+  {
+    name: "Yash",
+    surname: "Mittal",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941503/JSCOP6.0/YashMittalnew_wmdgnz.jpg",
+    insta: "https://www.instagram.com/yashmittal_05?igsh=MXI2MGR4YWhwZnQ5Yw==",
+    linkedin: "https://www.linkedin.com/in/yash-mittal-433307251/",
+    designation: "Tech Volunteer",
+  },
+
+
+  {
     name: "Rajat",
     surname: "Bhati",
-    photo: "/images/Webteamimages/RajatBhatinew.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941469/JSCOP6.0/RajatBhatinew_x337ms.jpg",
     linkedin: "https://www.linkedin.com/in/rajat-bhati-6a2114216/",
     insta: "https://www.instagram.com/rajat___.13?igsh=NWVpaWxxMzRpc2ht",
     designation: "Tech Volunteer",
@@ -62,7 +63,7 @@ const WebTeamData = [
   {
     name: "Rishika",
     surname: "Aggarwal",
-    photo: "/images/Webteamimages/Rishikanew.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941477/JSCOP6.0/Rishikanew_hdoxv8.jpg",
     linkedin: "https://www.linkedin.com/in/rishika-aggarwal-462b2a280",
     insta: "https://www.instagram.com/rishika_772713/",
     designation: "Tech Volunteer",
@@ -70,7 +71,7 @@ const WebTeamData = [
   {
     name: "Aryan",
     surname: "Goyal",
-    photo: "/images/Webteamimages/Aryan-hackathon.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941412/JSCOP6.0/Aryan-hackathon_omjleg.jpg",
     linkedin: "https://www.linkedin.com/in/aryan-goyal-0368b8247/",
     insta: "https://www.instagram.com/ag_0080/",
     designation: "Tech Volunteer",
@@ -78,7 +79,7 @@ const WebTeamData = [
   {
     name: "Kshitij",
     surname: "Gupta",
-    photo: "/images/Webteamimages/ksitijnew.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941452/JSCOP6.0/ksitijnew_l7o3ao.jpg",
     linkedin: "https://www.linkedin.com/in/kshitijgupta0707/",
     insta: "https://www.instagram.com/iamkshitijm?igsh=MTZzenp0OGxoa3AzNg==",
     designation: "Tech Volunteer",
@@ -86,7 +87,7 @@ const WebTeamData = [
   {
     name: "Ayush",
     surname: "Tomar",
-    photo: "/images/Webteamimages/AyushTomar.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941423/JSCOP6.0/AyushTomar_dx4vjz.jpg",
     linkedin:
       "https://www.linkedin.com/in/ayush-kumar-tomar-a1a368270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/tomar_ayush?igsh=NDYweTBwM3NnOGNw",
@@ -95,7 +96,7 @@ const WebTeamData = [
   {
     name: "Arnav",
     surname: "Goyal",
-    photo: "/images/Webteamimages/arnav.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941404/JSCOP6.0/arnav_m0mtir.jpg",
     linkedin:
       "https://www.linkedin.com/in/arnav-goyal-1a26ba123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta:
@@ -105,7 +106,7 @@ const WebTeamData = [
 ];
 const CoreTeamData = [
   {
-    photo: "/images/coreteamimg/Aman_Tripathi.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941343/JSCOP6.0/Aman_Tripathi_jbkmzi.jpg",
     name: "Aman",
     surname: "Tripathi",
     designation: "President",
@@ -113,7 +114,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/aman-tripathi-808a4319b/",
   },
   {
-    photo: "/images/Webteamimages/Harsh_sharma.png",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941423/JSCOP6.0/Harsh_sharma_lpzstx.jpg",
     name: "Harsh",
     surname: "Sharma",
     designation: "Vice President",
@@ -121,7 +122,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/harshsharma20503/",
   },
   {
-    photo: "/images/coreteamimg/Mridul_Saraswat.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941362/JSCOP6.0/Mridul_Saraswat_rlhoyr.jpg",
     name: "Mridul",
     surname: "Saraswat",
     designation: "Treasurer",
@@ -129,7 +130,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/mridul-sarasawat-690853196/",
   },
   {
-    photo: "/images/coreteamimg/Anukriti_Mishra.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941353/JSCOP6.0/Anukriti_Mishra_s1yjx6.jpg",
     name: "Anukriti",
     surname: "Mishra",
     designation: "Secretary",
@@ -137,7 +138,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/anukriti-mishra16",
   },
   {
-    photo: "/images/coreteamimg/Aryan_Aggarwal.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941357/JSCOP6.0/Aryan_Aggarwal_eorudc.jpg",
     name: "Aryan",
     surname: "Agarwal",
     designation: "Strategic Chief",
@@ -145,7 +146,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/aryan-aggarwal-9b8073228/",
   },
   {
-    photo: "/images/coreteamimg/Ansh_kilhor.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941343/JSCOP6.0/Ansh_kilhor_xoayp2.jpg",
     name: "Ansh",
     surname: "Kilhor",
     designation: "Strategic Chief",
@@ -154,7 +155,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/ansh-kilhor-b875b224a",
   },
   {
-    photo: "/images/Webteamimages/kaavyaberniwalnew.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941431/JSCOP6.0/kaavyaberniwalnew_qabed8.jpg",
     name: "Kaavya",
     surname: "Baranwal",
     designation: "Technical Head",
@@ -163,7 +164,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/kaavya-baranwal",
   },
   {
-    photo: "/images/coreteamimg/Nancy_Soni.png",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941376/JSCOP6.0/Nancy_Soni_ypvm0r.png",
     name: "Nancy",
     surname: "Soni",
     designation: "Outreach Head",
@@ -172,7 +173,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/nancy-soni-3038b31b3",
   },
   {
-    photo: "/images/coreteamimg/sanidhya_agarwal.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941386/JSCOP6.0/sanidhya_agarwal_qv8enw.jpg",
     name: "Sanidhya",
     surname: "Agarwal",
     designation: "Management Head",
@@ -180,7 +181,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/sanidhya-agarwal-887438221/",
   },
   {
-    photo: "/images/coreteamimg/Prateeksha_chansoria.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941374/JSCOP6.0/Prateeksha_chansoria_bxgxsb.jpg",
     name: "Prateeksha",
     surname: "Chansoria",
     designation: "Management Head",
@@ -189,7 +190,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/prateeksha-chansoria-3a951a23b",
   },
   {
-    photo: "/images/coreteamimg/Rijul_Raj.jpeg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941379/JSCOP6.0/Rijul_Raj_xt2wax.jpg",
     name: "Rijul",
     surname: "Raj",
     designation: "Digital Head",
@@ -197,7 +198,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/rijul-raj-660113245/",
   },
   {
-    photo: "/images/coreteamimg/Anshul_Chaturvedi.png",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941345/JSCOP6.0/Anshul_Chaturvedi_n8sohn.png",
     name: "Anshul",
     surname: "Chaturvedi",
     designation: "Digital Head",
@@ -205,7 +206,7 @@ const CoreTeamData = [
     linkedin: "https://www.linkedin.com/in/anshul-chaturvedi-50bb54231/",
   },
   {
-    photo: "/images/coreteamimg/yashv_creative.jpg",
+    photo: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941396/JSCOP6.0/yashv_creative_fpjta5.jpg",
     name: "Yash",
     surname: "vardhan",
     designation: "Creative Head",
