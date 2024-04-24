@@ -1,7 +1,5 @@
 import React from "react";
-// import background from '../../assets/back.jpg';
 import "./Footer.css";
-// import logo from "../../assets/JSCOP_LOGO.png";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
@@ -10,8 +8,7 @@ import { FaYoutubeSquare } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
-import { color } from "framer-motion";
-import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
+
 
 export default function Footer() {
   return (
@@ -20,7 +17,7 @@ export default function Footer() {
         <div className="Border">
           {/* <img className="bg-img" src={background} alt="" /> */}
           <div className="symbol">
-            <img className="logo" src={jscop6logo} alt="JSCOP Logo" />
+            <img className="logo" src="https://res.cloudinary.com/dnqsoxydq/image/upload/v1713942236/JSCOP6.0/jscop6logo2_ubjyj8.png" alt="JSCOP Logo" />
           </div>
           <a
             className="phone"

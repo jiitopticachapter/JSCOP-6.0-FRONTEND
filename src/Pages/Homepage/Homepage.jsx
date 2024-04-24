@@ -1,12 +1,10 @@
 import "./Homepage.css";
 import { useEffect, useRef } from "react";
-// import planet from "../../assets/Homeimages/planet2.jpg";
 import Stars from "../../Components/Stars/Stars";
 import Timer from "../../Components/Timer/Timer";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import Astronaut3update from "../../assets/Homeimages/Astronaut3update.png";
-// import jscop6heading from "../../assets/jscop6heading2.png";
+
 
 const Homepage = () => {
   const videoRef = useRef();

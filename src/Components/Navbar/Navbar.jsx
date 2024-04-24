@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
+
 
 import Sidenav from "./SideNavbar";
 import { Link, NavLink } from "react-router-dom";
