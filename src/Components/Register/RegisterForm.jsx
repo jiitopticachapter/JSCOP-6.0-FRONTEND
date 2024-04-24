@@ -151,7 +151,7 @@ const RegisterForm = () => {
       errors.branch = "Branch is required";
     }
     if (
-      !/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9])$/.test(formData.batch) &&
+      !/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9]|b[1-9]|b1[0-4]|a[1-7]|c[1-9])$/.test(formData.batch) &&
       (formData.college === "JIIT-62" || formData.college === "JIIT-128")
     ) {
       errors.batch = "Invalid batch format";
@@ -268,7 +268,7 @@ const RegisterForm = () => {
                   </li>
                   <li style={{ textAlign: "justify" }}>
                     There are limited registrations only for the lunch and
-                    refreshments, forms may close anytime the slots are filled.
+                    refreshments, forms may close anytime.
                   </li>
                   <li style={{ textAlign: "justify" }}>
                     Individual event registration are free of cost and can be
@@ -481,7 +481,7 @@ const RegisterForm = () => {
                 Enrollment Type <span className="registernecessary"> * </span>:
               </label> */}
               {formData.college === "JIIT-62" ||
-              formData.college === "JIIT-128" ? (
+                formData.college === "JIIT-128" ? (
                 <div>
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <div>

@@ -95,7 +95,7 @@ const Events = [
     imgsrc: "/images/eventimages/Eceevent.jpeg",
     description: `"Welcome to the Intergalactic Design Challenge Event! In this event, you will be forming teams to design and construct a 3-stage circuit using logic gates and comparators. The goal of this event is to create a circuit that can light up an LED when a certain output is achieved based on the input from the first and second stages. The first stage will use AND, OR, and NOT gates to process the input, the second stage will use an AND/OR/NOT gate to perform the logic operations, and the third stage will include a comparator connected to an LED. Your task is to work as a team to design and build this circuit using components such as wires, resistors, LEDs, and logic gates. This is a great opportunity for you to put your design skills to the test, work with other teams, and have fun as you build and test your circuits. Make sure to follow the safety guidelines provided by the team, and remember to be respectful and supportive of your fellow team members. So, get ready to build, learn, and have a blast at the Intergalactic Design Challenge Event!"`,
     date: "27th April 2023",
-    location: "ADC LAB",
+    location: "EDC LAB",
     time: "2:30 - 4:00 PM",
     // deadline: "14-March-2023,11:59 pm",
     register_link:
@@ -105,7 +105,7 @@ const Events = [
     faq: [
       {
         question: "Is this a team event?",
-        answer: " YES, this is an team event.",
+        answer: " YES, this is a team event.",
         open: false,
       },
       {

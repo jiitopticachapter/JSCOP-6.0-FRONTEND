@@ -43,11 +43,7 @@ const Speakers = () => {
               <h4 className="speaker-h3"> Prof. Gagan Kumar</h4>
               <h4 className="speaker-h3">IIT Guwahati</h4>
               <div style={{ textAlign: "left" }} className="speaker-p">
-                We are more than delighted to announce that Dr Gagan Kumar will
-                be joining us as our guest speaker at JSCOP 6.0. Enhance your
-                knowledge on the topics of microfabrication and nanotechnology
-                as you attend the enriching session with the expert in this
-                field, Dr Gagan Kumar, Associate Professor ai IIT Guwahati.
+                The Terahertz Photonics and Plasmonics lab, led by Dr. Gagan Kumar, focuses on developing terahertz plasmonic devices and exploring near field coupling in terahertz metamaterials and sesnsors to enhance speed and senstivity.
                 <h5 style={{ textAlign: "left" }} className="speaker-h5">
                   Date : 27-04-2024
                 </h5>
@@ -106,12 +102,7 @@ const Speakers = () => {
               <h4 className="speaker-h3"> Dr. Bipin Kumar Gupta</h4>
               <h4 className="speaker-h3">CSIR NPL</h4>
               <div style={{ textAlign: "left" }} className="speaker-p">
-                We're delighted to announce the distinguished presence of Dr.
-                Bipin Kumar Gupta from CSIR India at JSCOP 6.0. Join us and
-                Prepare to embark on a journey through the realms of
-                microfabrication and nanotechnology as Dr. Gupta, an esteemed
-                Associate Professor, shares his expert insights and expan your
-                knowledge horizon.
+                Dr. Bipin Kumar Gupta, an expert in Solid State Physics, specalizes in luminescent materials, nanotechnology bio-nanotechnology, and hydrogen energy. His work involves graphene quantam dots and 2-D materials for applications in security ink, optoelectronics, biological labeling, and drug delivery.
                 <h5 style={{ textAlign: "left" }} className="speaker-h5">
                   Date : 27-04-2024
                 </h5>
