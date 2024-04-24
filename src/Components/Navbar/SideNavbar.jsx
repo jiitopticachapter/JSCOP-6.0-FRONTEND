@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./SideNavbar.css";
 import { Link, useParams } from "react-router-dom";
-import jscop6logo from "../../assets/Navimages/jscop6logo2.png";
+
 
 const Sidenav = () => {
   const [sidenavWidth, setSidenavWidth] = useState("0vw");

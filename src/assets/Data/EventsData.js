@@ -36,7 +36,7 @@ const Events = [
     ],
     OrgTeam: [
       {
-        imgsrc: "/images/Webteamimages/Harsh_sharma.png",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941423/JSCOP6.0/Harsh_sharma_lpzstx.jpg",
         name: "Harsh Sharma",
         role: "Vice President",
         social: [
@@ -46,7 +46,7 @@ const Events = [
         ],
       },
       {
-        imgsrc: "/images/Webteamimages/RajatBhatinew.jpg",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941469/JSCOP6.0/RajatBhatinew_x337ms.jpg",
         name: "Rajat Bhati",
         role: "Tech Volunteer",
         social: [
@@ -56,7 +56,7 @@ const Events = [
         ],
       },
       {
-        imgsrc: "/images/Webteamimages/Aryan-hackathon.jpg",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941412/JSCOP6.0/Aryan-hackathon_omjleg.jpg",
         name: "ARYAN GOYAL",
         role: "Tech Volunteer",
         social: [
@@ -66,7 +66,7 @@ const Events = [
         ],
       },
       {
-        imgsrc: "/images/Webteamimages/YashMittalnew.jpeg",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941503/JSCOP6.0/YashMittalnew_wmdgnz.jpg",
         name: "YASH MITTAL",
         role: "Tech Volunteer",
         social: [
@@ -116,7 +116,7 @@ const Events = [
     ],
     OrgTeam: [
       {
-        imgsrc: "/images/coreteamimg/Aman_Tripathi.jpeg",
+        imgsrc: "https://res.cloudinary.com/dnqsoxydq/image/upload/v1713941343/JSCOP6.0/Aman_Tripathi_jbkmzi.jpg",
         name: "Aman Tripathi ",
         role: "President",
         social: [

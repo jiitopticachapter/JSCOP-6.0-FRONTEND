@@ -1,9 +1,8 @@
 import React from "react";
 import "./Speakers.css";
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+// import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import bipin from "../../assets/speakerimages/bipin.png";
-import gagan from "../../assets/speakerimages/gagan.png";
+
 
 const Speakers = () => {
   return (
