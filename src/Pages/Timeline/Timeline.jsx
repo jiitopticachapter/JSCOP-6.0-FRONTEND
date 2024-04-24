@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Timeline.css";
 import Tiline from "./Tline.jsx";
+import timelinedown from "/images/timelinedown.jpeg";
 
 function Timeline() {
   let arr1 = [
@@ -115,12 +116,11 @@ function Timeline() {
 
           <Tiline arr={arr1} />
 
-          {/* <div id="tlbtndiv2" className="tlbtndiv">
-            <a href="./day1.png" download>
-            <button className="tlbtn tlbtn2">Download Schedule</button>
+          <div id="tlbtndiv2" className="tlbtndiv">
+            <a href={timelinedown} download>
+              <button className="tlbtn tlbtn2">Download Schedule</button>
             </a>
-           
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
