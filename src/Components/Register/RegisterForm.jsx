@@ -155,12 +155,13 @@ const RegisterForm = () => {
     ) {
       errors.branch = "Branch is required";
     }
-    if //(
+    if (
       //!/^(A[1-7]|B[1-9]|B1[0-4]|C[1-9]|b[1-9]|b1[0-4]|a[1-7]|c[1-9]|F[1-9]|f[1-9]|E[1-9]|e[1-9])$/.test(formData.batch) &&
+      !formData.batch.trim() &&
       (formData.college === "JIIT-62" || formData.college === "JIIT-128")
-    //)
+    )
     {
-      errors.batch = "Invalid batch";
+      errors.batch = "Batch is required";
     }
 
     setFormErrors(errors);
